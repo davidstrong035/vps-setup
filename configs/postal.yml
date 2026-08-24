@@ -1,0 +1,48 @@
+version: 2
+
+postal:
+  web_hostname: postal.maileff.space
+  web_protocol: https
+  smtp_hostname: postal.maileff.space
+
+main_db:
+  host: 127.0.0.1
+  username: root
+  password: postal
+  database: postal
+
+message_db:
+  host: 127.0.0.1
+  username: root
+  password: postal
+  prefix: postal
+
+smtp_server:
+  default_bind_address: "::"
+
+dns:
+  # Specify the DNS records that you have configured. Refer to the documentation at
+  # https://github.com/atech/postal/wiki/Domains-&-DNS-Configuration for further
+  # information about these.
+  mx_records:
+    - mx.postal.maileff.space
+  spf_include: spf.postal.maileff.space
+  return_path_domain: rp.postal.maileff.space
+  route_domain: routes.postal.maileff.space
+  track_domain: track.postal.maileff.space
+
+smtp:
+  # Specify an SMTP server that can be used to send messages from the Postal management
+  # system to users. You can configure this to use a Postal mail server once the
+  # your installation has been set up.
+  host: 127.0.0.1
+  port: 2525
+  username: # Complete when Postal is running and you can
+  password: # generate the credentials within the interface.
+  from_name: Postal
+  from_address: postal.maileff.space
+
+rails:
+  # This is generated automatically by the config initialization. It should be a random
+  # string unique to your installation.
+  secret_key: 7a4657da82dcd9c53aaac249886cc9b1cf7848c58931bb701323a47e241e60da045c02279778fab0e4acbf2e902cc136bafecbf1fb398508ad8aebc70d1b8e27c470fb851dc14a60206201ad4b4c625c59ce24501b297bca63cfc1b56a25e48ad87a1a3a05cd1ccb701b4a0b31ce61152b8145c8628617c2c1b05a7dfdb9b2ee

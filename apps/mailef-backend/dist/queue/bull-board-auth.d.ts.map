@@ -1,0 +1,1 @@
+{"version":3,"file":"bull-board-auth.d.ts","sourceRoot":"","sources":["../../src/queue/bull-board-auth.ts"],"names":[],"mappings":"AAAA,OAAO,EAAW,QAAQ,EAAE,YAAY,EAAE,MAAM,SAAS,CAAC;AAE1D,OAAO,EAAE,WAAW,EAAE,MAAM,UAAU,CAAC;AAEvC;;;;;GAKG;AACH,MAAM,CAAC,OAAO,UAAU,uBAAuB,CAC7C,GAAG,EAAE,WAAW,EAChB,GAAG,EAAE,QAAQ,EACb,IAAI,EAAE,YAAY,GACjB,IAAI,CAmDN"}

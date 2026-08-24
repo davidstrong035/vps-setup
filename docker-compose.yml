@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postal-mariadb:
+    image: mariadb:10.11
+    container_name: postal-mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: postal
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  postal-caddy:
+    image: caddy:latest
+    container_name: postal-caddy
+    restart: always
+    network_mode: "host"
+    volumes:
+      - ./configs/Caddyfile:/etc/caddy/Caddyfile:ro
+      - /opt/postal/caddy-data:/data
+
+  postal:
+    image: ghcr.io/postalserver/postal:3.3.7
+    container_name: postal
+    restart: always
+    network_mode: "host"
+    depends_on:
+      - postal-mariadb
+    volumes:
+      - ./configs/postal.yml:/config/postal.yml:ro
+      - ./configs/signing.key:/config/fast_signing.key:ro
+
+volumes:
+  mariadb_data:

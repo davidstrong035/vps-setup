@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const campaign_controller_1 = require("../controllers/campaign.controller");
+const auth_middleware_1 = require("../middleware/auth.middleware");
+const router = (0, express_1.Router)();
+router.use(auth_middleware_1.authenticate);
+router.get("/", campaign_controller_1.getCampaigns);
+router.get("/queue-overview", campaign_controller_1.getMyQueueOverview);
+router.post("/", campaign_controller_1.createCampaign);
+router.get("/:id", campaign_controller_1.getCampaign);
+router.put("/:id", campaign_controller_1.updateCampaign);
+router.delete("/:id", campaign_controller_1.deleteCampaign);
+router.post("/:id/send", campaign_controller_1.sendCampaign);
+router.post("/:id/schedule", campaign_controller_1.scheduleCampaign);
+router.post("/:id/pause", campaign_controller_1.pauseUserCampaign);
+router.post("/:id/cancel", campaign_controller_1.cancelUserCampaign);
+router.get("/:id/stats", campaign_controller_1.getCampaignStats);
+exports.default = router;
+//# sourceMappingURL=campaign.routes.js.map

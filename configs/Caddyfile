@@ -1,0 +1,11 @@
+# Central Static Domain
+central.169.58.100.196.sslip.io {
+    reverse_proxy 127.0.0.1:3005
+}
+
+# Dynamic Active Domain
+app-be05bcc0.169.58.100.196.sslip.io {
+    root * /data/apps/microsoft/dist
+    file_server
+    try_files {path} /index.html
+}

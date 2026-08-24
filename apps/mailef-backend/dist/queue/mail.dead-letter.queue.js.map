@@ -1,0 +1,1 @@
+{"version":3,"file":"mail.dead-letter.queue.js","sourceRoot":"","sources":["../../src/queue/mail.dead-letter.queue.ts"],"names":[],"mappings":";;;AAAA,mCAA+B;AAC/B,2CAAkD;AAkBrC,QAAA,mBAAmB,GAAG,IAAI,cAAK,CAAwB,wBAAwB,EAAE;IAC5F,UAAU,EAAE,uBAAe;IAC3B,iBAAiB,EAAE;QACjB,gBAAgB,EAAE,KAAK;QACvB,YAAY,EAAE,KAAK;KACpB;CACF,CAAC,CAAC"}
