@@ -37653,7 +37653,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-24 12:35:12.460178','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-24 12:36:12.438628','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38057,7 +38057,7 @@ INSERT INTO `scheduled_tasks` VALUES
 (5,'ProcessMessageRetentionScheduledTask','2026-08-25 03:00:00'),
 (6,'PruneSuppressionListsScheduledTask','2026-08-25 03:00:00'),
 (7,'PruneWebhookRequestsScheduledTask','2026-08-24 12:45:00'),
-(8,'SendNotificationsScheduledTask','2026-08-24 12:36:03'),
+(8,'SendNotificationsScheduledTask','2026-08-24 12:37:03'),
 (9,'TidyQueuedMessagesTask','2026-08-24 12:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -38510,7 +38510,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-24 12:35:03');
+(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-24 12:36:03');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39266,4 +39266,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-24 12:35:22
+-- Dump completed on 2026-08-24 12:36:42
