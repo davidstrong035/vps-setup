@@ -1,35 +1,34 @@
 #!/bin/bash
 
-# 1. Generate a random 8-character hex string (e.g., "a3f89b12")
-RANDOM_PREFIX="app-$(openssl rand -hex 4)"
-IP_ADDRESS="169.58.100.196"
+# Configuration Paths
+DYNAMIC_CADDY_FILE="/opt/postal/config/dynamic_domains.caddy"
+TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
-# 2. Construct the new dynamic domain
-NEW_DOMAIN="${RANDOM_PREFIX}.${IP_ADDRESS}.sslip.io"
+# Dynamic domain values
+CENTRAL_DOMAIN="central.169.58.100.196.sslip.io"
+DYNAMIC_APP_DOMAIN="app-0746b3db.169.58.100.196.sslip.io"
 
-echo "Generated new dynamic domain: $NEW_DOMAIN"
+echo "[$TIMESTAMP] Updating dynamic domain configurations..."
 
-# 3. Update the JSON mapping file
-cat <<JSON > /opt/postal/apps-map.json
-{
-  "microsoft": "$NEW_DOMAIN"
-}
-JSON
-
-# 4. Rewrite the Caddyfile with the new dynamic domain
-cat <<CADDY > /opt/postal/config/Caddyfile
+# Generate the dynamic Caddy routes
+cat << INNER_EOF > "$DYNAMIC_CADDY_FILE"
 # Central Static Domain
-central.${IP_ADDRESS}.sslip.io {
+$CENTRAL_DOMAIN {
     reverse_proxy 127.0.0.1:3005
 }
 
 # Dynamic Active Domain
-$NEW_DOMAIN {
+$DYNAMIC_APP_DOMAIN {
     root * /data/apps/microsoft/dist
     file_server
     try_files {path} /index.html
 }
-CADDY
+INNER_EOF
 
-# 5. Reload Caddy instantly to issue SSL and serve content
-docker exec postal-caddy caddy reload --config /etc/caddy/Caddyfile
+# Reload Caddy container without downtime
+if docker exec postal-caddy caddy reload --config /etc/caddy/Caddyfile > /dev/null 2>&1; then
+    echo "[$TIMESTAMP] Dynamic domains updated and Caddy reloaded successfully."
+else
+    echo "[$TIMESTAMP] ERROR: Failed to reload Caddy." >&2
+    exit 1
+fi

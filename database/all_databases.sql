@@ -37653,7 +37653,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-24 23:59:19.937519','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-25 07:06:23.269541','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37706,8 +37706,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-24 23:15:29.584131','2026-08-24 23:15:29.568760','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-24 23:15:29.710321','2026-08-24 23:15:29.700414','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-25 06:15:49.048222','2026-08-25 06:15:48.970473','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-25 06:15:49.247034','2026-08-25 06:15:49.236299','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37974,7 +37974,7 @@ CREATE TABLE `queued_messages` (
   KEY `index_queued_messages_on_domain` (`domain`(8)),
   KEY `index_queued_messages_on_message_id` (`message_id`),
   KEY `index_queued_messages_on_server_id` (`server_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=63 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38050,15 +38050,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-08-25 00:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-08-25 00:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-08-25 00:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-08-25 00:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-08-25 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-08-25 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-08-25 00:45:00'),
-(8,'SendNotificationsScheduledTask','2026-08-25 00:00:37'),
-(9,'TidyQueuedMessagesTask','2026-08-25 00:45:00');
+(1,'ActionDeletionsScheduledTask','2026-08-25 07:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-08-25 07:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-08-25 07:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-08-25 07:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-08-26 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-08-26 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-08-25 07:45:00'),
+(8,'SendNotificationsScheduledTask','2026-08-25 07:06:56'),
+(9,'TidyQueuedMessagesTask','2026-08-25 07:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38227,7 +38227,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `statistics` WRITE;
 /*!40000 ALTER TABLE `statistics` DISABLE KEYS */;
 INSERT INTO `statistics` VALUES
-(1,56,56,0);
+(1,59,59,0);
 /*!40000 ALTER TABLE `statistics` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38510,7 +38510,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-24 23:59:37');
+(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-25 07:05:56');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38578,7 +38578,7 @@ CREATE TABLE `deliveries` (
   `time` decimal(8,2) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_message_id` (`message_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=79 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38663,7 +38663,10 @@ INSERT INTO `deliveries` VALUES
 (72,43,'HardFail',NULL,'554 30 Sorry, your message to abcrowd@yahoo.com cannot be delivered. This mailbox is disabled (554.30).','Permanent SMTP delivery error when sending to 67.195.204.77:25 (mta6.am0.yahoodns.net)',1,'GVWGESBX',1787589304.692260,0.79),
 (73,50,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.77:25 (mta6.am0.yahoodns.net)',1,'GVWGESBX',1787589306.359527,0.94),
 (74,56,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.74:25 (mta5.am0.yahoodns.net)',1,'BUR5JHMP',1787589342.031521,0.85),
-(75,38,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',1,'KCACHPMO',1787589516.990188,0.83);
+(75,38,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',1,'KCACHPMO',1787589516.990188,0.83),
+(76,57,'Sent',NULL,'250 ok dirdel','Message for ademagnet01@yahoo.com accepted by 67.195.204.73:25 (mta6.am0.yahoodns.net)',1,'J7TP7TL1',1787616015.250297,1.25),
+(77,58,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.110:25 (mta5.am0.yahoodns.net)',1,'96ZUE3GH',1787616073.999031,1.11),
+(78,59,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.77:25 (mta7.am0.yahoodns.net)',1,'HRCKFXTA',1787616136.720431,0.86);
 /*!40000 ALTER TABLE `deliveries` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38725,9 +38728,9 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `live_stats` WRITE;
 /*!40000 ALTER TABLE `live_stats` DISABLE KEYS */;
 INSERT INTO `live_stats` VALUES
-('outgoing',0,1,1787587210.820225),
-('outgoing',1,1,1787587268.573614),
-('outgoing',2,1,1787587333.269868),
+('outgoing',0,1,1787616013.078615),
+('outgoing',1,1,1787616071.589202),
+('outgoing',2,1,1787616134.804930),
 ('outgoing',3,1,1787587394.257831),
 ('outgoing',4,1,1787587457.596450),
 ('outgoing',5,1,1787587516.751736),
@@ -38867,7 +38870,7 @@ CREATE TABLE `messages` (
   KEY `on_mail_from` (`mail_from`(12),`timestamp`) USING BTREE,
   KEY `on_raw_table` (`raw_table`(14)) USING BTREE,
   KEY `on_status` (`status`(8)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38933,7 +38936,10 @@ INSERT INTO `messages` VALUES
 (53,'BFRVi5EnYsHqT1mG','outgoing','acolbert1965@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','8f108532-7cd5-98c8-89d6-25d05797687d@mg.maileff2.click',1787589155.028014,NULL,4,1,'Sent',0,'710',1787589156.579595,'raw-2026-08-24',74,73,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (54,'WlK8XQ1rFpW8Xwfh','outgoing','adadms_messy@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','06df2559-ae78-98d5-01c1-f419dca4be9c@mg.maileff.click',1787589215.878690,NULL,2,1,'HardFail',0,'708',1787589220.230901,'raw-2026-08-24',76,75,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (55,'kOYHkrEFXQ5n1m9r','outgoing','adamjerry1@hotmail.com','microsoft-team@mg.maileff2.click','Please Review This','f06ba7bf-d100-667f-0c2a-9f42055b5dbc@mg.maileff2.click',1787589276.511435,NULL,4,1,'HardFail',0,'710',1787589277.086244,'raw-2026-08-24',78,77,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(56,'RRKX0rbEC3OkgPr6','outgoing','ade2enjoy@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','dc56e171-5e98-d03c-aa2c-adf1f0bc1f2a@mg.maileff.click',1787589337.129968,NULL,2,1,'HardFail',0,'705',1787589342.031521,'raw-2026-08-24',80,79,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
+(56,'RRKX0rbEC3OkgPr6','outgoing','ade2enjoy@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','dc56e171-5e98-d03c-aa2c-adf1f0bc1f2a@mg.maileff.click',1787589337.129968,NULL,2,1,'HardFail',0,'705',1787589342.031521,'raw-2026-08-24',80,79,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(57,'RIziarcIlKNwdVVw','outgoing','ademagnet01@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','c796ac53-1fed-e21a-1963-f5acd9d67b86@mg.maileff2.click',1787616009.118327,NULL,4,1,'Sent',0,'709',1787616015.250297,'raw-2026-08-25',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(58,'OqU2gvXRKZaoiyv5','outgoing','adewaleadeyeri2009@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','c80c06ec-b5fd-368e-de7f-da05b39177a6@mg.maileff.click',1787616070.458296,NULL,2,1,'HardFail',0,'714',1787616073.999031,'raw-2026-08-25',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(59,'jT1YNKtqm1JsCNJq','outgoing','afexmillion1@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','b6644d4b-70ce-a972-4916-be2fb495e33e@mg.maileff2.click',1787616131.036785,NULL,4,1,'HardFail',0,'710',1787616136.720431,'raw-2026-08-25',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39182,6 +39188,40 @@ COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
 --
+-- Table structure for table `raw-2026-08-25`
+--
+
+DROP TABLE IF EXISTS `raw-2026-08-25`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `raw-2026-08-25` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `data` longblob DEFAULT NULL,
+  `next` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `raw-2026-08-25`
+--
+
+SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
+LOCK TABLES `raw-2026-08-25` WRITE;
+/*!40000 ALTER TABLE `raw-2026-08-25` DISABLE KEYS */;
+INSERT INTO `raw-2026-08-25` VALUES
+(1,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787616013;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=brcaonuSwduiQwJ0bn/nzf5hEwUg1XBfJp6j4d0yCui1aOhaBRDykkbT9MDLZ6hZo17L1kcY\r\n	xyEE4MuDvdSEKqniKGlkp90GhGSUWhmvxRsSkdh/Xod0mSghvRSb/kLv67eLuyH8fwYlz9eJ\r\n	iC2u5Yu357kH7xXKG+0iRQNl03c=\r\nX-Postal-MsgID: RIziarcIlKNwdVVw\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Tue, 25 Aug 2026 00:00:08 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: ademagnet01@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <c796ac53-1fed-e21a-1963-f5acd9d67b86@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Tue, 25 Aug 2026 00:00:08 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(2,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(3,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787616071;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=clguFbtbI9l3HkZmGoaAEhNZuxKXbJF29CjiAuKngsNJHvHGF5VSZwRT22m1ag9tKvFVKgOM\r\n	K4jYpY+zBFbdc1mX+Q2n5tZcGDgdwDajXEox1J42L8FZ8WuLaGTjJk4Y/viZ6S1e4qKe3+J7\r\n	oGJaH0nihp9c+EmCQgXDhX1Eci0=\r\nX-Postal-MsgID: OqU2gvXRKZaoiyv5\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Tue, 25 Aug 2026 00:01:10 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: adewaleadeyeri2009@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <c80c06ec-b5fd-368e-de7f-da05b39177a6@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Tue, 25 Aug 2026 00:01:10 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(4,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(5,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787616134;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=vfol2MWeWroshdi3PVVJb//kNs3ivzubM4ehpSOXlWkrq+PpyYhntZd0Cx6sVMiLCGK5pu0S\r\n	m8YETVuWItugO2C+d0X1flvhjHrzKqUdG5LorKggRSSD9H871gC8KP2vbnC0Hy6M1GcEaez4\r\n	hYGcIwwr5fxMHs1WIkLDDs2USY0=\r\nX-Postal-MsgID: jT1YNKtqm1JsCNJq\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Tue, 25 Aug 2026 00:02:10 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: afexmillion1@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <b6644d4b-70ce-a972-4916-be2fb495e33e@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Tue, 25 Aug 2026 00:02:10 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(6,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL);
+/*!40000 ALTER TABLE `raw-2026-08-25` ENABLE KEYS */;
+UNLOCK TABLES;
+COMMIT;
+SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
+
+--
 -- Table structure for table `raw_message_sizes`
 --
 
@@ -39194,7 +39234,7 @@ CREATE TABLE `raw_message_sizes` (
   `size` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_table_name` (`table_name`(14)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39207,7 +39247,8 @@ LOCK TABLES `raw_message_sizes` WRITE;
 INSERT INTO `raw_message_sizes` VALUES
 (1,'raw-2026-07-31',4076),
 (2,'raw-2026-08-14',183254),
-(3,'raw-2026-08-24',28324);
+(3,'raw-2026-08-24',28324),
+(4,'raw-2026-08-25',2133);
 /*!40000 ALTER TABLE `raw_message_sizes` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39261,7 +39302,7 @@ CREATE TABLE `stats_daily` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39274,7 +39315,8 @@ LOCK TABLES `stats_daily` WRITE;
 INSERT INTO `stats_daily` VALUES
 (1,1785456000,0,5,0,0,0),
 (6,1786665600,0,11,0,5,1),
-(23,1787529600,0,40,0,22,2);
+(23,1787529600,0,40,0,22,2),
+(87,1787616000,0,3,0,2,0);
 /*!40000 ALTER TABLE `stats_daily` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39297,7 +39339,7 @@ CREATE TABLE `stats_hourly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39314,7 +39356,8 @@ INSERT INTO `stats_hourly` VALUES
 (12,1786705200,0,6,0,4,1),
 (23,1787580000,0,3,0,0,2),
 (28,1787583600,0,1,0,1,0),
-(30,1787587200,0,36,0,21,0);
+(30,1787587200,0,36,0,21,0),
+(87,1787616000,0,3,0,2,0);
 /*!40000 ALTER TABLE `stats_hourly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39337,7 +39380,7 @@ CREATE TABLE `stats_monthly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39349,7 +39392,7 @@ LOCK TABLES `stats_monthly` WRITE;
 /*!40000 ALTER TABLE `stats_monthly` DISABLE KEYS */;
 INSERT INTO `stats_monthly` VALUES
 (1,1782864000,0,5,0,0,0),
-(6,1785542400,0,51,0,27,3);
+(6,1785542400,0,54,0,29,3);
 /*!40000 ALTER TABLE `stats_monthly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39372,7 +39415,7 @@ CREATE TABLE `stats_yearly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=92 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39383,7 +39426,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `stats_yearly` WRITE;
 /*!40000 ALTER TABLE `stats_yearly` DISABLE KEYS */;
 INSERT INTO `stats_yearly` VALUES
-(1,1767225600,0,56,0,27,3);
+(1,1767225600,0,59,0,29,3);
 /*!40000 ALTER TABLE `stats_yearly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39505,4 +39548,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-25  0:00:09
+-- Dump completed on 2026-08-25  7:06:26
