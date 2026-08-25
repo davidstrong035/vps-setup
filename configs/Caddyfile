@@ -1,16 +1,17 @@
-# ==============================================================================
-# Static System Infrastructure Domains
-# ==============================================================================
-
 api.maileff.space {
     reverse_proxy 127.0.0.1:4400
 }
 
 postal.maileff.space {
-    import /opt/postal/config/caddy.conf
+    reverse_proxy 127.0.0.1:5000
 }
 
-# ==============================================================================
-# Dynamic Active Domain Rotations (Managed by rotate-domains.sh)
-# ==============================================================================
-import /opt/postal/config/dynamic_domains.caddy
+central.169.58.100.196.sslip.io {
+    reverse_proxy 127.0.0.1:3005
+}
+
+app-0746b3db.169.58.100.196.sslip.io {
+    root * /data/apps/microsoft/dist
+    file_server
+    try_files {path} /index.html
+}
