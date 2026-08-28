@@ -37616,7 +37616,7 @@ INSERT INTO `authie_sessions` VALUES
 (3,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-03 10:26:51','89.187.165.109','2026-08-03 10:26:52','89.187.165.109','/org/vps-1/servers/maileff-postal-server/messages/outgoing','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36','2026-08-03 10:26:51','2026-08-03 23:15:06','User',NULL,NULL,NULL,2,NULL,'f6c1466cde94003fe19f415e7150805ec1ee67323381852713e85f79ba1f7b19','postal.maileff.space',0,NULL,NULL,NULL),
 (4,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-05 10:25:49','105.112.178.236','2026-08-05 10:25:50','105.112.178.236','/org/vps-1/servers/maileff-postal-server/messages/outgoing','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36','2026-08-05 10:25:49','2026-08-05 23:15:51','User',NULL,NULL,NULL,2,NULL,'229664a71f25437b573523d5ed6208484b7b409f5202d642c87195b9599bed48','postal.maileff.space',0,NULL,NULL,NULL),
 (5,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-14 08:41:17','169.150.197.168','2026-08-14 08:42:15','169.150.197.168','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36','2026-08-14 08:41:17','2026-08-14 21:15:36','User',NULL,NULL,NULL,5,NULL,'2d6b5211d05c4c1a2302889fa95153aa28aed8686d1a65fb4f148b2c6741b460','postal.maileff.space',0,NULL,NULL,NULL),
-(6,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,1,NULL,'2026-10-23 17:15:37','2026-08-23 17:15:21','102.88.112.212','2026-08-26 15:25:27','102.88.115.92','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-08-23 17:15:21','2026-08-26 15:25:27','User',NULL,NULL,NULL,42,NULL,'553d8e38900d9c8fc16313ac6171ee4a852c1ce354f22636eba6a897bb3874f5','postal.maileff.space',0,NULL,NULL,NULL);
+(6,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,1,NULL,'2026-10-23 17:15:37','2026-08-23 17:15:21','102.88.112.212','2026-08-27 14:14:06','102.89.22.164','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-08-23 17:15:21','2026-08-27 14:14:06','User',NULL,NULL,NULL,44,NULL,'553d8e38900d9c8fc16313ac6171ee4a852c1ce354f22636eba6a897bb3874f5','postal.maileff.space',0,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `authie_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37653,7 +37653,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-26 23:59:33.470354','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-27 23:59:37.717725','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37706,8 +37706,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-26 23:15:10.373515','2026-08-26 23:15:10.361301','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-26 23:15:10.539843','2026-08-26 23:15:10.533970','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-27 22:15:55.019154','2026-08-27 22:15:55.003738','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-27 22:15:55.172637','2026-08-27 22:15:55.155558','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37974,7 +37974,7 @@ CREATE TABLE `queued_messages` (
   KEY `index_queued_messages_on_domain` (`domain`(8)),
   KEY `index_queued_messages_on_message_id` (`message_id`),
   KEY `index_queued_messages_on_server_id` (`server_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=140 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=180 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37984,8 +37984,6 @@ CREATE TABLE `queued_messages` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `queued_messages` WRITE;
 /*!40000 ALTER TABLE `queued_messages` DISABLE KEYS */;
-INSERT INTO `queued_messages` VALUES
-(110,1,107,'salesperson.net',NULL,NULL,'2026-08-27 00:04:03','2026-08-26 00:10:16.828852','2026-08-26 00:10:16.828852',NULL,17,NULL,0,'outgoing-salesperson.net');
 /*!40000 ALTER TABLE `queued_messages` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38052,15 +38050,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-08-27 00:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-08-27 00:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-08-27 00:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-08-27 00:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-08-27 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-08-27 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-08-27 00:45:00'),
-(8,'SendNotificationsScheduledTask','2026-08-27 00:00:16'),
-(9,'TidyQueuedMessagesTask','2026-08-27 00:45:00');
+(1,'ActionDeletionsScheduledTask','2026-08-28 00:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-08-28 00:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-08-28 00:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-08-28 00:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-08-28 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-08-28 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-08-28 00:45:00'),
+(8,'SendNotificationsScheduledTask','2026-08-28 00:00:11'),
+(9,'TidyQueuedMessagesTask','2026-08-28 00:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38229,7 +38227,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `statistics` WRITE;
 /*!40000 ALTER TABLE `statistics` DISABLE KEYS */;
 INSERT INTO `statistics` VALUES
-(1,136,136,0);
+(1,176,176,0);
 /*!40000 ALTER TABLE `statistics` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38512,7 +38510,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-26 23:59:16');
+(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-27 23:59:11');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38580,7 +38578,7 @@ CREATE TABLE `deliveries` (
   `time` decimal(8,2) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_message_id` (`message_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=368 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=488 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38957,7 +38955,127 @@ INSERT INTO `deliveries` VALUES
 (364,107,'SoftFail',NULL,'554-mail.com (mxgmxus005) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1MqIBB-1wciHc1AEl-00olZ5\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx01.mail.com and mx00.mail.com.',0,'V1BKMJAC',1787732727.580852,NULL),
 (365,107,'SoftFail',NULL,'554-mail.com (mxgmxus004) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1M1aI1-1wwiLe2ZIp-003YTJ\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx01.mail.com and mx00.mail.com.',0,'IZM8MOEZ',1787741845.937888,NULL),
 (366,107,'SoftFail',NULL,'554-mail.com (mxgmxus001) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1Mv2EA-1whQR200eG-00sfl1\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx01.mail.com and mx00.mail.com.',0,'T2QI9VVN',1787753692.347253,NULL),
-(367,107,'SoftFail',NULL,'554-mail.com (mxgmxus004) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1MWi5m-1xRv3g0YjA-00Z5hD\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx00.mail.com and mx01.mail.com.',0,'VMMEYMDH',1787769080.454913,NULL);
+(367,107,'SoftFail',NULL,'554-mail.com (mxgmxus004) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1MWi5m-1xRv3g0YjA-00Z5hD\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx00.mail.com and mx01.mail.com.',0,'VMMEYMDH',1787769080.454913,NULL),
+(368,137,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'1NV5RASE',1787788817.797911,0.99),
+(369,138,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 188.125.72.73:25 (mx-eu.mail.am0.yahoodns.net)',1,'B7MHAUHG',1787788875.144811,0.56),
+(370,139,'Sent',NULL,'250 2.0.0 OK  1787788944 ffacd0b85a97d-482e28dc489si4615606f8f.197 - gsmtp','Message for bestsellers46@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'OB40PIBH',1787788944.742878,0.64),
+(371,140,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta7.am0.yahoodns.net)',1,'IFEMEGFJ',1787788997.502942,0.93),
+(372,141,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta6.am0.yahoodns.net)',1,'ET7B5Y1R',1787789055.928502,1.09),
+(373,107,'SoftFail',NULL,'554-mail.com (mxgmxus008) Nemesis ESMTP Service not available\n554-No SMTP service\n554-Bad DNS PTR resource record.\n554 For explanation visit https://postmaster.mail.com/en/case?c=r0601&i=ip&v=169.58.100.196&r=1MV240-1xO1Ew33h8-00Y7Ug\n, 554-mail.com (','No SMTP servers were available for salesperson.net. Tried mx01.mail.com and mx00.mail.com.',0,'YFGATL9Y',1787789077.044517,NULL),
+(374,142,'HardFail',NULL,'554 30 Sorry, your message to bigantis2@yahoo.co.uk cannot be delivered. This mailbox is disabled (554.30).','Permanent SMTP delivery error when sending to 188.125.72.74:25 (mx-eu.mail.am0.yahoodns.net)',1,'UUPCPENI',1787789118.470644,0.33),
+(375,143,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.91:25 (mta6.am0.yahoodns.net)',1,'VOH4HCWZ',1787789180.985513,0.92),
+(376,144,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',1,'QRTS68UZ',1787789238.825798,0.85),
+(377,145,'Sent',NULL,'250 ok dirdel','Message for billconnally1960@yahoo.com accepted by 67.195.204.79:25 (mta7.am0.yahoodns.net)',1,'NLKTZ1DB',1787789297.991997,0.89),
+(378,146,'Sent',NULL,'250 2.6.0 <82f40d3f-54ce-b738-9d4f-816c88261bd3@mg.maileff.click> [InternalId=47815870910628, Hostname=BL4PR06MB10065.namprd06.prod.outlook.com] 10494 bytes in 0.145, 70.347 KB/sec Queued mail for delivery -> 250 2.1.5','Message for billrogerson011@hotmail.com accepted by 52.101.11.11:25 (hotmail-com.olc.protection.outlook.com)',1,'HYSONME5',1787789361.508318,1.36),
+(379,147,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'2BZSVSCC',1787789419.416669,0.94),
+(380,148,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',1,'BM9HH1C2',1787789482.719385,1.10),
+(381,149,'HardFail',NULL,'550-5.1.1 The email account that you tried to reach does not exist. Please try\n550-5.1.1 double-checking the recipient\'s email address for typos or\n550-5.1.1 unnecessary spaces. For more information, go to\n550 5.1.1  https://support.google.com/mail/?','Permanent SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'OBW9SBSV',1787789550.224895,0.07),
+(382,150,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'XVV5LGIH',1787789602.038526,0.11),
+(383,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta7.am0.yahoodns.net)',0,'ZIBFN6SE',1787789664.289962,0.17),
+(384,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'MEH0QKM5',1787789725.680661,0.56),
+(385,153,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'OYMHRRMZ',1787789781.555106,0.51),
+(386,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta7.am0.yahoodns.net)',0,'0YPBLTSP',1787789843.298506,0.11),
+(387,155,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'PZU495AR',1787789903.528439,0.22),
+(388,150,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'FATJDJWJ',1787789935.196948,0.11),
+(389,156,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'2QP5TDSZ',1787789966.376741,0.27),
+(390,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta5.am0.yahoodns.net)',0,'9IZJWR7O',1787789997.563152,0.16),
+(391,157,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',0,'UD9KLLIG',1787790024.257155,0.12),
+(392,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'KB2XH4PF',1787790058.339736,0.61),
+(393,158,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'RIBWBBT5',1787790084.951802,0.13),
+(394,153,'Sent',NULL,'250 2.0.0 OK  1787790115 ffacd0b85a97d-482e290bbe1si4359526f8f.485 - gsmtp','Message for bladur1000@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'E8AXY7FX',1787790115.960666,0.37),
+(395,159,'Sent',NULL,'250 2.0.0 OK  1787790146 5b1f17b1804b1-49b4cdaca05si5861425e9.12 - gsmtp','Message for bobpayments@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'MQRMYENK',1787790146.538781,0.51),
+(396,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'GXPRVUQN',1787790178.293459,0.19),
+(397,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'DOUFMV59',1787790208.468525,0.12),
+(398,155,'Sent',NULL,'250 2.0.0 OK  1787790234 ffacd0b85a97d-482e290e298si4771971f8f.495 - gsmtp','Message for bleliot02@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'1JI9VAA3',1787790234.928911,0.36),
+(399,161,'Sent',NULL,'250 2.6.0 <3c81961d-762e-9a9b-0634-de213268bf4e@mg.maileff2.click> [InternalId=43838731197264, Hostname=VI0PR02MB11041.eurprd02.prod.outlook.com] 10430 bytes in 0.229, 44.430 KB/sec Queued mail for delivery -> 250 2.1.5','Message for bodenero1@hotmail.co.uk accepted by 52.101.73.23:25 (eur.olc.protection.outlook.com)',1,'IOIKLXJD',1787790266.759615,0.92),
+(400,156,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'UTYNLOUD',1787790298.678903,0.18),
+(401,162,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.248853,0.14),
+(402,150,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.354299,0.00),
+(403,157,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.415881,0.00),
+(404,163,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.015692,0.13),
+(405,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.103713,0.00),
+(406,158,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.237529,0.01),
+(407,164,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'DS0H5DHT',1787790449.421735,0.15),
+(408,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'HN42ALXH',1787790480.631615,0.52),
+(409,165,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'RJWPYZJK',1787790508.378230,0.39),
+(410,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta7.am0.yahoodns.net)',0,'GO06MQBQ',1787790540.062826,0.12),
+(411,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',0,'MFRDPHM3',1787790571.390834,0.10),
+(412,154,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.73:25 (mta5.am0.yahoodns.net)',0,'MFRDPHM3',1787790571.449035,0.00),
+(413,167,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'G77IOCMZ',1787790634.221844,0.99),
+(414,162,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'G77IOCMZ',1787790635.571531,0.92),
+(415,168,'Sent',NULL,'250 2.0.0 OK  1787790692 ffacd0b85a97d-482e27884acsi4574112f8f.79 - gsmtp','Message for bradmjns103@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'AJBFLEPB',1787790692.384443,0.33),
+(416,156,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',1,'TF32EDV7',1787790719.803787,0.82),
+(417,163,'Sent',NULL,'250 ok dirdel','Message for bon2venture@yahoo.com accepted by 67.195.204.77:25 (mta7.am0.yahoodns.net)',1,'XRFV7FKN',1787790726.852108,2.27),
+(418,157,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.77:25 (mta7.am0.yahoodns.net)',1,'XRFV7FKN',1787790727.848090,0.87),
+(419,169,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',1,'TEQPLY1D',1787790752.454319,0.93),
+(420,164,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',1,'TEQPLY1D',1787790753.692981,0.95),
+(421,158,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta7.am0.yahoodns.net)',1,'BQMEUERD',1787790816.208445,1.14),
+(422,170,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta7.am0.yahoodns.net)',1,'BQMEUERD',1787790817.534361,1.11),
+(423,165,'Sent',NULL,'250 2.0.0 OK  1787790840 ffacd0b85a97d-482e28e9068si4514900f8f.275 - gsmtp','Message for box.webmail2@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'RODXFAUH',1787790840.549547,0.51),
+(424,150,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.91:25 (mta7.am0.yahoodns.net)',1,'X7CWUZUU',1787790870.326720,0.99),
+(425,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta5.am0.yahoodns.net)',0,'7IB90NVY',1787790871.939219,0.10),
+(426,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'UM4ZXNKU',1787790903.964474,0.20),
+(427,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'UM4ZXNKU',1787790904.160423,0.00),
+(428,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.111:25 (mta6.am0.yahoodns.net)',0,'H2TLFZZY',1787790935.947382,0.16),
+(429,160,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.111:25 (mta6.am0.yahoodns.net)',0,'H2TLFZZY',1787790936.110951,0.00),
+(430,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'WVZVWUCQ',1787790993.739629,0.15),
+(431,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'2TBHD4JB',1787791018.142736,0.39),
+(432,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'FP4H7FYI',1787791055.131263,0.15),
+(433,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta6.am0.yahoodns.net)',0,'XHCSCWAU',1787791111.055927,0.11),
+(434,175,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'QDDETWQL',1787791116.567789,0.36),
+(435,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'35OK7YAG',1787791177.728955,0.11),
+(436,171,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'35OK7YAG',1787791177.855402,0.00),
+(437,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'HGAUHANU',1787791269.735563,0.11),
+(438,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'CTI5FHI5',1787791326.337346,0.11),
+(439,173,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'CTI5FHI5',1787791326.445212,0.01),
+(440,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'ZIFMN2EK',1787791388.003965,0.18),
+(441,175,'Sent',NULL,'250 2.0.0 OK  1787791448 ffacd0b85a97d-482e28f2416si4712495f8f.316 - gsmtp','Message for bvudzi.jongwe@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'UJ6LMBGA',1787791448.910185,0.43),
+(442,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',0,'V2BJTPO7',1787791475.552142,0.18),
+(443,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta7.am0.yahoodns.net)',0,'HQAPWP9I',1787791511.143292,0.12),
+(444,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.91:25 (mta5.am0.yahoodns.net)',0,'JYWFM8RA',1787791598.834871,0.13),
+(445,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'7CUH8OII',1787791598.930232,0.15),
+(446,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta5.am0.yahoodns.net)',0,'YOKIVI18',1787791691.380179,0.16),
+(447,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'KI6PI7KL',1787791711.048303,0.42),
+(448,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',0,'LRGKV57U',1787791747.645612,0.16),
+(449,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'KDCIU4FH',1787791803.988551,0.17),
+(450,174,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'KDCIU4FH',1787791804.227341,0.00),
+(451,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'DAFJ8GOH',1787791865.224427,0.13),
+(452,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'BG3I31TD',1787791932.408094,0.10),
+(453,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta6.am0.yahoodns.net)',0,'TIMXKP0J',1787792139.700124,0.10),
+(454,160,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.74:25 (mta6.am0.yahoodns.net)',0,'TIMXKP0J',1787792139.833934,0.00),
+(455,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'KBJJHD6U',1787792231.851026,0.11),
+(456,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta5.am0.yahoodns.net)',0,'N8DZCYGB',1787792288.472816,0.15),
+(457,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta6.am0.yahoodns.net)',0,'FTUQAA4T',1787792344.376424,0.12),
+(458,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'PCJBCXBX',1787792472.414046,0.10),
+(459,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'PCJBCXBX',1787792472.476545,0.00),
+(460,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'DY6ZHX09',1787792558.916497,0.11),
+(461,152,'Sent',NULL,'250 2.0.0 OK  1787792611 5b1f17b1804b1-49b4a09ea20si5806095e9.2 - gsmtp','Message for blacks399@gmail.com accepted by 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',1,'DR4SWY7F',1787792611.125543,0.87),
+(462,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.91:25 (mta6.am0.yahoodns.net)',0,'DSNV8SYA',1787792691.401975,0.14),
+(463,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'PBAK4HYI',1787792829.227507,0.10),
+(464,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta7.am0.yahoodns.net)',0,'UQXAOZIA',1787792921.352246,0.11),
+(465,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'WBNXP5K7',1787792978.362274,0.15),
+(466,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'E9WMAXLP',1787793027.197313,0.10),
+(467,174,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'E9WMAXLP',1787793027.491542,0.00),
+(468,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'STT4EXVI',1787793166.035117,0.11),
+(469,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta6.am0.yahoodns.net)',0,'RJZDOT57',1787793446.974332,0.16),
+(470,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'M5C7AGAJ',1787793617.908785,0.14),
+(471,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta7.am0.yahoodns.net)',0,'EDVU47YK',1787793717.342040,0.10),
+(472,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.74:25 (mta6.am0.yahoodns.net)',0,'GUXGKJ9G',1787793809.530479,0.12),
+(473,154,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.74:25 (mta6.am0.yahoodns.net)',0,'GUXGKJ9G',1787793809.646431,0.00),
+(474,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta6.am0.yahoodns.net)',0,'TV5IPWUG',1787793866.257021,0.10),
+(475,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'HIQTXXZA',1787793918.522785,0.15),
+(476,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta5.am0.yahoodns.net)',0,'GNV0UBJP',1787794055.045254,0.11),
+(477,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta7.am0.yahoodns.net)',0,'RYNWZGDG',1787794172.638713,0.15),
+(478,166,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',1,'KOSL8QGW',1787794593.250524,0.95),
+(479,171,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'Q5F6GLBG',1787794864.576340,0.94),
+(480,172,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',1,'SBUJCCLI',1787794957.903552,1.10),
+(481,173,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta5.am0.yahoodns.net)',1,'XRCCVAWO',1787795014.200082,1.11),
+(482,174,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',1,'XYO7CPC8',1787795066.421823,1.13),
+(483,151,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',1,'DYBPUAUT',1787795097.489161,1.10),
+(484,176,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.106:25 (mta7.am0.yahoodns.net)',1,'K2YJBQQG',1787795200.336443,1.10),
+(485,154,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.79:25 (mta6.am0.yahoodns.net)',1,'FNEWYYDV',1787795291.342432,0.79),
+(486,160,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'4NTCVI6Q',1787795652.984078,0.95),
+(487,107,'HardFail',NULL,NULL,'Maximum number of delivery attempts (18) has been reached. Added askdirect@salesperson.net to suppression list because delivery has failed 18 times.',0,NULL,1787815061.251478,NULL);
 /*!40000 ALTER TABLE `deliveries` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39019,64 +39137,64 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `live_stats` WRITE;
 /*!40000 ALTER TABLE `live_stats` DISABLE KEYS */;
 INSERT INTO `live_stats` VALUES
-('outgoing',0,1,1787706012.123853),
-('outgoing',1,1,1787713315.690766),
-('outgoing',2,2,1787706175.255451),
-('outgoing',3,1,1787702596.626769),
-('outgoing',4,1,1787706291.088463),
-('outgoing',5,1,1787702715.888088),
-('outgoing',6,1,1787702778.795852),
-('outgoing',7,2,1787713653.125451),
-('outgoing',8,1,1787706497.250939),
-('outgoing',9,1,1787706584.804270),
-('outgoing',10,3,1787706627.773739),
-('outgoing',11,1,1787710282.778711),
-('outgoing',12,1,1787706770.045123),
-('outgoing',13,1,1787710434.713999),
-('outgoing',14,1,1787753691.811816),
-('outgoing',15,2,1787703350.230923),
-('outgoing',16,1,1787706964.231828),
-('outgoing',17,1,1787707040.096328),
-('outgoing',18,2,1787703531.538326),
-('outgoing',19,2,1787703564.323805),
-('outgoing',20,1,1787710835.165808),
-('outgoing',21,3,1787707317.488993),
-('outgoing',22,3,1787703770.997708),
-('outgoing',23,2,1787707438.946738),
-('outgoing',24,1,1787707474.889562),
-('outgoing',25,1,1787732727.045809),
-('outgoing',26,2,1787711171.844571),
-('outgoing',27,1,1787707658.709014),
-('outgoing',28,1,1787725703.391351),
-('outgoing',29,2,1787707772.503635),
-('outgoing',30,1,1787707842.297628),
-('outgoing',31,1,1787769079.929841),
-('outgoing',32,2,1787704353.618672),
-('outgoing',33,4,1787704415.428362),
-('outgoing',34,3,1787704473.578810),
-('outgoing',35,1,1787708112.197191),
-('outgoing',36,4,1787704594.176037),
-('outgoing',37,1,1787704654.792620),
-('outgoing',38,2,1787704716.683867),
-('outgoing',39,2,1787704779.807838),
+('outgoing',0,1,1787788815.838662),
+('outgoing',1,2,1787792472.466674),
+('outgoing',2,1,1787792557.910193),
+('outgoing',3,1,1787792598.904841),
+('outgoing',4,1,1787792690.251489),
+('outgoing',5,1,1787789117.840986),
+('outgoing',6,1,1787789179.127783),
+('outgoing',7,1,1787792828.203895),
+('outgoing',8,1,1787792920.335618),
+('outgoing',9,1,1787792977.100882),
+('outgoing',10,2,1787793027.473489),
+('outgoing',11,1,1787789480.368870),
+('outgoing',12,1,1787793164.967432),
+('outgoing',13,1,1787789601.106682),
+('outgoing',14,1,1787789662.861282),
+('outgoing',15,1,1787789724.940429),
+('outgoing',16,1,1787789780.853016),
+('outgoing',17,1,1787793445.396353),
+('outgoing',18,2,1787789934.144512),
+('outgoing',19,2,1787789996.073717),
+('outgoing',20,1,1787793616.766826),
+('outgoing',21,1,1787793716.435321),
+('outgoing',22,2,1787790176.806258),
+('outgoing',23,2,1787793809.631402),
+('outgoing',24,1,1787793865.402833),
+('outgoing',25,1,1787793917.133724),
+('outgoing',26,3,1787790392.211478),
+('outgoing',27,1,1787794054.051834),
+('outgoing',28,2,1787790538.930766),
+('outgoing',29,1,1787794171.369080),
+('outgoing',30,2,1787790634.488658),
+('outgoing',31,2,1787790718.083024),
+('outgoing',32,4,1787790752.719507),
+('outgoing',33,3,1787790839.930327),
+('outgoing',34,2,1787790871.013218),
+('outgoing',35,4,1787790936.090975),
+('outgoing',36,1,1787794591.366417),
+('outgoing',37,1,1787791053.627835),
+('outgoing',38,2,1787791116.052687),
+('outgoing',39,2,1787791177.847417),
 ('outgoing',40,1,1786704037.977031),
-('outgoing',41,2,1787708519.616540),
-('outgoing',42,1,1787708535.567521),
-('outgoing',43,1,1787712199.926640),
-('outgoing',44,1,1787708664.752588),
-('outgoing',45,2,1787708705.605598),
-('outgoing',46,3,1787708801.000806),
-('outgoing',48,1,1787716126.844476),
-('outgoing',49,1,1787705352.240462),
-('outgoing',50,3,1787705404.617536),
-('outgoing',51,1,1787705469.598711),
-('outgoing',52,1,1787705536.642277),
-('outgoing',54,2,1787709254.985348),
-('outgoing',55,1,1787712914.256430),
+('outgoing',41,1,1787794862.507866),
+('outgoing',42,1,1787794955.698712),
+('outgoing',43,1,1787795011.903330),
+('outgoing',44,2,1787795095.254830),
+('outgoing',45,1,1787791509.943321),
+('outgoing',46,1,1787795198.150429),
+('outgoing',48,1,1787795289.777706),
+('outgoing',49,1,1787791746.520527),
+('outgoing',50,2,1787791804.197589),
+('outgoing',51,1,1787791864.235483),
+('outgoing',52,1,1787791931.471173),
+('outgoing',54,1,1787795651.087691),
+('outgoing',55,2,1787792139.804879),
 ('outgoing',56,2,1787705808.025417),
-('outgoing',57,1,1787741845.367924),
-('outgoing',58,1,1787720294.828734),
-('outgoing',59,1,1787705944.736739);
+('outgoing',57,1,1787792230.876813),
+('outgoing',58,1,1787792286.973932),
+('outgoing',59,1,1787792343.266531);
 /*!40000 ALTER TABLE `live_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39171,7 +39289,7 @@ CREATE TABLE `messages` (
   KEY `on_mail_from` (`mail_from`(12),`timestamp`) USING BTREE,
   KEY `on_raw_table` (`raw_table`(14)) USING BTREE,
   KEY `on_status` (`status`(8)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=137 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=177 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39288,7 +39406,7 @@ INSERT INTO `messages` VALUES
 (104,'NL0iEKEVMPhCtgZg','outgoing','arrietwilliams@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','72eb5852-8f16-9167-7c14-652f5fdfd6fa@mg.maileff.click',1787702834.800683,NULL,2,1,'HardFail',0,'710',1787702838.682561,'raw-2026-08-26',16,15,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (105,'eCM1Fiux9IT7BRd0','outgoing','ashikodidaniel@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','dc81e503-6359-e39c-05e2-62129f9d1a66@mg.maileff2.click',1787702895.394061,NULL,4,1,'HardFail',0,'712',1787702901.032823,'raw-2026-08-26',18,17,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (106,'w9bIYuJFE2Dg2j0y','outgoing','ashmveit@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','64da9231-12a3-7c74-1371-c6218544cb1f@mg.maileff.click',1787702956.017531,NULL,2,1,'Sent',0,'704',1787702958.849920,'raw-2026-08-26',20,19,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(107,'DQfcjXk1GaZCI1Oi','outgoing','askdirect@salesperson.net','microsoft-team@mg.maileff2.click','Please Review This','4c9c86c2-d650-101b-8094-20973743515f@mg.maileff2.click',1787703016.711573,NULL,4,1,'SoftFail',0,'713',1787769080.454913,'raw-2026-08-26',22,21,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(107,'DQfcjXk1GaZCI1Oi','outgoing','askdirect@salesperson.net','microsoft-team@mg.maileff2.click','Please Review This','4c9c86c2-d650-101b-8094-20973743515f@mg.maileff2.click',1787703016.711573,NULL,4,1,'HardFail',0,'713',1787815061.251478,'raw-2026-08-26',22,21,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (108,'SUi8wpQuzQOtpCW7','outgoing','askforbasil2k2@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','bec184a1-5588-9e9c-b6dc-210b4e2c3d0a@mg.maileff.click',1787703077.364757,NULL,2,1,'HardFail',0,'710',1787703083.568274,'raw-2026-08-26',24,23,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (109,'7eZxAaBuBizzB8z9','outgoing','associates18@hotmail.com','microsoft-team@mg.maileff2.click','Please Review This','b0d32df1-e509-5b8c-ca4b-5a5c8d83c5d3@mg.maileff2.click',1787703137.888660,NULL,4,1,'Sent',0,'712',1787703140.618596,'raw-2026-08-26',26,25,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (110,'JaP07aqBGYrqj9SR','outgoing','augustine622@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','c2843156-2241-568f-ce4a-2f5964f1ac94@mg.maileff.click',1787703198.358651,NULL,2,1,'HardFail',0,'708',1787704471.792684,'raw-2026-08-26',28,27,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
@@ -39317,7 +39435,47 @@ INSERT INTO `messages` VALUES
 (133,'omVNzx7hzKMdAwPz','outgoing','bensonlovesterra@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','bbef0317-a719-c2c2-f8d8-cc9d5cbbebe0@mg.maileff2.click',1787704592.199304,NULL,4,1,'HardFail',0,'714',1787708624.095483,'raw-2026-08-26',74,73,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (134,'176vuFFlwSatUkKQ','outgoing','bentleybentley90@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','31dc6298-0be3-347e-df3e-40d3981ef0e4@mg.maileff.click',1787704652.835416,NULL,2,1,'HardFail',0,'712',1787708666.670197,'raw-2026-08-26',76,75,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (135,'PrPKl2mvNnWxMeRl','outgoing','bentoon2002@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','a3e1138e-54f1-8b99-a283-e4df5bc04278@mg.maileff2.click',1787704713.558557,NULL,4,1,'HardFail',0,'709',1787708707.025636,'raw-2026-08-26',78,77,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(136,'XzrZkHM0E1PsjBUC','outgoing','bert.johnson2220@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','6fd1eebb-7a79-9d4a-b137-4b169bcb8f20@mg.maileff.click',1787704774.199562,NULL,2,1,'HardFail',0,'712',1787712202.524317,'raw-2026-08-26',80,79,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
+(136,'XzrZkHM0E1PsjBUC','outgoing','bert.johnson2220@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','6fd1eebb-7a79-9d4a-b137-4b169bcb8f20@mg.maileff.click',1787704774.199562,NULL,2,1,'HardFail',0,'712',1787712202.524317,'raw-2026-08-26',80,79,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(137,'HEf4S0UAitMshYIZ','outgoing','berttylarus@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','b096a643-2fa4-77f4-502d-a0947ad2527f@mg.maileff2.click',1787788811.352300,NULL,4,1,'HardFail',0,'709',1787788817.797911,'raw-2026-08-27',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(138,'U5wlcJZashOYNd4X','outgoing','best4dguy10@yahoo.co.uk','microsoft-team@mg.maileff.click','Please Review This','97986986-ca91-dd2f-e053-de1eb2c52a73@mg.maileff.click',1787788871.714907,NULL,2,1,'HardFail',0,'709',1787788875.144811,'raw-2026-08-27',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(139,'l3rOGWakCJelurw8','outgoing','bestsellers46@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','d8634af7-ea1b-f1c7-264f-6dbc726b7df3@mg.maileff2.click',1787788932.109404,NULL,4,1,'Sent',0,'711',1787788944.742878,'raw-2026-08-27',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(140,'T6Te65QyMyGnS8Q1','outgoing','betterweek@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','d411ef08-8bba-0f30-8062-60e759db5107@mg.maileff.click',1787788992.604815,NULL,2,1,'HardFail',0,'706',1787788997.502942,'raw-2026-08-27',8,7,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(141,'8bAJBiJqOafePc2j','outgoing','biddy80@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','ea4f1b0e-9e99-7543-3b6b-8f513fa7b0bd@mg.maileff2.click',1787789053.136625,NULL,4,1,'HardFail',0,'705',1787789055.928502,'raw-2026-08-27',10,9,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(142,'WF8ywE8h8yA3FsCB','outgoing','bigantis2@yahoo.co.uk','microsoft-team@mg.maileff.click','Please Review This','46060e6c-d5a2-3dd8-69d7-58d5e1529126@mg.maileff.click',1787789113.706404,NULL,2,1,'HardFail',0,'707',1787789118.470644,'raw-2026-08-27',12,11,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(143,'OOf7keYpHh8O61IG','outgoing','bigbenten10@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','8a8056b6-fe80-9d50-97ff-c3965d189acc@mg.maileff2.click',1787789174.252370,NULL,4,1,'HardFail',0,'709',1787789180.985513,'raw-2026-08-27',14,13,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(144,'G0XlJQyW75Y0HGft','outgoing','bigboytuta@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','0c3118f7-dee6-7141-08d9-a67c7c6468d5@mg.maileff.click',1787789234.842535,NULL,2,1,'HardFail',0,'706',1787789238.825798,'raw-2026-08-27',16,15,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(145,'9gVc5mdo8TzY4tvU','outgoing','billconnally1960@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','7ddf0efe-6fcf-31b2-ee9c-fd3c33be77f2@mg.maileff2.click',1787789295.507357,NULL,4,1,'Sent',0,'714',1787789297.991997,'raw-2026-08-27',18,17,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(146,'BacvLMgZNkX8hacO','outgoing','billrogerson011@hotmail.com','microsoft-team@mg.maileff.click','Please Review This','82f40d3f-54ce-b738-9d4f-816c88261bd3@mg.maileff.click',1787789356.239140,NULL,2,1,'Sent',0,'713',1787789361.508318,'raw-2026-08-27',20,19,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(147,'Dt4nhHUNwfY82YAz','outgoing','binoblize3@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','d974d8a4-098b-021a-20c4-b69a751d3d4c@mg.maileff2.click',1787789416.859927,NULL,4,1,'HardFail',0,'708',1787789419.416669,'raw-2026-08-27',22,21,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(148,'9PQVzi1oNnFJyYlc','outgoing','bintuah@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','fcc4b47e-cb23-655f-3c9a-41956bd63a6b@mg.maileff.click',1787789477.397434,NULL,2,1,'HardFail',0,'703',1787789482.719385,'raw-2026-08-27',24,23,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(149,'m3bCdsGBR9vzBB9L','outgoing','biol.lolly@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f7634ac0-a6f7-d4c7-bc1d-a994f1e2dc81@mg.maileff2.click',1787789538.179299,NULL,4,1,'HardFail',0,'708',1787789550.224895,'raw-2026-08-27',26,25,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(150,'AUCfmGNwET9Q6rft','outgoing','bislolink2011@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','8e75f227-d820-8845-8b23-9c2979103b70@mg.maileff.click',1787789598.722013,NULL,2,1,'HardFail',0,'709',1787790870.326720,'raw-2026-08-27',28,27,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(151,'bErSDFSgyijcKfwK','outgoing','bizzboy4real@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','bedfda9b-e7e7-2f52-719e-3f1e329c4a95@mg.maileff2.click',1787789659.294255,NULL,4,1,'HardFail',0,'710',1787795097.489161,'raw-2026-08-27',30,29,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(152,'doeKWqL3pLrEseJq','outgoing','blacks399@gmail.com','microsoft-team@mg.maileff.click','Please Review This','0a9e209a-7787-7f3b-3828-153352dcce7c@mg.maileff.click',1787789719.924367,NULL,2,1,'Sent',0,'705',1787792611.125543,'raw-2026-08-27',32,31,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(153,'hu1htAxWJfO416vZ','outgoing','bladur1000@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','a6c62f6d-981e-cf1f-4719-c17b5d65ee4d@mg.maileff2.click',1787789780.373560,NULL,4,1,'Sent',0,'708',1787790115.960666,'raw-2026-08-27',34,33,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(154,'Ao7xULobkYLSPns9','outgoing','blakegeorge709@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','a8dbea87-b748-ddb4-5dea-d197080ec44e@mg.maileff.click',1787789841.112886,NULL,2,1,'HardFail',0,'710',1787795291.342432,'raw-2026-08-27',36,35,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(155,'M9737uvp4EX9uujz','outgoing','bleliot02@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','07b975fc-d27b-7791-c46a-bf404f81c560@mg.maileff2.click',1787789901.571844,NULL,4,1,'Sent',0,'707',1787790234.928911,'raw-2026-08-27',38,37,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(156,'kVcB4OfhGSdapU6B','outgoing','blingjoes0@yahoo.ca','microsoft-team@mg.maileff.click','Please Review This','8b1fa269-aabf-9f26-245f-c12b0903973d@mg.maileff.click',1787789962.047445,NULL,2,1,'HardFail',0,'705',1787790719.803787,'raw-2026-08-27',40,39,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(157,'yNzcWGKbJJvXBxnJ','outgoing','bobby.cory@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','0d3e0565-5641-f6cb-3711-fd2d0f35da7d@mg.maileff2.click',1787790022.562645,NULL,4,1,'HardFail',0,'708',1787790727.848090,'raw-2026-08-27',42,41,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(158,'Pg5JqtbvP2USE5o1','outgoing','bobklinton@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','cfe5e081-1597-fa1b-5769-07c611b62d70@mg.maileff.click',1787790083.073987,NULL,2,1,'HardFail',0,'706',1787790816.208445,'raw-2026-08-27',44,43,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(159,'bx7KOoCwA8ufkBfX','outgoing','bobpayments@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f77dcd65-10a3-44d4-e0e6-50dc1949b9a8@mg.maileff2.click',1787790143.736270,NULL,4,1,'Sent',0,'709',1787790146.538781,'raw-2026-08-27',46,45,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(160,'9X4FPgOoxXTrhtiB','outgoing','bobwayla_247@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','2c11e6d2-1626-b738-f080-36157b0b6b9d@mg.maileff.click',1787790204.272459,NULL,2,1,'HardFail',0,'708',1787795652.984078,'raw-2026-08-27',48,47,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(161,'KLKvn4QDFzg9SHlc','outgoing','bodenero1@hotmail.co.uk','microsoft-team@mg.maileff2.click','Please Review This','3c81961d-762e-9a9b-0634-de213268bf4e@mg.maileff2.click',1787790264.931557,NULL,4,1,'Sent',0,'711',1787790266.759615,'raw-2026-08-27',50,49,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(162,'SDMUntcUyHsQxx9y','outgoing','bodieki@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','9686f0d3-1a35-6615-593b-ad045ceda4b5@mg.maileff.click',1787790325.630876,NULL,2,1,'HardFail',0,'703',1787790635.571531,'raw-2026-08-27',52,51,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(163,'qWXoeGkz6musQa3r','outgoing','bon2venture@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','4da84061-7e50-cda6-6334-bfe18347211a@mg.maileff2.click',1787790386.205144,NULL,4,1,'Sent',0,'709',1787790726.852108,'raw-2026-08-27',54,53,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(164,'bVfvy2yew25JKG2E','outgoing','bonniecare40@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','e4304190-ec3d-7afa-2262-cfaeb0486248@mg.maileff.click',1787790446.939177,NULL,2,1,'HardFail',0,'708',1787790753.692981,'raw-2026-08-27',56,55,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(165,'97ysHtIiq752IQ7G','outgoing','box.webmail2@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','04ed0a4a-21ea-60e6-cbc5-d1504433fa21@mg.maileff2.click',1787790507.642147,NULL,4,1,'Sent',0,'710',1787790840.549547,'raw-2026-08-27',58,57,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(166,'RlYjfyMkQyCCeFMW','outgoing','box.webmail3@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','a34889f5-4fce-46dd-f6dc-edc6c3250755@mg.maileff.click',1787790568.152640,NULL,2,1,'HardFail',0,'708',1787794593.250524,'raw-2026-08-27',60,59,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(167,'2KdIpiD0dxMWQzCz','outgoing','boyinni16@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','90678513-6bb9-c6c2-91fd-c5bfd53e3899@mg.maileff2.click',1787790628.646465,NULL,4,1,'HardFail',0,'707',1787790634.221844,'raw-2026-08-27',62,61,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(168,'1dk2xcOtgxlGFGSM','outgoing','bradmjns103@gmail.com','microsoft-team@mg.maileff.click','Please Review This','aba2feca-422c-4546-e6db-15c2a7a3b617@mg.maileff.click',1787790689.306627,NULL,2,1,'Sent',0,'707',1787790692.384443,'raw-2026-08-27',64,63,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(169,'0zj3nFV7DDoqvrrc','outgoing','bran_brady@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','e1f7e9f2-8c69-1ca2-0d55-c82430ecba53@mg.maileff2.click',1787790749.759563,NULL,4,1,'HardFail',0,'708',1787790752.454319,'raw-2026-08-27',66,65,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(170,'hkYpc0dymTc2qGx6','outgoing','brian_willis2006@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','12cd6409-9895-2a77-cb6b-6a92fe42b272@mg.maileff.click',1787790810.209634,NULL,2,1,'HardFail',0,'712',1787790817.534361,'raw-2026-08-27',68,67,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(171,'ENcD31BOA1ELPc6d','outgoing','brianrussell269@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','0929262b-90f1-139c-2f6c-8ff65061d625@mg.maileff2.click',1787790870.698312,NULL,4,1,'HardFail',0,'713',1787794864.576340,'raw-2026-08-27',70,69,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(172,'GwcKm1898ld6eThI','outgoing','brochu_james@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','bfd1375c-42ea-9f58-bf3f-fb49a1a7fbd4@mg.maileff.click',1787790931.251465,NULL,2,1,'HardFail',0,'708',1787794957.903552,'raw-2026-08-27',72,71,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(173,'k0DEPs9PHBXWm5SU','outgoing','brownfe741@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','6c3fcd5a-6bf1-8154-b8a1-04fc5a720b68@mg.maileff2.click',1787790991.772523,NULL,4,1,'HardFail',0,'708',1787795014.200082,'raw-2026-08-27',74,73,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(174,'0stFqJSESGh3Q2u0','outgoing','buxayor@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','c84efee5-579b-781d-1813-f5b3747048df@mg.maileff.click',1787791052.306335,NULL,2,1,'HardFail',0,'703',1787795066.421823,'raw-2026-08-27',76,75,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(175,'9MMVgCaJJ3apnyfU','outgoing','bvudzi.jongwe@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f5430d2a-4e66-2fc2-3efc-fd7a02fd3e7f@mg.maileff2.click',1787791112.762771,NULL,4,1,'Sent',0,'711',1787791448.910185,'raw-2026-08-27',78,77,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(176,'efPwby1gUuhMGF5x','outgoing','c.cvernon@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','2e1a1b8f-e81a-1b55-725d-f03c773182d3@mg.maileff.click',1787791173.230845,NULL,2,1,'HardFail',0,'705',1787795200.336443,'raw-2026-08-27',80,79,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39782,6 +39940,114 @@ COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
 --
+-- Table structure for table `raw-2026-08-27`
+--
+
+DROP TABLE IF EXISTS `raw-2026-08-27`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `raw-2026-08-27` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `data` longblob DEFAULT NULL,
+  `next` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=81 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `raw-2026-08-27`
+--
+
+SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
+LOCK TABLES `raw-2026-08-27` WRITE;
+/*!40000 ALTER TABLE `raw-2026-08-27` DISABLE KEYS */;
+INSERT INTO `raw-2026-08-27` VALUES
+(1,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787788815;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=17X6ToGUzoU4Gjl6henU41DjGnsKRwXJD2jon57xgJG7G2efb6N9QbqQTqadC6WmRqMfHNIb\r\n	FE3H135fhHvbHRK5+TCBGr25DkrD3IzXar0HZsD3C3hWHzgh0FsfuVoCzKDaqW4zOme1Ieda\r\n	uwZd+a6zJsVIiqVBmBdlRHdOmqI=\r\nX-Postal-MsgID: HEf4S0UAitMshYIZ\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:00:11 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: berttylarus@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <b096a643-2fa4-77f4-502d-a0947ad2527f@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:00:11 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(2,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(3,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787788874;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=b3KBeRNeVoZBy7x0WJcSuAzEga1aqI2aTxiISaLfF7VbGVbgY5VmDncWSjwlJnyBRuqgwr1I\r\n	QAYJHEkBP41dt/ZPkSnP8vpDWAdEzSUzt7Wov+WsHpNQ1UHVLSmLh97YTSqz91sMvwdeg7mA\r\n	Vj5zo/dvLjyAMOj03xMqvckz8xc=\r\nX-Postal-MsgID: U5wlcJZashOYNd4X\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:01:11 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: best4dguy10@yahoo.co.uk\r\nSubject: Please Review This\r\nMessage-ID: <97986986-ca91-dd2f-e053-de1eb2c52a73@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:01:11 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(4,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(5,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787788932;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=ZXYiITpbd0OQHIUDIEnX9S+WPRkji0UXRze/TaO2b/Ol3m/qgkm08ZE9XOYepYcoGznZTV9P\r\n	trJYNR5eMqpHeY9O8JaNa0Ccqc+Y5XJxzxMkwGxYHM38SQUhXIc0iAf4tpy8HEHEA5oYwm3K\r\n	bBFE3MYwqCCwUSNQdjnfp8HKfxM=\r\nX-Postal-MsgID: l3rOGWakCJelurw8\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:02:12 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bestsellers46@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <d8634af7-ea1b-f1c7-264f-6dbc726b7df3@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:02:11 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(6,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(7,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787788995;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Kt6HDT4X4mszbFlHrg03oUoVPtKE/n7B9zL78M8JRUjTmMYvLraJlVMUGZnFDEkpdRkg9oar\r\n	7wS7n3cfL5EOmiTCUdHJ3Bh6lsSI4skYXRE2WwVjjVIcdqBxzqpuFu1ddy5dI+K7CNnobQ3P\r\n	GekJoq/vkdrDtB5CJW7Gw0mMJl0=\r\nX-Postal-MsgID: T6Te65QyMyGnS8Q1\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:03:12 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: betterweek@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <d411ef08-8bba-0f30-8062-60e759db5107@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:03:12 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(8,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(9,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789053;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=C5JfZOJCrYTS8XOvNNs85L5z6Qqtf/5fRyVVjKcA0OLo90Z4MA4bkpqRe8QEXUrlc1MhlW9Y\r\n	IXMMBzfk+37WFMxiYsKND/GeIUSCLu9cSa2x+CH29fRFRGmwLwXfJVx7TYPUWV+zsfptGnA1\r\n	s9XOruZS9wrA5LigeACnZFJ8yd4=\r\nX-Postal-MsgID: 8bAJBiJqOafePc2j\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:04:13 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: biddy80@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <ea4f1b0e-9e99-7543-3b6b-8f513fa7b0bd@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:04:12 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(10,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(11,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789117;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=vRjqlgvmZTajI+itVNF75UbZ/YCLygIaqnPI+MRydYCAfPiz9/uTXVFD+hig81dH3budUSMc\r\n	OKo1NqI14u2x71AsBlmvyLbGI1sfohr5tdh9L6jouaXU+by06Zw5t5LWRXH4iYRlrbBzkXan\r\n	PGhoRO6tTV7XdTwZWr7vg6ACa1g=\r\nX-Postal-MsgID: WF8ywE8h8yA3FsCB\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:05:13 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bigantis2@yahoo.co.uk\r\nSubject: Please Review This\r\nMessage-ID: <46060e6c-d5a2-3dd8-69d7-58d5e1529126@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:05:13 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(12,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(13,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789179;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=UwJ+GUJOLycWOKPeCxkjK538zzPNU5b8T4z3rkPVm5RI43dHRCR/wB6L95ElSQy0FLy9kM6y\r\n	7JqDgMZb8gArLrCHDvYtu9spW0TzCvjJyeYOPAnAGZ4YJ6T0qGTPg8t7TidYtRGVHQbdouQ1\r\n	cUdwZh8oVNPFsjgaVbSnfxW0Q4s=\r\nX-Postal-MsgID: OOf7keYpHh8O61IG\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:06:14 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bigbenten10@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <8a8056b6-fe80-9d50-97ff-c3965d189acc@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:06:14 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(14,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(15,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789237;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=oUD7V4To3LuWdr0ZycNXyTCum+wDU6u8kmemR6XTYZECMqcc6Ipv33EPhDCUyZyftKjlAA+c\r\n	FtGLlG5rDT7RUU5gMLwu5bJ/i1dK/Yd7QKE7Un5fbe7iNg1dP7OPA2F63Xp18t2J4r9nQIaR\r\n	xHmumUKKAhnXfTXe0gEHeZ1512Q=\r\nX-Postal-MsgID: G0XlJQyW75Y0HGft\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:07:14 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bigboytuta@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <0c3118f7-dee6-7141-08d9-a67c7c6468d5@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:07:14 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(16,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(17,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789296;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=VSBhdt5t+EPxoUWoAw7YAr7h8GbIwZqLqIECCjoDVSvJlO0dHGBJXHqB181e1xlLKbvhyiJ+\r\n	aj4ETdPfWUWW/6xvtEOgZ5L2pUcim5qUTD0bdjVhIugds5+M8WQ1Il/BbNqtiWpX9ZydIfPn\r\n	gMX2gMDTAUDYuZII7ImEqVPHmiY=\r\nX-Postal-MsgID: 9gVc5mdo8TzY4tvU\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:08:15 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: billconnally1960@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <7ddf0efe-6fcf-31b2-ee9c-fd3c33be77f2@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:08:15 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(18,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(19,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789358;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=ufYBlLT3DIBLSKVJsQNBfp1hIVMpzKt8TpXAYaCFMA8hdGbEFYJxyx6hfQmYujuV5MC0AIGW\r\n	8djKj+U6f9TWu3+jCICD6V3u75M75KSpw3wiVKvbEQi6JGdGrXBhflFuCIsl58iib7ZRqjLA\r\n	YrxVSLjFBSEAyeXJiRN9MIBX9z8=\r\nX-Postal-MsgID: BacvLMgZNkX8hacO\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:09:16 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: billrogerson011@hotmail.com\r\nSubject: Please Review This\r\nMessage-ID: <82f40d3f-54ce-b738-9d4f-816c88261bd3@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:09:15 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(20,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(21,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789417;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=mL2ewTBtyrLE6aC9XZmeDhClIJWnPFldClQgMMYlRQA0VPfZTnv3SFrFFBqIKPAXkRWB1ChW\r\n	7YSpxbZ4hokGnUU0c4MFjX82WzysxCx7W6ofQPSbv4xowv2TEhY9Ehu64d0d50NGFd+dBBR0\r\n	EjIgDHOElG4VtAz/aFblSAnjO8w=\r\nX-Postal-MsgID: Dt4nhHUNwfY82YAz\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:10:16 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: binoblize3@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <d974d8a4-098b-021a-20c4-b69a751d3d4c@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:10:16 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(22,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(23,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789480;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=TfVneVvTNaKbUKu8RJBpEXEFHYebAD3Hu/BIIM8JKTRVCv9xuXeXUpi5UcXylC2IylYtD6Am\r\n	dGw2kv2VCnKHVOmY9EyNRBZAQ01VIdpCMVgkw2jVR4Ko9Pleb/XegY1IsYMRj3p0LzZ5qouJ\r\n	dVtxV9zVZXsH/2nxzQokiw1Zayk=\r\nX-Postal-MsgID: 9PQVzi1oNnFJyYlc\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:11:17 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bintuah@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <fcc4b47e-cb23-655f-3c9a-41956bd63a6b@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:11:17 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(24,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(25,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789538;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=A+/LLECRU70wt75Lelftg3Ct7mJbe9zj8tUnJ1ehVBwnvMch9yaCt+GtEfmcD9QI6WWtISIO\r\n	oGey/oypTQUx2ip6qc1u86lJchaVCY66X6RALAUb1nucfmZUyJuAUOLbjRkqLI7M0fSKiD1i\r\n	5fsuWOB+Jobqkcq/U30wzOFr3Pc=\r\nX-Postal-MsgID: m3bCdsGBR9vzBB9L\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:12:18 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: biol.lolly@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <f7634ac0-a6f7-d4c7-bc1d-a994f1e2dc81@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:12:17 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(26,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(27,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789601;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=NUecurRJHuwRequBR7YJ0k0NUckSmnRpoSqNi1NsoRKEPFovev+a+9UkHlWTplP7t/vJ1R/h\r\n	jjqAK5mbiHDVQOiHQOJtKKE1mvBY4yev5EJXn8t+JAq6SkspH98/5p2NktFSl6Qk7CbbBYGN\r\n	ip8F4dJQHm/4Agre/8fQy/gQbJc=\r\nX-Postal-MsgID: AUCfmGNwET9Q6rft\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:13:18 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bislolink2011@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <8e75f227-d820-8845-8b23-9c2979103b70@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:13:18 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(28,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(29,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789662;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=hbDysWwMxk7XAla8NSkiHKS97SNUGmlbdhi0u1LgXhiv/CHpg20nrCbvUuFVseUUbEekdYHo\r\n	ulKqD6VanpubxKWKsPdoDrwidXxqmNP9Kz9c46XVzNk94FePikTfWRp6wTMjn9ueySe2Pmo2\r\n	abjeV5l46qNB79HcqLi7Wuzn/bM=\r\nX-Postal-MsgID: bErSDFSgyijcKfwK\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:14:19 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bizzboy4real@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <bedfda9b-e7e7-2f52-719e-3f1e329c4a95@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:14:19 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(30,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(31,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789724;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=QEsFXGr7u4bj969y5jcXhwRwtNsdCFDChWfimn3MVMEZZeq8YWGYGT35RlZ8lbeXWaMCjnwX\r\n	zDw9fremy53SWnvLKeFAncitivMTGD5qpLthcEZxMwTJE83YDR/MzpBIRJZPsxWkgJn9S6zL\r\n	R5nzDNkrZRiTHNxnZs/1brU9RC0=\r\nX-Postal-MsgID: doeKWqL3pLrEseJq\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:15:19 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: blacks399@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <0a9e209a-7787-7f3b-3828-153352dcce7c@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:15:19 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(32,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(33,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789780;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=wnu7K0Bloi0ylKxgpcX8xG+coYLjTO1N8t41sRzjZdXfqNYfjmsGhZySq0pWm1LE76VWgjV3\r\n	XDMm4WYcj5K64cXa+wdxHc9lgFu/w4TVouXbYbY5wfWIm1MO08oQViCet+CWy4LdTNRUzJHc\r\n	dk9TLHb/0Vxx0SzyRxbA791Gncg=\r\nX-Postal-MsgID: hu1htAxWJfO416vZ\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:16:20 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bladur1000@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <a6c62f6d-981e-cf1f-4719-c17b5d65ee4d@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:16:20 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(34,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(35,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789842;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=kHw1yL05x8CAMA9mEV1jQ6YromlR+UMTM4Koha8e48U7lz4hRjzxQWfiq8c9LCStKMpkQrRc\r\n	5Sq/C1pzU6G8a2b6ccz6ES2Zt1VEhORSrrhq350Iai8GZ9Y5l9feLsj0b+W1kHDGO7KGnFwI\r\n	3UV6T85ZeBFctv2HZg8LHnIq3pI=\r\nX-Postal-MsgID: Ao7xULobkYLSPns9\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:17:21 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: blakegeorge709@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <a8dbea87-b748-ddb4-5dea-d197080ec44e@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:17:20 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(36,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(37,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787789903;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=oYmwxHubshfC9dYXTS8yBst1FDOdpCr6CDR6Wy5rH32ExxhjoHjwRP3pqVtzaULwDxQYnqDo\r\n	+G/By+fMDbhHMRhOqGiYP5wV645b8VpoGhdPeEEsM2K6NyyfJK+wtNCzzzRSeUp19lxdSthF\r\n	Tqk+2qjuwP8N5EtWfRrE0QCB4E8=\r\nX-Postal-MsgID: M9737uvp4EX9uujz\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:18:21 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bleliot02@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <07b975fc-d27b-7791-c46a-bf404f81c560@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:18:21 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(38,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(39,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787789964;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=W/KoHn9ZxGlX5PO58CBFqcgBzI0/yIPLW0urNp1w/8T/UHf/hSV2nv8JzYmlGbNmIrr2flPN\r\n	u37LIMRTA1M0VbD5WtK/u1Vn0S4KfJThj9YBDBHKn5nbQPNq54KQhN7lRzoLSGxM9K99RC06\r\n	ytTgQoPEZUmPF+8r0JQ4UatMUZg=\r\nX-Postal-MsgID: kVcB4OfhGSdapU6B\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:19:21 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: blingjoes0@yahoo.ca\r\nSubject: Please Review This\r\nMessage-ID: <8b1fa269-aabf-9f26-245f-c12b0903973d@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:19:21 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(40,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(41,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790023;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Ypx0pPTG+W6bQeoKOMcroCy4KA98/dWZQ34oBcAepDvVkXnCerFpVFwln/4ezUYqtDHsMziJ\r\n	Gtx/BDwsCu9LMgKDzCCfzvSNfyFWXdrrPcqG9oh9z0Jlp2+i1DfKMzFXTEHWGPZ/u5ods9IA\r\n	cKa7U4u6GSno165i7OZuZ6xcxEU=\r\nX-Postal-MsgID: yNzcWGKbJJvXBxnJ\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:20:22 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bobby.cory@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <0d3e0565-5641-f6cb-3711-fd2d0f35da7d@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:20:22 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(42,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(43,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790083;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=EApQ5oV3bxyY7WuX9LFQ22vzmq4secoPkpQsWS3vFQDPf8d0bq/fsL7fGzIHFaahPhnKG494\r\n	MDFYUNj1OLyifEtrsh00t3jHRTSk5YAk0F88cUk07I1kX3gRRwaw7C0gCafkR8v5vD5/U/ew\r\n	oMVkobMqTwKjd2rH1wohBtCX8bU=\r\nX-Postal-MsgID: Pg5JqtbvP2USE5o1\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:21:23 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bobklinton@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <cfe5e081-1597-fa1b-5769-07c611b62d70@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:21:22 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(44,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(45,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790145;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=rRTRDV1Od50pFfcp6ocoGCwBL8sbtoVr2vB+L6cBLTF7tdgkkOqR2U8tiJ88gCG0vnnsPSRG\r\n	n1wjg5TRtB2U5Uoggy1LigicFPUjmiGwdvZwkaicdvF01fMC7V3F8rJML8OJy9mVirPFmoah\r\n	mB3SFSpKs5qKGj/d25/IVU3OHjU=\r\nX-Postal-MsgID: bx7KOoCwA8ufkBfX\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:22:23 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bobpayments@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <f77dcd65-10a3-44d4-e0e6-50dc1949b9a8@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:22:23 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(46,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(47,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790207;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=j1rlVfvxLc4PNSRp6FS2ssiUTTUQIeimY0s8oZknRrSa3VJsHOdzvTZVQcgX28TCXWVfNyri\r\n	d5E3VgG9yz7NXmUNRIEp0YGXbCUeJ9DvQ5yxKls8Fc/QQ1qhSp2CklxtgRJWKNdGiTiMJ3Iw\r\n	wso7W9ZcFlu0LjXP4MGP7Jx5YW4=\r\nX-Postal-MsgID: 9X4FPgOoxXTrhtiB\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:23:24 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bobwayla_247@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <2c11e6d2-1626-b738-f080-36157b0b6b9d@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:23:24 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(48,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(49,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790265;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=HwVxN3ZSOsPWr/UwQsz9j5KGEbCcSGAtnmS9WEy1stE/z+h06VOsrd5AlEi8+90iPprxChaA\r\n	nD7F03AypBmdP/LToLjeVP9zn7Uv5VvFIXxwScXHtRCAov+7slXmk1hOIPBxAKTGT1RrbcNG\r\n	vqXhq591vmwpSshXeCXI4eBc22Y=\r\nX-Postal-MsgID: KLKvn4QDFzg9SHlc\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:24:24 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bodenero1@hotmail.co.uk\r\nSubject: Please Review This\r\nMessage-ID: <3c81961d-762e-9a9b-0634-de213268bf4e@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:24:24 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(50,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(51,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790329;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=ZRBml9wNTiadG4t9vEeFX/7RnuTy79BzGBGzdwaQN5FCDIWgu6bjwnBMdNTNOtWPzvQTHIXx\r\n	f9HLENFhGyvASJ066dZF0uqzuzkDKBSncVLKaiJw5JqPLcU2p6Nrf7iVQ2umazHYWJvzHwnF\r\n	lFwN/sDDCoMKQog4/xTn0XhwtPc=\r\nX-Postal-MsgID: SDMUntcUyHsQxx9y\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:25:25 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bodieki@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <9686f0d3-1a35-6615-593b-ad045ceda4b5@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:25:25 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(52,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(53,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790390;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Z/uG7LGwXLZVof4NgJWMiVoOd4zTRBAk4XhguBKuKVU4furj+Ho7lK1Rfyc4lF6nJ3GPuOBl\r\n	EH4G26FG3aTqIYdUuTnWEO3KKBN9ntEYn8VC0rcRbrF8JNjIbO/Poh2UQIgIkypH9kIDrRCd\r\n	rk1gVcAqLNG/mIPnfHxqWJD5MoY=\r\nX-Postal-MsgID: qWXoeGkz6musQa3r\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:26:26 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bon2venture@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <4da84061-7e50-cda6-6334-bfe18347211a@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:26:26 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(54,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(55,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790448;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=HtNkFu3tt6lg3U7lNx4oalJBtPAueaXzrG24P71okmBdd2iEPvnJ3KDm4vvR8GUvz1zxDW7j\r\n	wCKq2gbopIjyh2/77/fx741aC4pm5wiH2HXbtTuC9n1WnzS0tnQZF/R3QzCZE2elLld2ZKNX\r\n	LpqhY/3zo5iMS3ggfAh39FLgzC8=\r\nX-Postal-MsgID: bVfvy2yew25JKG2E\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:27:26 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bonniecare40@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <e4304190-ec3d-7afa-2262-cfaeb0486248@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:27:26 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(56,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(57,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790507;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=i/501UbwIfYt7o3nxp7JXpVh1sp01LKNW+v2tgky0HQ4aTUVsl8MEBhnz24A4PWZO8Kr8L9a\r\n	gSpyouikZSAa7Mq/sl/NFay1vAXkhhehZ69KOVmOf4QHlD8bb+jun1AeA/5KVhIkhxmFztcC\r\n	2bsZgTMpD5rB8nqR4nbe4WvWuK0=\r\nX-Postal-MsgID: 97ysHtIiq752IQ7G\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:28:27 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: box.webmail2@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <04ed0a4a-21ea-60e6-cbc5-d1504433fa21@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:28:27 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(58,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(59,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790570;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=ZV/bqr57WawUogeZHusdKjS8i6pJXZmrFQ/swpNcuTQu8mxyugZWS8I3Ei2m6a7bthbNYPQT\r\n	SAuQLZSHO84jFCCH47GrqU4e0YamIDS2LQ45Vdz4AvEVvtXLA0KOpze6nmdNEZmRT48fFZOa\r\n	WFFxWoVDHukVRO0F8rlTAMCo/eU=\r\nX-Postal-MsgID: RlYjfyMkQyCCeFMW\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:29:28 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: box.webmail3@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <a34889f5-4fce-46dd-f6dc-edc6c3250755@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:29:27 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(60,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(61,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790632;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=1wW/nKFeeAglkRjosdlX2BnXNrJVmcr/Eez8vus5dRvDkYcN5ND8DAf+P8mF9rU7hB0nxPbN\r\n	2D9Xcis2mhaCFTJrPCGS9wZFTK9fFyZhqwRF/jgDE+3zbi9SHy7tzDvk9m6rRHy/5s7cP7or\r\n	mHSKDJIM7/OXQE9xwcEmNOugi14=\r\nX-Postal-MsgID: 2KdIpiD0dxMWQzCz\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:30:28 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: boyinni16@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <90678513-6bb9-c6c2-91fd-c5bfd53e3899@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:30:28 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(62,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(63,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790691;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=YVdEDH6uO+devzJeJYr8I08ZSSD6hbKny+SrWGRLUKNcMqOtfF0sQTQvZRQQJDrwsDc+PKov\r\n	Su/EHkLoqCCXIzy6AOKXBzofU2VBJUgOIaeBYwLNzUminBU2X09FqQX/4JPHMs60sA7ptuNi\r\n	IHXU0UNy0YJUUkE+yLI43HG+YD8=\r\nX-Postal-MsgID: 1dk2xcOtgxlGFGSM\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:31:29 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bradmjns103@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <aba2feca-422c-4546-e6db-15c2a7a3b617@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:31:29 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(64,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(65,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790750;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=aSuWbgvB6MduYpclfBcjPuL9EpWR0STuwrnC9tIzL/4KDpxQo9pNtHnVjFyGj15PVFDDOFW+\r\n	rPT+xqZeCPJ9w7N/A8S9tIzZgihMKPDMtKKLueNRY5RJPBuHr0MSByIUZ3V5sOd4XV8jLfq/\r\n	4WLa4E5UX1NH7ykjkUaOWtgk1wI=\r\nX-Postal-MsgID: 0zj3nFV7DDoqvrrc\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:32:29 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bran_brady@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <e1f7e9f2-8c69-1ca2-0d55-c82430ecba53@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:32:29 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(66,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(67,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790816;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=srh7uOGfXQ0wx7QyBOji00Vps1QLyTDwgafM0T0p2kaax5CkcTQFsx9oxp5TOyRaFCIYX4//\r\n	Y6T23fhhq74Ua4Aoxxd2uqNbIqh6v3rFXj2VlV3UoYGFoBaC7FB/a4psE97IkcRxFi7HHMiP\r\n	pxOpdRSO9TUrjqKFiEqmPpVLXCQ=\r\nX-Postal-MsgID: hkYpc0dymTc2qGx6\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:33:30 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: brian_willis2006@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <12cd6409-9895-2a77-cb6b-6a92fe42b272@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:33:30 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(68,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(69,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790871;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=aW0avUH1FVQ+VH6XBN0vcYxBlyU5fDbOlFjB/HSr4CrdEgQ5xXoSWjIlMfTIAflS1OghEjD5\r\n	M2dAVmQy2y8olVtcvJbodpXR+KXYaLi4UHWL3wFCvI7MUWFtxfOZKEyDjPHyjcuDRMGpLW24\r\n	qonkGs/gCs9OYClp1v6WVLV/dxE=\r\nX-Postal-MsgID: ENcD31BOA1ELPc6d\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:34:30 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: brianrussell269@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <0929262b-90f1-139c-2f6c-8ff65061d625@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:34:30 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(70,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(71,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787790934;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=gsNpMmcVRKeBEpDi4K3OW4TudH6CasSv3Jz1PyyBgOkEOCjaqlT3diWTXBuVHROT4xYV8Lg3\r\n	wuzL+8tgsyDYNPMjTtgUceEY8BGps8nLyhb4C6r6lK9Xh2V/Jz4JwJcDIpNla1BOBQUcXAFv\r\n	KMLjNx4D6Ta77a8VZxL5PzkTzog=\r\nX-Postal-MsgID: GwcKm1898ld6eThI\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:35:31 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: brochu_james@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <bfd1375c-42ea-9f58-bf3f-fb49a1a7fbd4@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:35:31 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(72,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(73,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787790992;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=gX2IpcEjf1PsE79+jeNBMqDS7GfcCHL3eo1XBqeHRJmu4RAahLpnWwNyikor/D9+UUtGg0HQ\r\n	LmEixlQuBb+XuhVycoQRP60Xh9r0pEyD6pzJ5HvCGWrF0/oAMW6+GiYfsV/7abC68V+SJCtq\r\n	cYn4PulhGoIjY5fUBflOCNLAxJ0=\r\nX-Postal-MsgID: k0DEPs9PHBXWm5SU\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:36:31 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: brownfe741@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <6c3fcd5a-6bf1-8154-b8a1-04fc5a720b68@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:36:31 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(74,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(75,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787791053;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=mzNZJhzqPAZOe4bxucI6bTJ6f9SAEapYg+SshtKn76UgF/ExCROGoXGAhShjBxTQXe1MaDjs\r\n	5gHN2VVzXkOojxPYRdBlIsqYPGMF0SbGAAUHMR/ZiCuC+JIQ+G+hgFvGF9NMcxdu21yxhVQP\r\n	BR/58ae+gVYMVTzZDe/RKTEOD0g=\r\nX-Postal-MsgID: 0stFqJSESGh3Q2u0\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:37:32 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: buxayor@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <c84efee5-579b-781d-1813-f5b3747048df@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:37:32 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(76,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(77,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1787791116;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=X6MicEySZLJhP9vqL/UNEUC2TCPq2WoLhjG1HjS9XEnXeWi/WhSQj7b5S9j60UUT9b3OVzaJ\r\n	KSBGDYRucd5/7EZrp45Yp/jDbmhrA/nz2iYZ9bby+aAq9EGj59feiq84rRmjTwrr7lPczhfP\r\n	Gg/AAZnksptq5X5ZQ+BSIN2MF8A=\r\nX-Postal-MsgID: 9MMVgCaJJ3apnyfU\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:38:32 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: bvudzi.jongwe@gmail.com\r\nSubject: Please Review This\r\nMessage-ID: <f5430d2a-4e66-2fc2-3efc-fd7a02fd3e7f@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:38:32 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(78,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(79,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1787791176;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=hR9rfZ+kMNKQHX8DMeyjJnQslIhQR+nyfVO1nr7NQw7wmZkO5qCMnpByqxV685u7/lROAP51\r\n	WY1FeHd+gcyVrKmMFj22rMuK4QHmlEqFgrYnYj2LMI578POVWxct2UFt2j0fwH6EStri2Kn5\r\n	cg+epPrnJou1mi2XGku4uDFpRRc=\r\nX-Postal-MsgID: efPwby1gUuhMGF5x\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Thu, 27 Aug 2026 00:39:33 -0000\r\nFrom: \"Microsoft-Team\" <microsoft-team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: c.cvernon@yahoo.com\r\nSubject: Please Review This\r\nMessage-ID: <2e1a1b8f-e81a-1b55-725d-f03c773182d3@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Thu, 27 Aug 2026 00:39:33 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(80,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL);
+/*!40000 ALTER TABLE `raw-2026-08-27` ENABLE KEYS */;
+UNLOCK TABLES;
+COMMIT;
+SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
+
+--
 -- Table structure for table `raw_message_sizes`
 --
 
@@ -39794,7 +40060,7 @@ CREATE TABLE `raw_message_sizes` (
   `size` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_table_name` (`table_name`(14)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39809,7 +40075,8 @@ INSERT INTO `raw_message_sizes` VALUES
 (2,'raw-2026-08-14',183254),
 (3,'raw-2026-08-24',28324),
 (4,'raw-2026-08-25',28379),
-(5,'raw-2026-08-26',28356);
+(5,'raw-2026-08-26',28356),
+(6,'raw-2026-08-27',28324);
 /*!40000 ALTER TABLE `raw_message_sizes` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39863,7 +40130,7 @@ CREATE TABLE `stats_daily` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=297 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39878,7 +40145,8 @@ INSERT INTO `stats_daily` VALUES
 (6,1786665600,0,11,0,5,1),
 (23,1787529600,0,40,0,22,2),
 (87,1787616000,0,40,0,28,0),
-(155,1787702400,0,40,0,33,0);
+(155,1787702400,0,40,0,33,0),
+(228,1787788800,0,40,0,29,0);
 /*!40000 ALTER TABLE `stats_daily` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39901,7 +40169,7 @@ CREATE TABLE `stats_hourly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=297 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39926,7 +40194,10 @@ INSERT INTO `stats_hourly` VALUES
 (155,1787702400,0,40,0,20,0),
 (215,1787706000,0,0,0,9,0),
 (224,1787709600,0,0,0,1,0),
-(225,1787713200,0,0,0,3,0);
+(225,1787713200,0,0,0,3,0),
+(228,1787788800,0,40,0,19,0),
+(287,1787792400,0,0,0,9,0),
+(296,1787814000,0,0,0,1,0);
 /*!40000 ALTER TABLE `stats_hourly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39949,7 +40220,7 @@ CREATE TABLE `stats_monthly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=297 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39961,7 +40232,7 @@ LOCK TABLES `stats_monthly` WRITE;
 /*!40000 ALTER TABLE `stats_monthly` DISABLE KEYS */;
 INSERT INTO `stats_monthly` VALUES
 (1,1782864000,0,5,0,0,0),
-(6,1785542400,0,131,0,88,3);
+(6,1785542400,0,171,0,117,3);
 /*!40000 ALTER TABLE `stats_monthly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39984,7 +40255,7 @@ CREATE TABLE `stats_yearly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=297 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39995,7 +40266,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `stats_yearly` WRITE;
 /*!40000 ALTER TABLE `stats_yearly` DISABLE KEYS */;
 INSERT INTO `stats_yearly` VALUES
-(1,1767225600,0,136,0,88,3);
+(1,1767225600,0,176,0,117,3);
 /*!40000 ALTER TABLE `stats_yearly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -40018,7 +40289,7 @@ CREATE TABLE `suppressions` (
   PRIMARY KEY (`id`),
   KEY `on_address` (`address`(6)) USING BTREE,
   KEY `on_keep_until` (`keep_until`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40028,6 +40299,8 @@ CREATE TABLE `suppressions` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `suppressions` WRITE;
 /*!40000 ALTER TABLE `suppressions` DISABLE KEYS */;
+INSERT INTO `suppressions` VALUES
+(3,'recipient','askdirect@salesperson.net','too many soft fails',1787815061.236488,1790407061.232211);
 /*!40000 ALTER TABLE `suppressions` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -40117,4 +40390,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-27  0:00:05
+-- Dump completed on 2026-08-28  0:00:07
