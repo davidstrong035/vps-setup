@@ -37653,7 +37653,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-30 23:59:47.979324','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-08-31 23:59:51.518923','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37706,8 +37706,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-30 23:15:29.351180','2026-08-30 23:15:29.338666','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-30 23:15:29.531463','2026-08-30 23:15:29.524598','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-08-31 23:15:15.904828','2026-08-31 23:15:15.892686','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-08-31 23:15:16.032674','2026-08-31 23:15:16.014548','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38050,15 +38050,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-08-31 00:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-08-31 00:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-08-31 00:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-08-31 00:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-08-31 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-08-31 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-08-31 00:45:00'),
-(8,'SendNotificationsScheduledTask','2026-08-31 00:00:37'),
-(9,'TidyQueuedMessagesTask','2026-08-31 00:45:00');
+(1,'ActionDeletionsScheduledTask','2026-09-01 00:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-09-01 00:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-09-01 00:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-09-01 00:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-09-01 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-09-01 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-09-01 00:45:00'),
+(8,'SendNotificationsScheduledTask','2026-09-01 00:00:22'),
+(9,'TidyQueuedMessagesTask','2026-09-01 00:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38510,7 +38510,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-30 23:59:37');
+(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-08-31 23:59:22');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39403,11 +39403,11 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
 INSERT INTO `messages` VALUES
-(1,'zr83Xkig3UjCmOR3','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Live Testing','4e441108-ce89-3a00-2ff6-c150a3977632@mg.maileff2.click',1785516942.681995,NULL,4,1,'Sent',0,'816',1785516955.633635,'raw-2026-07-31',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(2,'0AGgIQn86mYWEQkE','outgoing','maileff2026@protonmail.com','maileff.team@mg.maileff.click','Live Testing','6681d62d-9090-6b7d-466c-48846487b9f2@mg.maileff.click',1785517003.257987,NULL,2,1,'Sent',0,'818',1785517013.138594,'raw-2026-07-31',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(3,'K9sFuRfuAeNNJgGR','outgoing','dedon4christ5@yahoo.com','maileff.team@mg.maileff2.click','Live Testing','5d050b0e-f50a-9372-85b2-77115da59305@mg.maileff2.click',1785517063.799335,NULL,4,1,'Sent',0,'817',1785517069.377260,'raw-2026-07-31',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(4,'9PRnRKlfpi7eVXzi','outgoing','dedon4@live.com','maileff.team@mg.maileff.click','Live Testing','70036461-53b7-1707-9395-57d289361d18@mg.maileff.click',1785517124.222654,NULL,2,1,'Sent',0,'807',1785517132.772579,'raw-2026-07-31',8,7,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(5,'tT4chobacNhEXIgL','outgoing','davidstrong035@gmail.com','maileff.team@mg.maileff2.click','Live Testing','fe447e81-ec5b-6816-5361-35ef8926ba31@mg.maileff2.click',1785517184.613605,NULL,4,1,'Sent',0,'818',1785517185.500124,'raw-2026-07-31',10,9,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(1,'zr83Xkig3UjCmOR3','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Live Testing','4e441108-ce89-3a00-2ff6-c150a3977632@mg.maileff2.click',1785516942.681995,NULL,4,1,'Sent',0,NULL,1785516955.633635,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(2,'0AGgIQn86mYWEQkE','outgoing','maileff2026@protonmail.com','maileff.team@mg.maileff.click','Live Testing','6681d62d-9090-6b7d-466c-48846487b9f2@mg.maileff.click',1785517003.257987,NULL,2,1,'Sent',0,NULL,1785517013.138594,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(3,'K9sFuRfuAeNNJgGR','outgoing','dedon4christ5@yahoo.com','maileff.team@mg.maileff2.click','Live Testing','5d050b0e-f50a-9372-85b2-77115da59305@mg.maileff2.click',1785517063.799335,NULL,4,1,'Sent',0,NULL,1785517069.377260,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(4,'9PRnRKlfpi7eVXzi','outgoing','dedon4@live.com','maileff.team@mg.maileff.click','Live Testing','70036461-53b7-1707-9395-57d289361d18@mg.maileff.click',1785517124.222654,NULL,2,1,'Sent',0,NULL,1785517132.772579,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(5,'tT4chobacNhEXIgL','outgoing','davidstrong035@gmail.com','maileff.team@mg.maileff2.click','Live Testing','fe447e81-ec5b-6816-5361-35ef8926ba31@mg.maileff2.click',1785517184.613605,NULL,4,1,'Sent',0,NULL,1785517185.500124,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (6,'bmGudLixAC64ixwv','outgoing','djeffssource@gmail.com','outlook.review@mg.maileff.click','Review Your Account','43b2afba-6f03-2bfe-ddf7-40e82c714671@mg.maileff.click',1786696860.032840,NULL,2,1,'Sent',0,'17639',1786696892.956113,'raw-2026-08-14',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (7,'MT6Lj9Gl3qbE8spe','outgoing','maileff2026@protonmail.com','outlook.review@mg.maileff2.click','Review Your Account','cf7f6d04-5c0f-b08f-22a5-4ce561ebbe55@mg.maileff2.click',1786696920.866959,NULL,4,1,'Sent',0,'17645',1786696930.549387,'raw-2026-08-14',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (8,'OpRwQp0XeRJeOS0m','outgoing','dedon4christ5@yahoo.com','outlook.review@mg.maileff.click','Review Your Account','f6d798e2-6980-7255-ff43-0102b2e7f3f5@mg.maileff.click',1786696987.574295,NULL,2,1,'Sent',0,'17640',1786696991.726781,'raw-2026-08-14',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
@@ -39665,44 +39665,6 @@ INSERT INTO `migrations` VALUES
 (19),
 (20);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
-UNLOCK TABLES;
-COMMIT;
-SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
-
---
--- Table structure for table `raw-2026-07-31`
---
-
-DROP TABLE IF EXISTS `raw-2026-07-31`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `raw-2026-07-31` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `data` longblob DEFAULT NULL,
-  `next` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `raw-2026-07-31`
---
-
-SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
-LOCK TABLES `raw-2026-07-31` WRITE;
-/*!40000 ALTER TABLE `raw-2026-07-31` DISABLE KEYS */;
-INSERT INTO `raw-2026-07-31` VALUES
-(1,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1785516943;\r\n	bh=f8nkqnuh26NXqeOZNbvSKwBzGZVlmvCi8nImT7SCKxY=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=WEsGw0kZpXtGxrGEw3xeKcnb7FbZvzdvpGDBviiIVlbtzvuhbgzfIdST0fua4xc8mPKIazXt\r\n	JRjFDvymQ12B1ZC7rNoRUNHb4Ht2sA9yXlAHVcFnW0c0Sqnt/wjW1hhH1X90WPsKA+e9k2NJ\r\n	CFg+UJwisrlCN18vKiykgBVT+So=\r\nX-Postal-MsgID: zr83Xkig3UjCmOR3\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 31 Jul 2026 16:55:42 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: djeffssource@gmail.com\r\nSubject: Live Testing\r\nMessage-ID: <4e441108-ce89-3a00-2ff6-c150a3977632@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 31 Jul 2026 16:55:42 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(2,'<p>Hi Dear,</p><p></p><p>This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should<br><br><em>Best Regards</em><br><strong>Djokhar =\r\nDjokhar</strong></p>\r\n',NULL),
-(3,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1785517004;\r\n	bh=f8nkqnuh26NXqeOZNbvSKwBzGZVlmvCi8nImT7SCKxY=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=uEfaim72xRpeQ01AJk9wHGU1CzqU5YJU/hldRDAxV6bdoM+Qit23IF5TUN/bLr+x5OKyW1GT\r\n	fEfK2Dlx1926ura0itBFmi//gQs4oNXcrDpb5mhMjjs1+zP/j6zP/rZMcSp9J2v+Qr91CwWB\r\n	TRzP4s2+eWBxVY4VJAhIPyr3/R0=\r\nX-Postal-MsgID: 0AGgIQn86mYWEQkE\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 31 Jul 2026 16:56:43 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: maileff2026@protonmail.com\r\nSubject: Live Testing\r\nMessage-ID: <6681d62d-9090-6b7d-466c-48846487b9f2@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 31 Jul 2026 16:56:43 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(4,'<p>Hi Dear,</p><p></p><p>This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should<br><br><em>Best Regards</em><br><strong>Djokhar =\r\nDjokhar</strong></p>\r\n',NULL),
-(5,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1785517066;\r\n	bh=f8nkqnuh26NXqeOZNbvSKwBzGZVlmvCi8nImT7SCKxY=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=CGOv4nA6fQPUYQCKOOYy52w7FVHmGlO6xGV/9vKcWjfI83sLOLHLL+edm9wUQBmiwtMpMlm4\r\n	EsvPmH+byciLBO/TCmnI4v6oJZbN6chWIin3s7BXH5xH3zqAJfzitTJzLdIqa6+IkUv5YncR\r\n	7vofMqP/6uQGKHJ6qtdZ/sc4kxw=\r\nX-Postal-MsgID: K9sFuRfuAeNNJgGR\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 31 Jul 2026 16:57:43 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@yahoo.com\r\nSubject: Live Testing\r\nMessage-ID: <5d050b0e-f50a-9372-85b2-77115da59305@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 31 Jul 2026 16:57:43 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(6,'<p>Hi Dear,</p><p></p><p>This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should<br><br><em>Best Regards</em><br><strong>Djokhar =\r\nDjokhar</strong></p>\r\n',NULL),
-(7,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1785517125;\r\n	bh=f8nkqnuh26NXqeOZNbvSKwBzGZVlmvCi8nImT7SCKxY=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=U1w4lQoq1B4zkCzvzknMrh5pzBIA7ZT87ihrLEG2oufDDsanhj3mOVimTNqK4UXUXOlrTwVG\r\n	Ua7cIvFRwBEjJsFqvdypohPKWV+qPu58h6DCiODEsCAnn7/cA88pW/O1ywgRYHDM0ik5PkaQ\r\n	B5cF4bqQ42PYCKgk6Usip2vnU+k=\r\nX-Postal-MsgID: 9PRnRKlfpi7eVXzi\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 31 Jul 2026 16:58:44 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4@live.com\r\nSubject: Live Testing\r\nMessage-ID: <70036461-53b7-1707-9395-57d289361d18@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 31 Jul 2026 16:58:44 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(8,'<p>Hi Dear,</p><p></p><p>This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should<br><br><em>Best Regards</em><br><strong>Djokhar =\r\nDjokhar</strong></p>\r\n',NULL),
-(9,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1785517184;\r\n	bh=f8nkqnuh26NXqeOZNbvSKwBzGZVlmvCi8nImT7SCKxY=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=DNUV/BAG9149HiZIotY9MKBBXoue1Dzspb80ruRh8gatq8TUMplAHf46yn67SbvTeM13AKby\r\n	CRsZzVPRUZ9J3cBNDd/z0NYVxCbElQt009bxwuCNZlmVmF4EUTf2zgILK1CSKV9u51UCNAsQ\r\n	L8R+ZCeuLM0z/K9qzO4MZgJ0TcA=\r\nX-Postal-MsgID: tT4chobacNhEXIgL\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 31 Jul 2026 16:59:44 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: davidstrong035@gmail.com\r\nSubject: Live Testing\r\nMessage-ID: <fe447e81-ec5b-6816-5361-35ef8926ba31@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 31 Jul 2026 16:59:44 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(10,'<p>Hi Dear,</p><p></p><p>This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should. This is to test and make sure that everything is =\r\nworking as it should<br><br><em>Best Regards</em><br><strong>Djokhar =\r\nDjokhar</strong></p>\r\n',NULL);
-/*!40000 ALTER TABLE `raw-2026-07-31` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
@@ -40319,7 +40281,6 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `raw_message_sizes` WRITE;
 /*!40000 ALTER TABLE `raw_message_sizes` DISABLE KEYS */;
 INSERT INTO `raw_message_sizes` VALUES
-(1,'raw-2026-07-31',4076),
 (2,'raw-2026-08-14',183254),
 (3,'raw-2026-08-24',28324),
 (4,'raw-2026-08-25',28379),
@@ -40642,4 +40603,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-08-31  0:00:08
+-- Dump completed on 2026-09-01  0:00:07
