@@ -37617,7 +37617,7 @@ INSERT INTO `authie_sessions` VALUES
 (4,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-05 10:25:49','105.112.178.236','2026-08-05 10:25:50','105.112.178.236','/org/vps-1/servers/maileff-postal-server/messages/outgoing','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36','2026-08-05 10:25:49','2026-08-05 23:15:51','User',NULL,NULL,NULL,2,NULL,'229664a71f25437b573523d5ed6208484b7b409f5202d642c87195b9599bed48','postal.maileff.space',0,NULL,NULL,NULL),
 (5,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-14 08:41:17','169.150.197.168','2026-08-14 08:42:15','169.150.197.168','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36','2026-08-14 08:41:17','2026-08-14 21:15:36','User',NULL,NULL,NULL,5,NULL,'2d6b5211d05c4c1a2302889fa95153aa28aed8686d1a65fb4f148b2c6741b460','postal.maileff.space',0,NULL,NULL,NULL),
 (6,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,0,NULL,'2026-10-23 17:15:37','2026-08-23 17:15:21','102.88.112.212','2026-09-22 10:06:00','105.127.6.130','/logout','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-08-23 17:15:21','2026-09-22 10:06:00','User',NULL,NULL,NULL,152,NULL,'553d8e38900d9c8fc16313ac6171ee4a852c1ce354f22636eba6a897bb3874f5','postal.maileff.space',0,NULL,NULL,NULL),
-(7,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,1,NULL,'2026-11-22 10:06:07','2026-09-22 10:06:03','105.127.6.130','2026-09-22 10:09:41','105.127.9.81','/','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-09-22 10:06:03','2026-09-22 10:09:41','User',NULL,NULL,NULL,23,NULL,'b5b2db233c0275c6d0f970f0dd2c3cabbc184681533bb182336f9bcd104aeea1','postal.maileff.space',0,NULL,NULL,NULL);
+(7,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,1,NULL,'2026-11-22 10:06:07','2026-09-22 10:06:03','105.127.6.130','2026-09-23 18:22:17','105.127.9.130','/org/vps-1/servers/maileff-postal-server/edit','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-09-22 10:06:03','2026-09-23 18:22:17','User',NULL,NULL,NULL,76,NULL,'b5b2db233c0275c6d0f970f0dd2c3cabbc184681533bb182336f9bcd104aeea1','postal.maileff.space',0,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `authie_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37654,7 +37654,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-09-22 23:59:56.234252','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-09-23 23:59:58.989433','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37707,8 +37707,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-09-22 23:15:44.735994','2026-09-22 23:15:44.721405','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-09-22 23:15:44.878075','2026-09-22 23:15:44.862433','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-09-23 23:15:16.983093','2026-09-23 23:15:16.976097','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-09-23 23:15:17.086421','2026-09-23 23:15:17.081875','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37770,7 +37770,7 @@ CREATE TABLE `ip_addresses` (
   `hostname` varchar(255) DEFAULT NULL,
   `priority` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37780,6 +37780,9 @@ CREATE TABLE `ip_addresses` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `ip_addresses` WRITE;
 /*!40000 ALTER TABLE `ip_addresses` DISABLE KEYS */;
+INSERT INTO `ip_addresses` VALUES
+(1,1,'10.199.212.2',NULL,'2026-09-23 18:14:42.517773','2026-09-23 18:14:42.517773','Maileff',100),
+(2,1,'10.199.212.3',NULL,'2026-09-23 18:14:57.058135','2026-09-23 18:14:57.058135','Maileff',100);
 /*!40000 ALTER TABLE `ip_addresses` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37834,7 +37837,7 @@ CREATE TABLE `ip_pools` (
   `default` tinyint(1) DEFAULT 0,
   PRIMARY KEY (`id`),
   KEY `index_ip_pools_on_uuid` (`uuid`(8))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37844,6 +37847,8 @@ CREATE TABLE `ip_pools` (
 SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `ip_pools` WRITE;
 /*!40000 ALTER TABLE `ip_pools` DISABLE KEYS */;
+INSERT INTO `ip_pools` VALUES
+(1,'Test','e1cb1d17-241c-453a-9bec-573d2a8c0fa2','2026-09-23 16:25:28.485747','2026-09-23 16:25:28.485747',0);
 /*!40000 ALTER TABLE `ip_pools` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38051,15 +38056,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-09-23 00:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-09-23 00:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-09-23 00:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-09-23 00:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-09-23 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-09-23 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-09-23 00:45:00'),
-(8,'SendNotificationsScheduledTask','2026-09-23 00:00:50'),
-(9,'TidyQueuedMessagesTask','2026-09-23 00:45:00');
+(1,'ActionDeletionsScheduledTask','2026-09-24 00:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-09-24 00:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-09-24 00:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-09-24 00:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-09-24 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-09-24 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-09-24 00:45:00'),
+(8,'SendNotificationsScheduledTask','2026-09-24 00:00:22'),
+(9,'TidyQueuedMessagesTask','2026-09-24 00:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38511,7 +38516,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:8 thread:16','2026-09-22 23:59:50');
+(1,'tasks','host:vmi3476242 pid:8 thread:16','2026-09-23 23:59:22');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -40553,4 +40558,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-09-23  0:00:05
+-- Dump completed on 2026-09-24  0:00:04
