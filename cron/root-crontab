@@ -21,5 +21,8 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-0 0 * * * /bin/bash /opt/postal/rotate-domains.sh >> /var/log/domain-rotation.log 2>&1
+
 0 2 * * * /bin/bash /root/vps-setup/auto-sync.sh >> /var/log/vps-backup.log 2>&1
+# Rotate ALL domains every 3 hours
+0 */3 * * * /opt/postal/rotate-all-apps.sh >> /var/log/domain-rotation.log 2>&1
+# Crontab backup - 2026-10-13 18:47:31

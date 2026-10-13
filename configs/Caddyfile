@@ -10,8 +10,15 @@ central.169.58.100.196.sslip.io {
     reverse_proxy 127.0.0.1:3005
 }
 
-app-0746b3db.169.58.100.196.sslip.io {
-    root * /data/apps/microsoft/dist
+app-3b2bae5a.169.58.100.196.sslip.io {
+    root * /data/apps/arvest
     file_server
     try_files {path} /index.html
 }
+
+app-0746b3db.169.58.100.196.sslip.io {
+    root * /data/apps/microsoft
+    file_server
+    try_files {path} /index.html
+}
+

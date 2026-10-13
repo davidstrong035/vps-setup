@@ -37654,7 +37654,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-10-12 23:59:31.584641','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-10-13 16:47:35.125121','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37707,8 +37707,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-10-12 23:15:12.402866','2026-10-12 23:15:12.388744','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-10-12 23:15:12.632460','2026-10-12 23:15:12.618668','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-10-13 15:15:59.065496','2026-10-13 15:15:59.057463','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-10-13 15:15:59.198842','2026-10-13 15:15:59.188588','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38051,15 +38051,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-10-13 00:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-10-13 00:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-10-13 00:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-10-13 00:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-10-13 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-10-13 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-10-13 00:45:00'),
-(8,'SendNotificationsScheduledTask','2026-10-13 00:00:18'),
-(9,'TidyQueuedMessagesTask','2026-10-13 00:45:00');
+(1,'ActionDeletionsScheduledTask','2026-10-13 17:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-10-13 17:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-10-13 17:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-10-13 17:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-10-14 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-10-14 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-10-13 17:45:00'),
+(8,'SendNotificationsScheduledTask','2026-10-13 16:48:18'),
+(9,'TidyQueuedMessagesTask','2026-10-13 17:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38513,7 +38513,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:8 thread:16','2026-10-12 23:59:18');
+(1,'tasks','host:vmi3476242 pid:8 thread:16','2026-10-13 16:47:18');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38592,24 +38592,9 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `deliveries` WRITE;
 /*!40000 ALTER TABLE `deliveries` DISABLE KEYS */;
 INSERT INTO `deliveries` VALUES
-(6,6,'Sent',NULL,'250 2.0.0 OK  1786696892 ffacd0b85a97d-4815f236892si3744776f8f.99 - gsmtp','Message for djeffssource@gmail.com accepted by 142.251.127.26:25 (gmail-smtp-in.l.google.com)',1,'KQMMRDWQ',1786696892.956113,0.59),
-(7,7,'Sent',NULL,'250 2.0.0 Ok: queued as 4hLwhH71hvz9G','Message for maileff2026@protonmail.com accepted by 185.70.42.128:25 (mail.protonmail.ch)',1,'WAZ15KX5',1786696930.549387,2.94),
-(8,8,'Sent',NULL,'250 ok dirdel','Message for dedon4christ5@yahoo.com accepted by 98.136.96.91:25 (mta7.am0.yahoodns.net)',1,'T7RQZS3W',1786696991.726781,1.56),
-(9,9,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'F1I384VC',1786704049.795584,0.40),
-(10,10,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.41.55:25 (live-com.olc.protection.outlook.com)',0,'VT0PGKJQ',1786704097.134495,0.16),
-(11,9,'Sent',NULL,'250 2.0.0 OK  1786704381 ffacd0b85a97d-4815f236d8asi4892046f8f.76 - gsmtp','Message for djeffssource@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'D4QV30TZ',1786704381.049995,0.30),
-(12,11,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'HLPCWIDU',1786705334.558376,1.47),
-(13,12,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.124.116:25 (live-com.olc.protection.outlook.com). Recipient added to suppression list (too many hard fails)',0,'BVFOX8VQ',1786705384.405083,0.24),
-(14,13,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.68.20:25 (live-com.olc.protection.outlook.com)',0,'MR7H7IXX',1786705445.409672,0.03),
-(15,11,'Sent',NULL,'250 2.0.0 OK  1786705668 ffacd0b85a97d-4815f318718si4645855f8f.296 - gsmtp','Message for djeffssource@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'NLD23KFZ',1786705668.415644,0.35),
-(16,14,'HardFail',NULL,'550-5.7.1 [2a02:c207:2347:6242::1      18] Gmail has detected that this message\n550-5.7.1 is likely suspicious due to the very low reputation of the sending IP\n550-5.7.1 address. To best protect our users from spam, the message has been\n550-5.7.1 blo','Permanent SMTP delivery error when sending to 2a00:1450:400c:c02::1a:25 (gmail-smtp-in.l.google.com)',0,'QGODBIPI',1786707574.308836,0.38),
-(17,15,'Held',NULL,NULL,'Recipient (daniel-strong@live.com) is on the suppression list (reason: too many hard fails)',0,NULL,1786707635.109448,NULL),
-(18,16,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.9.25:25 (live-com.olc.protection.outlook.com). Recipient added to suppression list (too many hard fails)',0,'FRKGAEOK',1786707696.984348,0.10),
-(19,15,'HoldCancelled',NULL,NULL,'The hold on this message has been removed without action.',0,NULL,1787314549.560808,NULL),
 (20,17,'Sent',NULL,'250 2.0.0 OK  1787583349 5b1f17b1804b1-499c25f9675si90654735e9.0 - gsmtp','Message for djeffssource@gmail.com accepted by 2a00:1450:400c:c07::1a:25 (gmail-smtp-in.l.google.com)',1,'QR0S7DBM',1787583349.157646,0.46),
 (21,18,'Held',NULL,NULL,'Recipient (daniel-strong@live.com) is on the suppression list (reason: too many hard fails)',0,NULL,1787583411.151927,NULL),
 (22,19,'Held',NULL,NULL,'Recipient (dedon4@live.com) is on the suppression list (reason: too many hard fails)',0,NULL,1787583472.849029,NULL),
-(23,16,'Sent',NULL,'250 2.6.0 <7756cc6f-2a58-6cee-b886-088649fb3d63@mg.maileff.click> [InternalId=57612691332474, Hostname=GV1P194MB2613.EURP194.PROD.OUTLOOK.COM] 26017 bytes in 0.395, 64.197 KB/sec Queued mail for delivery -> 250 2.1.5','Message for dedon4@live.com accepted by 52.101.11.18:25 (live-com.olc.protection.outlook.com). Recipient removed from suppression list',1,'CLH2LF46',1787583477.036101,2.65),
 (24,18,'Sent',NULL,'250 2.6.0 <a368cbe6-e861-3805-d917-d20437fae57a@mg.maileff.click> [InternalId=79023103309166, Hostname=DU2PR06MB8397.eurprd06.prod.outlook.com] 10380 bytes in 0.239, 42.404 KB/sec Queued mail for delivery -> 250 2.1.5','Message for daniel-strong@live.com accepted by 52.101.68.4:25 (live-com.olc.protection.outlook.com). Recipient removed from suppression list',1,'UM0WC6GR',1787583494.589808,1.42),
 (25,19,'Sent',NULL,'250 2.6.0 <75c586e0-d0b8-63b8-f50f-23355cce67da@mg.maileff2.click> [InternalId=30378303711354, Hostname=GV2P194MB2910.EURP194.PROD.OUTLOOK.COM] 10438 bytes in 0.311, 32.696 KB/sec Queued mail for delivery -> 250 2.1.5','Message for dedon4@live.com accepted by 52.101.11.6:25 (live-com.olc.protection.outlook.com)',1,'TLM9VIMM',1787583508.170596,3.18),
 (26,20,'HardFail',NULL,'550-5.1.1 The email account that you tried to reach does not exist. Please try\n550-5.1.1 double-checking the recipient\'s email address for typos or\n550-5.1.1 unnecessary spaces. For more information, go to\n550 5.1.1  https://support.google.com/mail/?','Permanent SMTP delivery error when sending to 74.125.133.27:25 (gmail-smtp-in.l.google.com)',1,'A0GTRGCM',1787587174.988449,0.06),
@@ -39416,17 +39401,6 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
 INSERT INTO `messages` VALUES
-(6,'bmGudLixAC64ixwv','outgoing','djeffssource@gmail.com','outlook.review@mg.maileff.click','Review Your Account','43b2afba-6f03-2bfe-ddf7-40e82c714671@mg.maileff.click',1786696860.032840,NULL,2,1,'Sent',0,NULL,1786696892.956113,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(7,'MT6Lj9Gl3qbE8spe','outgoing','maileff2026@protonmail.com','outlook.review@mg.maileff2.click','Review Your Account','cf7f6d04-5c0f-b08f-22a5-4ce561ebbe55@mg.maileff2.click',1786696920.866959,NULL,4,1,'Sent',0,NULL,1786696930.549387,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(8,'OpRwQp0XeRJeOS0m','outgoing','dedon4christ5@yahoo.com','outlook.review@mg.maileff.click','Review Your Account','f6d798e2-6980-7255-ff43-0102b2e7f3f5@mg.maileff.click',1786696987.574295,NULL,2,1,'Sent',0,NULL,1786696991.726781,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(9,'Z7qKCG64VQsrzZKK','outgoing','djeffssource@gmail.com','microsoft.team@mg.maileff2.click','Review Your Account','a24ba466-c287-8cd3-c923-44a2df4c6e44@mg.maileff2.click',1786704034.124822,NULL,4,1,'Sent',0,NULL,1786704381.049995,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(10,'Qqm63hvt0dw1mG4O','outgoing','daniel-strong@live.com','microsoft.team@mg.maileff.click','Review Your Account','73a9dff8-d1e2-7c44-7ea7-275a31040176@mg.maileff.click',1786704094.740372,NULL,2,1,'HardFail',0,NULL,1786704097.134495,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(11,'Voqtg8Y9euhtAksw','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Review Your Account','96ed481e-e1f3-4911-33f8-9d11ab8a56d2@mg.maileff2.click',1786705320.050381,NULL,4,1,'Sent',0,NULL,1786705668.415644,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(12,'FUbPa2cdPkf6i9Hp','outgoing','daniel-strong@live.com','maileff.team@mg.maileff.click','Review Your Account','8e1ca739-d860-c43d-735e-5b7a96af1cac@mg.maileff.click',1786705380.530354,NULL,2,1,'HardFail',0,NULL,1786705384.405083,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(13,'GsqyZZC7KwCsR9mZ','outgoing','dedon4@live.com','maileff.team@mg.maileff2.click','Review Your Account','06bd1ba4-8cdd-8b41-08a7-7a35144d9ede@mg.maileff2.click',1786705441.149689,NULL,4,1,'HardFail',0,NULL,1786705445.409672,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(14,'RWDeDPQugedFMX2V','outgoing','djeffssource@gmail.com','support.team@mg.maileff.click','Review Your Account','53c83533-295b-2bf5-c663-5bb4c1617bdc@mg.maileff.click',1786707572.244464,NULL,2,1,'HardFail',0,NULL,1786707574.308836,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(15,'vpLa2cf7txGZyD32','outgoing','daniel-strong@live.com','support.team@mg.maileff2.click','Review Your Account','e5845ae1-9f58-15c6-5bf2-568d2c7486d2@mg.maileff2.click',1786707632.803700,NULL,4,1,'HoldCancelled',0,NULL,1787314549.560808,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,0,NULL,NULL),
-(16,'TwBnDyYeYyo8EusE','outgoing','dedon4@live.com','support.team@mg.maileff.click','Review Your Account','7756cc6f-2a58-6cee-b886-088649fb3d63@mg.maileff.click',1786707693.302672,NULL,2,1,'Sent',0,NULL,1787583477.036101,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (17,'eP3VoFujod2Tt4lF','outgoing','djeffssource@gmail.com','microsoft-team@mg.maileff2.click','You should Review This','5f3e19d1-27e8-2acb-b9ab-7842e4c3f722@mg.maileff2.click',1787583346.002443,NULL,4,1,'Sent',0,NULL,1787583349.157646,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (18,'FbcBjRGj6vbKjfY1','outgoing','daniel-strong@live.com','microsoft-team@mg.maileff.click','You should Review This','a368cbe6-e861-3805-d917-d20437fae57a@mg.maileff.click',1787583407.056238,NULL,2,1,'Sent',0,NULL,1787583494.589808,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (19,'xZZ45LD2U2Z1uO7C','outgoing','dedon4@live.com','microsoft-team@mg.maileff2.click','You should Review This','75c586e0-d0b8-63b8-f50f-23355cce67da@mg.maileff2.click',1787583468.029848,NULL,4,1,'Sent',0,NULL,1787583508.170596,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
@@ -40085,4 +40059,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-10-13  0:00:05
+-- Dump completed on 2026-10-13 16:47:41
