@@ -25,4 +25,4 @@
 0 2 * * * /bin/bash /root/vps-setup/auto-sync.sh >> /var/log/vps-backup.log 2>&1
 # Rotate ALL domains every 3 hours
 0 */3 * * * /opt/postal/rotate-all-apps.sh >> /var/log/domain-rotation.log 2>&1
-# Crontab backup - 2026-10-22 02:00:01
+# Crontab backup - 2026-10-23 02:00:01
