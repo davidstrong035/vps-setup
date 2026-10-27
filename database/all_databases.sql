@@ -37618,8 +37618,8 @@ INSERT INTO `authie_sessions` VALUES
 (5,NULL,'a73e1f8c-83dc-4362-83bd-2ded2f3625d7',1,0,NULL,NULL,'2026-08-14 08:41:17','169.150.197.168','2026-08-14 08:42:15','169.150.197.168','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36','2026-08-14 08:41:17','2026-08-14 21:15:36','User',NULL,NULL,NULL,5,NULL,'2d6b5211d05c4c1a2302889fa95153aa28aed8686d1a65fb4f148b2c6741b460','postal.maileff.space',0,NULL,NULL,NULL),
 (6,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,0,NULL,'2026-10-23 17:15:37','2026-08-23 17:15:21','102.88.112.212','2026-09-22 10:06:00','105.127.6.130','/logout','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-08-23 17:15:21','2026-09-22 10:06:00','User',NULL,NULL,NULL,152,NULL,'553d8e38900d9c8fc16313ac6171ee4a852c1ce354f22636eba6a897bb3874f5','postal.maileff.space',0,NULL,NULL,NULL),
 (7,NULL,'a8cdd00f-9b87-460b-a5f4-223b57ec4d9a',1,1,NULL,'2026-11-22 10:06:07','2026-09-22 10:06:03','105.127.6.130','2026-09-25 11:22:27','105.127.7.103','/org/vps-1/servers/maileff-postal-server/advanced','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36','2026-09-22 10:06:03','2026-09-25 11:22:27','User',NULL,NULL,NULL,128,NULL,'b5b2db233c0275c6d0f970f0dd2c3cabbc184681533bb182336f9bcd104aeea1','postal.maileff.space',0,NULL,NULL,NULL),
-(8,NULL,'bae34226-0cb5-4891-929c-13366d26a79a',1,1,NULL,'2026-12-15 10:04:23','2026-10-15 10:04:18','105.127.8.215','2026-10-19 08:39:02','105.127.8.160','/org/vps-1/servers/maileff-postal-server','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36','2026-10-15 10:04:18','2026-10-19 08:39:02','User',NULL,NULL,NULL,16,NULL,'e48c94547f1823e355b633c4de01969458cbc3c39a362f97a0b0624d01b1589d','postal.maileff.space',0,NULL,NULL,NULL),
-(9,NULL,'951c4839-2fbd-453b-85f1-09a2a5f9e8bb',1,1,NULL,'2026-12-15 10:05:34','2026-10-15 10:05:32','105.127.8.215','2026-10-23 14:42:03','105.127.8.203','/org/vps-1/servers/maileff-postal-server/messages/532','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36','2026-10-15 10:05:32','2026-10-23 14:42:03','User',NULL,NULL,NULL,18,NULL,'a19e703c84467addc815c6b53a48d986506a8c26ed450a2933366defa1066917','postal.maileff.space',0,NULL,NULL,NULL);
+(8,NULL,'bae34226-0cb5-4891-929c-13366d26a79a',1,1,NULL,'2026-12-15 10:04:23','2026-10-15 10:04:18','105.127.8.215','2026-10-26 15:15:56','105.127.6.209','/','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36','2026-10-15 10:04:18','2026-10-26 15:15:56','User',NULL,NULL,NULL,27,NULL,'e48c94547f1823e355b633c4de01969458cbc3c39a362f97a0b0624d01b1589d','postal.maileff.space',0,NULL,NULL,NULL),
+(9,NULL,'951c4839-2fbd-453b-85f1-09a2a5f9e8bb',1,1,NULL,'2026-12-15 10:05:34','2026-10-15 10:05:32','105.127.8.215','2026-10-26 13:09:43','105.127.6.209','/org/vps-1/servers/maileff-postal-server/messages/532','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36','2026-10-15 10:05:32','2026-10-26 13:09:43','User',NULL,NULL,NULL,19,NULL,'a19e703c84467addc815c6b53a48d986506a8c26ed450a2933366defa1066917','postal.maileff.space',0,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `authie_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37656,7 +37656,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `credentials` WRITE;
 /*!40000 ALTER TABLE `credentials` DISABLE KEYS */;
 INSERT INTO `credentials` VALUES
-(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-10-26 00:59:58.790050','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
+(1,1,'xQBvYHIRY7p5vkiKW29N7yi2','SMTP','maileff-server-1',NULL,'2026-10-26 16:46:03.085523','2026-07-31 15:57:44.495143','2026-07-31 15:58:36.856267',0,'f9b344cc-2627-42f6-86b4-18c57adc4a32');
 /*!40000 ALTER TABLE `credentials` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37709,8 +37709,8 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `domains` WRITE;
 /*!40000 ALTER TABLE `domains` DISABLE KEYS */;
 INSERT INTO `domains` VALUES
-(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-10-26 00:15:38.603624','2026-10-26 00:15:38.587853','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
-(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-10-26 00:15:38.725158','2026-10-26 00:15:38.720916','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
+(2,NULL,'f8568f16-039c-4fe1-a443-d0642c6cb16c','mg.maileff.click','dxqGzHNaWJ0iTxbTqF2Y3Q8HhQrTpe1p','DNS','2026-07-31 14:36:59','-----BEGIN RSA PRIVATE KEY-----\nMIICWwIBAAKBgQDCvGuxTf5xsvToywxCIsZULvdezoNtkzjAIGNLzD3byd+g2mtE\nkZkvik6M2Nvb0yoNcqhY7aWET2JjRwy5ofpT3fVSzKIwaahBAQvNPsdkbFqWzDw/\nd7KcExlTEfli4EOLsu8Bo8VNSrsEHU/G1R6tofe9DkUHdCkDnIu0kAXBYQIDAQAB\nAoGAHAzH9mIlpHsCjAWzXlNj/fxF5YIZrE7ofcQsiV6CCoapj6HmkZnnVtG1PtR9\n1swz4nwBg823abeFlIdHbfXG+Mz/t45sr/Dg/4y2VkECHkNWja/pD85abwOh8qrp\nPgCIHViVNM9jHyXBQM/0qWLTr6hhHeyayTdv4WMFNMAgagECQQD2Bc9FHaB+6RgH\nseEYwCy7VDll1tvOjQYILrc1PPc6A4mBhlHVNkJm9OUvE0sOYIFIicTPrPlOuzz0\nGgsjJ95dAkEAyqIoBvgGANmdwTf/eYskc7bvA7fWcVSEvTj5PE3396gzo3R5Athp\nPSVmfbVJrMnSNIb3AS2XobX/a4T5/FjW1QJAC+8ONdERFvbhloX3YEb6JIAaZKk+\nck9+6mixtGBnsaW4RtMoJwqBwBLDBzyNWH4v5z/fjx9Z3IrSkxisT6FAdQJAZ6JT\ncmz7NQgXZLCtGo6NUBkpWO9233NoiBZRcgQ2ZBVEg76X/VqNSFaOepBzY8m8llzI\ni3Oz72LThTv3VpZhGQJAWIPL6TWX4nbvvfFn3pXJB+42ee9jCaepw7+Iq1A4b/Bn\nJSUsJYCE5KWclVgLoNQFMKqUxadLCrIUqxEOccENoQ==\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:36:59.111328','2026-10-27 00:15:09.782649','2026-10-27 00:15:09.762459','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff.click','OK',NULL,1,1,'Server',1,'PB2ZXV',NULL),
+(4,NULL,'014f2589-bcf6-4491-a599-aa576463470c','mg.maileff2.click','lMiCurdBq0AjliIDj08uli2Mv17C1o4p','DNS','2026-07-31 14:43:07','-----BEGIN RSA PRIVATE KEY-----\nMIICXQIBAAKBgQDYHRx5MkikIVbhKRh5XxWUxm4KI5vROj+gmkJMu6/FtP76T5fH\nO5Nj+4L1F/MGV0TvFBSZmHLXIE8w+nnttftZatZulIO8NyhcVUAJCFHfa+HDZKoI\nc9Z4G987/U9GA3ShpmKxgc3HQCsqa6UdgFuDiy2z6y5nrygNs4iDA5afJwIDAQAB\nAoGAA44HB99R3pFF0pJQer6bpkTVToljaL+iiEvBR23W6FOf1hI1Fuvd8skSUGHC\nd5o74grcg+JEEVHQu6eDFevmZHxhqyo8WGP4uzLa2O3EC/aAEjDbpE2b9Vxh8pF3\nqxTssFEsWxSffjGpTBIqsJ9pXGMsBvzDtm1L+9te0PqDWbECQQD8KgF6MMgDj21x\n3OrNhbrfpKGCMtM6woFG7rnDVYrQQooMa5AE8eS65FAk7ZGPSaaOMXYWlHG5JQo6\nFh+1grb1AkEA22a3N+Mw65zuCV9erYEqHgqfhtbfbykbUn3RrsIIAG4dzwAYOy3b\nmN7mwJlv5TMoYRogMgBEkEYu2TpCsUPUKwJBANjdm3Wl/G6rbHnPgBSPXX83jDt4\nUJepbhs99n8a0452m1lBLJREIO3mq1KHCneL5PVHboLO2dtcEqaQHmcxav0CQCmQ\nzCVKZXo9wNsFtmoojlIisRZanvnwT7zRGWiCWgG62urcmbqcdX4AvLbAWvKRPpUm\n3fKbGmI66aU95GSw9QECQQDGXzspkgNYtE3Xpz/lEphXgP0ov6lhPPITVrf8ucvr\nDHXdIpnHG2sV21NKYRnT18pdt1E90vgYhALjjKq9ojML\n-----END RSA PRIVATE KEY-----\n','2026-07-31 14:43:07.352825','2026-10-27 00:15:09.917461','2026-10-27 00:15:09.910860','OK',NULL,'OK',NULL,'Missing','There are no MX records for mg.maileff2.click','OK',NULL,1,1,'Server',1,'rYtZRl',NULL);
 /*!40000 ALTER TABLE `domains` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -37977,7 +37977,7 @@ CREATE TABLE `queued_messages` (
   KEY `index_queued_messages_on_domain` (`domain`(8)),
   KEY `index_queued_messages_on_message_id` (`message_id`),
   KEY `index_queued_messages_on_server_id` (`server_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=649 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=653 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38053,15 +38053,15 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `scheduled_tasks` WRITE;
 /*!40000 ALTER TABLE `scheduled_tasks` DISABLE KEYS */;
 INSERT INTO `scheduled_tasks` VALUES
-(1,'ActionDeletionsScheduledTask','2026-10-26 01:15:00'),
-(2,'CheckAllDNSScheduledTask','2026-10-26 01:15:00'),
-(3,'CleanupAuthieSessionsScheduledTask','2026-10-26 01:15:00'),
-(4,'ExpireHeldMessagesScheduledTask','2026-10-26 01:15:00'),
-(5,'ProcessMessageRetentionScheduledTask','2026-10-26 03:00:00'),
-(6,'PruneSuppressionListsScheduledTask','2026-10-26 03:00:00'),
-(7,'PruneWebhookRequestsScheduledTask','2026-10-26 01:45:00'),
-(8,'SendNotificationsScheduledTask','2026-10-26 01:00:45'),
-(9,'TidyQueuedMessagesTask','2026-10-26 01:45:00');
+(1,'ActionDeletionsScheduledTask','2026-10-27 01:15:00'),
+(2,'CheckAllDNSScheduledTask','2026-10-27 01:15:00'),
+(3,'CleanupAuthieSessionsScheduledTask','2026-10-27 01:15:00'),
+(4,'ExpireHeldMessagesScheduledTask','2026-10-27 01:15:00'),
+(5,'ProcessMessageRetentionScheduledTask','2026-10-27 03:00:00'),
+(6,'PruneSuppressionListsScheduledTask','2026-10-27 03:00:00'),
+(7,'PruneWebhookRequestsScheduledTask','2026-10-27 01:45:00'),
+(8,'SendNotificationsScheduledTask','2026-10-27 01:00:15'),
+(9,'TidyQueuedMessagesTask','2026-10-27 01:45:00');
 /*!40000 ALTER TABLE `scheduled_tasks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38230,7 +38230,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `statistics` WRITE;
 /*!40000 ALTER TABLE `statistics` DISABLE KEYS */;
 INSERT INTO `statistics` VALUES
-(1,645,645,0);
+(1,649,649,0);
 /*!40000 ALTER TABLE `statistics` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38437,7 +38437,7 @@ CREATE TABLE `webhook_requests` (
   `locked_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_webhook_requests_on_locked_by` (`locked_by`)
-) ENGINE=InnoDB AUTO_INCREMENT=606 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=612 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38484,7 +38484,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `webhooks` WRITE;
 /*!40000 ALTER TABLE `webhooks` DISABLE KEYS */;
 INSERT INTO `webhooks` VALUES
-(1,1,'80d960d5-88fb-440e-95ec-64309e8a3bf8','Maileff Webhook','https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY','2026-10-25 02:03:25',1,1,1,'2026-09-24 17:20:02.280741','2026-09-24 17:20:02.280741');
+(1,1,'80d960d5-88fb-440e-95ec-64309e8a3bf8','Maileff Webhook','https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY','2026-10-26 13:26:39',1,1,1,'2026-09-24 17:20:02.280741','2026-09-24 17:20:02.280741');
 /*!40000 ALTER TABLE `webhooks` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38515,7 +38515,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `worker_roles` WRITE;
 /*!40000 ALTER TABLE `worker_roles` DISABLE KEYS */;
 INSERT INTO `worker_roles` VALUES
-(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-10-26 00:59:45');
+(1,'tasks','host:vmi3476242 pid:9 thread:17','2026-10-27 00:59:15');
 /*!40000 ALTER TABLE `worker_roles` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -38583,7 +38583,7 @@ CREATE TABLE `deliveries` (
   `time` decimal(8,2) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_message_id` (`message_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=1194 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1200 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38594,124 +38594,6 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `deliveries` WRITE;
 /*!40000 ALTER TABLE `deliveries` DISABLE KEYS */;
 INSERT INTO `deliveries` VALUES
-(368,137,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'1NV5RASE',1787788817.797911,0.99),
-(369,138,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 188.125.72.73:25 (mx-eu.mail.am0.yahoodns.net)',1,'B7MHAUHG',1787788875.144811,0.56),
-(370,139,'Sent',NULL,'250 2.0.0 OK  1787788944 ffacd0b85a97d-482e28dc489si4615606f8f.197 - gsmtp','Message for bestsellers46@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'OB40PIBH',1787788944.742878,0.64),
-(371,140,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta7.am0.yahoodns.net)',1,'IFEMEGFJ',1787788997.502942,0.93),
-(372,141,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta6.am0.yahoodns.net)',1,'ET7B5Y1R',1787789055.928502,1.09),
-(374,142,'HardFail',NULL,'554 30 Sorry, your message to bigantis2@yahoo.co.uk cannot be delivered. This mailbox is disabled (554.30).','Permanent SMTP delivery error when sending to 188.125.72.74:25 (mx-eu.mail.am0.yahoodns.net)',1,'UUPCPENI',1787789118.470644,0.33),
-(375,143,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.91:25 (mta6.am0.yahoodns.net)',1,'VOH4HCWZ',1787789180.985513,0.92),
-(376,144,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',1,'QRTS68UZ',1787789238.825798,0.85),
-(377,145,'Sent',NULL,'250 ok dirdel','Message for billconnally1960@yahoo.com accepted by 67.195.204.79:25 (mta7.am0.yahoodns.net)',1,'NLKTZ1DB',1787789297.991997,0.89),
-(378,146,'Sent',NULL,'250 2.6.0 <82f40d3f-54ce-b738-9d4f-816c88261bd3@mg.maileff.click> [InternalId=47815870910628, Hostname=BL4PR06MB10065.namprd06.prod.outlook.com] 10494 bytes in 0.145, 70.347 KB/sec Queued mail for delivery -> 250 2.1.5','Message for billrogerson011@hotmail.com accepted by 52.101.11.11:25 (hotmail-com.olc.protection.outlook.com)',1,'HYSONME5',1787789361.508318,1.36),
-(379,147,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'2BZSVSCC',1787789419.416669,0.94),
-(380,148,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',1,'BM9HH1C2',1787789482.719385,1.10),
-(381,149,'HardFail',NULL,'550-5.1.1 The email account that you tried to reach does not exist. Please try\n550-5.1.1 double-checking the recipient\'s email address for typos or\n550-5.1.1 unnecessary spaces. For more information, go to\n550 5.1.1  https://support.google.com/mail/?','Permanent SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'OBW9SBSV',1787789550.224895,0.07),
-(382,150,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'XVV5LGIH',1787789602.038526,0.11),
-(383,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta7.am0.yahoodns.net)',0,'ZIBFN6SE',1787789664.289962,0.17),
-(384,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'MEH0QKM5',1787789725.680661,0.56),
-(385,153,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'OYMHRRMZ',1787789781.555106,0.51),
-(386,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta7.am0.yahoodns.net)',0,'0YPBLTSP',1787789843.298506,0.11),
-(387,155,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'PZU495AR',1787789903.528439,0.22),
-(388,150,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'FATJDJWJ',1787789935.196948,0.11),
-(389,156,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'2QP5TDSZ',1787789966.376741,0.27),
-(390,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta5.am0.yahoodns.net)',0,'9IZJWR7O',1787789997.563152,0.16),
-(391,157,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',0,'UD9KLLIG',1787790024.257155,0.12),
-(392,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'KB2XH4PF',1787790058.339736,0.61),
-(393,158,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'RIBWBBT5',1787790084.951802,0.13),
-(394,153,'Sent',NULL,'250 2.0.0 OK  1787790115 ffacd0b85a97d-482e290bbe1si4359526f8f.485 - gsmtp','Message for bladur1000@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'E8AXY7FX',1787790115.960666,0.37),
-(395,159,'Sent',NULL,'250 2.0.0 OK  1787790146 5b1f17b1804b1-49b4cdaca05si5861425e9.12 - gsmtp','Message for bobpayments@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'MQRMYENK',1787790146.538781,0.51),
-(396,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'GXPRVUQN',1787790178.293459,0.19),
-(397,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'DOUFMV59',1787790208.468525,0.12),
-(398,155,'Sent',NULL,'250 2.0.0 OK  1787790234 ffacd0b85a97d-482e290e298si4771971f8f.495 - gsmtp','Message for bleliot02@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'1JI9VAA3',1787790234.928911,0.36),
-(399,161,'Sent',NULL,'250 2.6.0 <3c81961d-762e-9a9b-0634-de213268bf4e@mg.maileff2.click> [InternalId=43838731197264, Hostname=VI0PR02MB11041.eurprd02.prod.outlook.com] 10430 bytes in 0.229, 44.430 KB/sec Queued mail for delivery -> 250 2.1.5','Message for bodenero1@hotmail.co.uk accepted by 52.101.73.23:25 (eur.olc.protection.outlook.com)',1,'IOIKLXJD',1787790266.759615,0.92),
-(400,156,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'UTYNLOUD',1787790298.678903,0.18),
-(401,162,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.248853,0.14),
-(402,150,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.354299,0.00),
-(403,157,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.76:25 (mta5.am0.yahoodns.net)',0,'UY5RX2YA',1787790330.415881,0.00),
-(404,163,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.015692,0.13),
-(405,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.103713,0.00),
-(406,158,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'ID9ERAR1',1787790392.237529,0.01),
-(407,164,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'DS0H5DHT',1787790449.421735,0.15),
-(408,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'HN42ALXH',1787790480.631615,0.52),
-(409,165,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'RJWPYZJK',1787790508.378230,0.39),
-(410,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta7.am0.yahoodns.net)',0,'GO06MQBQ',1787790540.062826,0.12),
-(411,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',0,'MFRDPHM3',1787790571.390834,0.10),
-(412,154,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.73:25 (mta5.am0.yahoodns.net)',0,'MFRDPHM3',1787790571.449035,0.00),
-(413,167,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'G77IOCMZ',1787790634.221844,0.99),
-(414,162,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'G77IOCMZ',1787790635.571531,0.92),
-(415,168,'Sent',NULL,'250 2.0.0 OK  1787790692 ffacd0b85a97d-482e27884acsi4574112f8f.79 - gsmtp','Message for bradmjns103@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'AJBFLEPB',1787790692.384443,0.33),
-(416,156,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',1,'TF32EDV7',1787790719.803787,0.82),
-(417,163,'Sent',NULL,'250 ok dirdel','Message for bon2venture@yahoo.com accepted by 67.195.204.77:25 (mta7.am0.yahoodns.net)',1,'XRFV7FKN',1787790726.852108,2.27),
-(418,157,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.77:25 (mta7.am0.yahoodns.net)',1,'XRFV7FKN',1787790727.848090,0.87),
-(419,169,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',1,'TEQPLY1D',1787790752.454319,0.93),
-(420,164,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',1,'TEQPLY1D',1787790753.692981,0.95),
-(421,158,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta7.am0.yahoodns.net)',1,'BQMEUERD',1787790816.208445,1.14),
-(422,170,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.111:25 (mta7.am0.yahoodns.net)',1,'BQMEUERD',1787790817.534361,1.11),
-(423,165,'Sent',NULL,'250 2.0.0 OK  1787790840 ffacd0b85a97d-482e28e9068si4514900f8f.275 - gsmtp','Message for box.webmail2@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'RODXFAUH',1787790840.549547,0.51),
-(424,150,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.91:25 (mta7.am0.yahoodns.net)',1,'X7CWUZUU',1787790870.326720,0.99),
-(425,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta5.am0.yahoodns.net)',0,'7IB90NVY',1787790871.939219,0.10),
-(426,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'UM4ZXNKU',1787790903.964474,0.20),
-(427,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'UM4ZXNKU',1787790904.160423,0.00),
-(428,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.111:25 (mta6.am0.yahoodns.net)',0,'H2TLFZZY',1787790935.947382,0.16),
-(429,160,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.111:25 (mta6.am0.yahoodns.net)',0,'H2TLFZZY',1787790936.110951,0.00),
-(430,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'WVZVWUCQ',1787790993.739629,0.15),
-(431,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'2TBHD4JB',1787791018.142736,0.39),
-(432,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'FP4H7FYI',1787791055.131263,0.15),
-(433,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta6.am0.yahoodns.net)',0,'XHCSCWAU',1787791111.055927,0.11),
-(434,175,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'QDDETWQL',1787791116.567789,0.36),
-(435,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'35OK7YAG',1787791177.728955,0.11),
-(436,171,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.72:25 (mta6.am0.yahoodns.net)',0,'35OK7YAG',1787791177.855402,0.00),
-(437,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'HGAUHANU',1787791269.735563,0.11),
-(438,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'CTI5FHI5',1787791326.337346,0.11),
-(439,173,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'CTI5FHI5',1787791326.445212,0.01),
-(440,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'ZIFMN2EK',1787791388.003965,0.18),
-(441,175,'Sent',NULL,'250 2.0.0 OK  1787791448 ffacd0b85a97d-482e28f2416si4712495f8f.316 - gsmtp','Message for bvudzi.jongwe@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'UJ6LMBGA',1787791448.910185,0.43),
-(442,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',0,'V2BJTPO7',1787791475.552142,0.18),
-(443,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta7.am0.yahoodns.net)',0,'HQAPWP9I',1787791511.143292,0.12),
-(444,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.91:25 (mta5.am0.yahoodns.net)',0,'JYWFM8RA',1787791598.834871,0.13),
-(445,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',0,'7CUH8OII',1787791598.930232,0.15),
-(446,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta5.am0.yahoodns.net)',0,'YOKIVI18',1787791691.380179,0.16),
-(447,152,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',0,'KI6PI7KL',1787791711.048303,0.42),
-(448,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.77:25 (mta6.am0.yahoodns.net)',0,'LRGKV57U',1787791747.645612,0.16),
-(449,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'KDCIU4FH',1787791803.988551,0.17),
-(450,174,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'KDCIU4FH',1787791804.227341,0.00),
-(451,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'DAFJ8GOH',1787791865.224427,0.13),
-(452,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',0,'BG3I31TD',1787791932.408094,0.10),
-(453,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta6.am0.yahoodns.net)',0,'TIMXKP0J',1787792139.700124,0.10),
-(454,160,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.74:25 (mta6.am0.yahoodns.net)',0,'TIMXKP0J',1787792139.833934,0.00),
-(455,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'KBJJHD6U',1787792231.851026,0.11),
-(456,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta5.am0.yahoodns.net)',0,'N8DZCYGB',1787792288.472816,0.15),
-(457,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta6.am0.yahoodns.net)',0,'FTUQAA4T',1787792344.376424,0.12),
-(458,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'PCJBCXBX',1787792472.414046,0.10),
-(459,151,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.79:25 (mta7.am0.yahoodns.net)',0,'PCJBCXBX',1787792472.476545,0.00),
-(460,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'DY6ZHX09',1787792558.916497,0.11),
-(461,152,'Sent',NULL,'250 2.0.0 OK  1787792611 5b1f17b1804b1-49b4a09ea20si5806095e9.2 - gsmtp','Message for blacks399@gmail.com accepted by 2a00:1450:4001:c21::1a:25 (gmail-smtp-in.l.google.com)',1,'DR4SWY7F',1787792611.125543,0.87),
-(462,154,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.91:25 (mta6.am0.yahoodns.net)',0,'DSNV8SYA',1787792691.401975,0.14),
-(463,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',0,'PBAK4HYI',1787792829.227507,0.10),
-(464,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta7.am0.yahoodns.net)',0,'UQXAOZIA',1787792921.352246,0.11),
-(465,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta6.am0.yahoodns.net)',0,'WBNXP5K7',1787792978.362274,0.15),
-(466,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'E9WMAXLP',1787793027.197313,0.10),
-(467,174,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'E9WMAXLP',1787793027.491542,0.00),
-(468,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.73:25 (mta7.am0.yahoodns.net)',0,'STT4EXVI',1787793166.035117,0.11),
-(469,166,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.106:25 (mta6.am0.yahoodns.net)',0,'RJZDOT57',1787793446.974332,0.16),
-(470,151,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.75:25 (mta5.am0.yahoodns.net)',0,'M5C7AGAJ',1787793617.908785,0.14),
-(471,171,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.72:25 (mta7.am0.yahoodns.net)',0,'EDVU47YK',1787793717.342040,0.10),
-(472,172,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 98.136.96.74:25 (mta6.am0.yahoodns.net)',0,'GUXGKJ9G',1787793809.530479,0.12),
-(473,154,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 98.136.96.74:25 (mta6.am0.yahoodns.net)',0,'GUXGKJ9G',1787793809.646431,0.00),
-(474,173,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta6.am0.yahoodns.net)',0,'TV5IPWUG',1787793866.257021,0.10),
-(475,174,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.110:25 (mta6.am0.yahoodns.net)',0,'HIQTXXZA',1787793918.522785,0.15),
-(476,176,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.204.77:25 (mta5.am0.yahoodns.net)',0,'GNV0UBJP',1787794055.045254,0.11),
-(477,160,'SoftFail',NULL,'421 4.7.0 [TSS04] Messages from 169.58.100.196 temporarily deferred due to unexpected volume or user complaints - 4.16.55.1; see https://postmaster.yahooinc.com/error-codes','Temporary SMTP delivery error when sending to 67.195.228.94:25 (mta7.am0.yahoodns.net)',0,'RYNWZGDG',1787794172.638713,0.15),
-(478,166,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.73:25 (mta5.am0.yahoodns.net)',1,'KOSL8QGW',1787794593.250524,0.95),
-(479,171,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta7.am0.yahoodns.net)',1,'Q5F6GLBG',1787794864.576340,0.94),
-(480,172,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',1,'SBUJCCLI',1787794957.903552,1.10),
-(481,173,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta5.am0.yahoodns.net)',1,'XRCCVAWO',1787795014.200082,1.11),
-(482,174,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.110:25 (mta7.am0.yahoodns.net)',1,'XYO7CPC8',1787795066.421823,1.13),
-(483,151,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.109:25 (mta6.am0.yahoodns.net)',1,'DYBPUAUT',1787795097.489161,1.10),
-(484,176,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.228.106:25 (mta7.am0.yahoodns.net)',1,'K2YJBQQG',1787795200.336443,1.10),
-(485,154,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.79:25 (mta6.am0.yahoodns.net)',1,'FNEWYYDV',1787795291.342432,0.79),
-(486,160,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 98.136.96.76:25 (mta6.am0.yahoodns.net)',1,'4NTCVI6Q',1787795652.984078,0.95),
 (488,177,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.79:25 (mta5.am0.yahoodns.net)',1,'OIBJRSBC',1787875216.598774,0.86),
 (489,178,'Sent',NULL,'250 2.6.0 <b201d974-ef02-1474-97dd-ae5c92f1d850@mg.maileff.click> [InternalId=78469052498394, Hostname=DU0PR03MB8576.eurprd03.prod.outlook.com] 10394 bytes in 0.146, 69.382 KB/sec Queued mail for delivery -> 250 2.1.5','Message for canievabfree@hotmail.com accepted by 52.101.68.26:25 (hotmail-com.olc.protection.outlook.com)',1,'JSF4Y8ZZ',1787875273.539856,0.50),
 (490,179,'HardFail',NULL,'552 1 Requested mail action aborted, mailbox not found','Permanent SMTP delivery error when sending to 67.195.204.74:25 (mta7.am0.yahoodns.net)',1,'UIB5AT6I',1787875335.469883,0.88),
@@ -39417,7 +39299,13 @@ INSERT INTO `deliveries` VALUES
 (1190,637,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 52.101.68.11:25 (hotmail-com.olc.protection.outlook.com)',0,'LKPVGN5R',1792891767.828574,0.00),
 (1191,636,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.50.9:25 (hotmail-com.olc.protection.outlook.com)',0,'RK32C0HV',1792892656.883660,0.15),
 (1192,637,'SoftFail',NULL,'SMTPClient::Endpoint::SMTPSessionNotStartedError','An error occurred while sending the message to 52.101.50.9:25 (hotmail-com.olc.protection.outlook.com)',0,'RK32C0HV',1792892657.023470,0.00),
-(1193,637,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.42.163:25 (hotmail-com.olc.protection.outlook.com)',0,'EJCVJDMJ',1792893805.250377,0.15);
+(1193,637,'HardFail',NULL,'550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin','Permanent SMTP delivery error when sending to 52.101.42.163:25 (hotmail-com.olc.protection.outlook.com)',0,'EJCVJDMJ',1792893805.250377,0.15),
+(1194,646,'Sent',NULL,'250 2.0.0 OK  1793020141 ffacd0b85a97d-48e3ece9464si14801649f8f.179 - gsmtp','Message for davidstrong035@gmail.com accepted by 142.251.127.27:25 (gmail-smtp-in.l.google.com)',1,'EQJEIJO7',1793020141.662408,0.65),
+(1195,647,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'BF9JIOSD',1793020433.978170,0.54),
+(1196,648,'Sent',NULL,'250 2.0.0 OK  1793020664 ffacd0b85a97d-48e3ecdbef9si14095521f8f.58 - gsmtp','Message for dedon4christ5@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'TFKXG3ZA',1793020664.150896,0.32),
+(1197,649,'Sent',NULL,'250 ok dirdel','Message for dedon4christ5@yahoo.com accepted by 98.136.96.76:25 (mta5.am0.yahoodns.net)',1,'QGWPWGVK',1793020667.463697,1.75),
+(1198,647,'SoftFail',NULL,'421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\n421-4.7.28 more information, go to\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat','Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',0,'LE5LFC9I',1793020765.515878,0.40),
+(1199,647,'Sent',NULL,'250 2.0.0 OK  1793021199 ffacd0b85a97d-48e3ed020e5si14532068f8f.296 - gsmtp','Message for djeffssource@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)',1,'2Q3RWVXB',1793021199.374968,0.48);
 /*!40000 ALTER TABLE `deliveries` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -39487,25 +39375,25 @@ INSERT INTO `live_stats` VALUES
 ('outgoing',5,4,1792767935.036499),
 ('outgoing',6,2,1792890361.930575),
 ('outgoing',7,3,1792400863.627352),
-('outgoing',8,6,1792890539.399215),
+('outgoing',8,1,1793020110.709869),
 ('outgoing',9,1,1792764553.748037),
 ('outgoing',10,1,1792804209.800876),
 ('outgoing',11,2,1792401103.579326),
 ('outgoing',12,1,1792887129.555124),
-('outgoing',13,1,1792890782.233515),
+('outgoing',13,1,1793020421.908077),
 ('outgoing',14,7,1792401284.967046),
 ('outgoing',15,2,1792401342.772739),
 ('outgoing',16,1,1792887370.374902),
-('outgoing',17,4,1792891078.772776),
+('outgoing',17,2,1793020664.687056),
 ('outgoing',18,3,1792401526.153922),
-('outgoing',19,4,1792401584.940101),
+('outgoing',19,1,1793020764.858631),
 ('outgoing',20,1,1792891230.881112),
 ('outgoing',21,4,1792801317.286847),
 ('outgoing',22,1,1792768925.942216),
 ('outgoing',23,2,1792401824.099381),
 ('outgoing',24,1,1792887852.175562),
 ('outgoing',25,1,1792801553.320025),
-('outgoing',26,4,1792401976.594440),
+('outgoing',26,1,1793021187.419124),
 ('outgoing',27,1,1792283261.540210),
 ('outgoing',28,1,1792888093.860677),
 ('outgoing',29,3,1792891767.820267),
@@ -39633,7 +39521,7 @@ CREATE TABLE `messages` (
   KEY `on_mail_from` (`mail_from`(12),`timestamp`) USING BTREE,
   KEY `on_raw_table` (`raw_table`(14)) USING BTREE,
   KEY `on_status` (`status`(8)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=646 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=650 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39644,46 +39532,6 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `messages` WRITE;
 /*!40000 ALTER TABLE `messages` DISABLE KEYS */;
 INSERT INTO `messages` VALUES
-(137,'HEf4S0UAitMshYIZ','outgoing','berttylarus@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','b096a643-2fa4-77f4-502d-a0947ad2527f@mg.maileff2.click',1787788811.352300,NULL,4,1,'HardFail',0,NULL,1787788817.797911,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(138,'U5wlcJZashOYNd4X','outgoing','best4dguy10@yahoo.co.uk','microsoft-team@mg.maileff.click','Please Review This','97986986-ca91-dd2f-e053-de1eb2c52a73@mg.maileff.click',1787788871.714907,NULL,2,1,'HardFail',0,NULL,1787788875.144811,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(139,'l3rOGWakCJelurw8','outgoing','bestsellers46@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','d8634af7-ea1b-f1c7-264f-6dbc726b7df3@mg.maileff2.click',1787788932.109404,NULL,4,1,'Sent',0,NULL,1787788944.742878,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(140,'T6Te65QyMyGnS8Q1','outgoing','betterweek@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','d411ef08-8bba-0f30-8062-60e759db5107@mg.maileff.click',1787788992.604815,NULL,2,1,'HardFail',0,NULL,1787788997.502942,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(141,'8bAJBiJqOafePc2j','outgoing','biddy80@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','ea4f1b0e-9e99-7543-3b6b-8f513fa7b0bd@mg.maileff2.click',1787789053.136625,NULL,4,1,'HardFail',0,NULL,1787789055.928502,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(142,'WF8ywE8h8yA3FsCB','outgoing','bigantis2@yahoo.co.uk','microsoft-team@mg.maileff.click','Please Review This','46060e6c-d5a2-3dd8-69d7-58d5e1529126@mg.maileff.click',1787789113.706404,NULL,2,1,'HardFail',0,NULL,1787789118.470644,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(143,'OOf7keYpHh8O61IG','outgoing','bigbenten10@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','8a8056b6-fe80-9d50-97ff-c3965d189acc@mg.maileff2.click',1787789174.252370,NULL,4,1,'HardFail',0,NULL,1787789180.985513,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(144,'G0XlJQyW75Y0HGft','outgoing','bigboytuta@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','0c3118f7-dee6-7141-08d9-a67c7c6468d5@mg.maileff.click',1787789234.842535,NULL,2,1,'HardFail',0,NULL,1787789238.825798,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(145,'9gVc5mdo8TzY4tvU','outgoing','billconnally1960@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','7ddf0efe-6fcf-31b2-ee9c-fd3c33be77f2@mg.maileff2.click',1787789295.507357,NULL,4,1,'Sent',0,NULL,1787789297.991997,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(146,'BacvLMgZNkX8hacO','outgoing','billrogerson011@hotmail.com','microsoft-team@mg.maileff.click','Please Review This','82f40d3f-54ce-b738-9d4f-816c88261bd3@mg.maileff.click',1787789356.239140,NULL,2,1,'Sent',0,NULL,1787789361.508318,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(147,'Dt4nhHUNwfY82YAz','outgoing','binoblize3@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','d974d8a4-098b-021a-20c4-b69a751d3d4c@mg.maileff2.click',1787789416.859927,NULL,4,1,'HardFail',0,NULL,1787789419.416669,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(148,'9PQVzi1oNnFJyYlc','outgoing','bintuah@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','fcc4b47e-cb23-655f-3c9a-41956bd63a6b@mg.maileff.click',1787789477.397434,NULL,2,1,'HardFail',0,NULL,1787789482.719385,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(149,'m3bCdsGBR9vzBB9L','outgoing','biol.lolly@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f7634ac0-a6f7-d4c7-bc1d-a994f1e2dc81@mg.maileff2.click',1787789538.179299,NULL,4,1,'HardFail',0,NULL,1787789550.224895,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(150,'AUCfmGNwET9Q6rft','outgoing','bislolink2011@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','8e75f227-d820-8845-8b23-9c2979103b70@mg.maileff.click',1787789598.722013,NULL,2,1,'HardFail',0,NULL,1787790870.326720,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(151,'bErSDFSgyijcKfwK','outgoing','bizzboy4real@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','bedfda9b-e7e7-2f52-719e-3f1e329c4a95@mg.maileff2.click',1787789659.294255,NULL,4,1,'HardFail',0,NULL,1787795097.489161,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(152,'doeKWqL3pLrEseJq','outgoing','blacks399@gmail.com','microsoft-team@mg.maileff.click','Please Review This','0a9e209a-7787-7f3b-3828-153352dcce7c@mg.maileff.click',1787789719.924367,NULL,2,1,'Sent',0,NULL,1787792611.125543,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(153,'hu1htAxWJfO416vZ','outgoing','bladur1000@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','a6c62f6d-981e-cf1f-4719-c17b5d65ee4d@mg.maileff2.click',1787789780.373560,NULL,4,1,'Sent',0,NULL,1787790115.960666,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(154,'Ao7xULobkYLSPns9','outgoing','blakegeorge709@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','a8dbea87-b748-ddb4-5dea-d197080ec44e@mg.maileff.click',1787789841.112886,NULL,2,1,'HardFail',0,NULL,1787795291.342432,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(155,'M9737uvp4EX9uujz','outgoing','bleliot02@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','07b975fc-d27b-7791-c46a-bf404f81c560@mg.maileff2.click',1787789901.571844,NULL,4,1,'Sent',0,NULL,1787790234.928911,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(156,'kVcB4OfhGSdapU6B','outgoing','blingjoes0@yahoo.ca','microsoft-team@mg.maileff.click','Please Review This','8b1fa269-aabf-9f26-245f-c12b0903973d@mg.maileff.click',1787789962.047445,NULL,2,1,'HardFail',0,NULL,1787790719.803787,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(157,'yNzcWGKbJJvXBxnJ','outgoing','bobby.cory@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','0d3e0565-5641-f6cb-3711-fd2d0f35da7d@mg.maileff2.click',1787790022.562645,NULL,4,1,'HardFail',0,NULL,1787790727.848090,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(158,'Pg5JqtbvP2USE5o1','outgoing','bobklinton@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','cfe5e081-1597-fa1b-5769-07c611b62d70@mg.maileff.click',1787790083.073987,NULL,2,1,'HardFail',0,NULL,1787790816.208445,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(159,'bx7KOoCwA8ufkBfX','outgoing','bobpayments@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f77dcd65-10a3-44d4-e0e6-50dc1949b9a8@mg.maileff2.click',1787790143.736270,NULL,4,1,'Sent',0,NULL,1787790146.538781,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(160,'9X4FPgOoxXTrhtiB','outgoing','bobwayla_247@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','2c11e6d2-1626-b738-f080-36157b0b6b9d@mg.maileff.click',1787790204.272459,NULL,2,1,'HardFail',0,NULL,1787795652.984078,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(161,'KLKvn4QDFzg9SHlc','outgoing','bodenero1@hotmail.co.uk','microsoft-team@mg.maileff2.click','Please Review This','3c81961d-762e-9a9b-0634-de213268bf4e@mg.maileff2.click',1787790264.931557,NULL,4,1,'Sent',0,NULL,1787790266.759615,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(162,'SDMUntcUyHsQxx9y','outgoing','bodieki@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','9686f0d3-1a35-6615-593b-ad045ceda4b5@mg.maileff.click',1787790325.630876,NULL,2,1,'HardFail',0,NULL,1787790635.571531,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(163,'qWXoeGkz6musQa3r','outgoing','bon2venture@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','4da84061-7e50-cda6-6334-bfe18347211a@mg.maileff2.click',1787790386.205144,NULL,4,1,'Sent',0,NULL,1787790726.852108,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(164,'bVfvy2yew25JKG2E','outgoing','bonniecare40@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','e4304190-ec3d-7afa-2262-cfaeb0486248@mg.maileff.click',1787790446.939177,NULL,2,1,'HardFail',0,NULL,1787790753.692981,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(165,'97ysHtIiq752IQ7G','outgoing','box.webmail2@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','04ed0a4a-21ea-60e6-cbc5-d1504433fa21@mg.maileff2.click',1787790507.642147,NULL,4,1,'Sent',0,NULL,1787790840.549547,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(166,'RlYjfyMkQyCCeFMW','outgoing','box.webmail3@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','a34889f5-4fce-46dd-f6dc-edc6c3250755@mg.maileff.click',1787790568.152640,NULL,2,1,'HardFail',0,NULL,1787794593.250524,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(167,'2KdIpiD0dxMWQzCz','outgoing','boyinni16@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','90678513-6bb9-c6c2-91fd-c5bfd53e3899@mg.maileff2.click',1787790628.646465,NULL,4,1,'HardFail',0,NULL,1787790634.221844,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(168,'1dk2xcOtgxlGFGSM','outgoing','bradmjns103@gmail.com','microsoft-team@mg.maileff.click','Please Review This','aba2feca-422c-4546-e6db-15c2a7a3b617@mg.maileff.click',1787790689.306627,NULL,2,1,'Sent',0,NULL,1787790692.384443,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(169,'0zj3nFV7DDoqvrrc','outgoing','bran_brady@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','e1f7e9f2-8c69-1ca2-0d55-c82430ecba53@mg.maileff2.click',1787790749.759563,NULL,4,1,'HardFail',0,NULL,1787790752.454319,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(170,'hkYpc0dymTc2qGx6','outgoing','brian_willis2006@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','12cd6409-9895-2a77-cb6b-6a92fe42b272@mg.maileff.click',1787790810.209634,NULL,2,1,'HardFail',0,NULL,1787790817.534361,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(171,'ENcD31BOA1ELPc6d','outgoing','brianrussell269@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','0929262b-90f1-139c-2f6c-8ff65061d625@mg.maileff2.click',1787790870.698312,NULL,4,1,'HardFail',0,NULL,1787794864.576340,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(172,'GwcKm1898ld6eThI','outgoing','brochu_james@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','bfd1375c-42ea-9f58-bf3f-fb49a1a7fbd4@mg.maileff.click',1787790931.251465,NULL,2,1,'HardFail',0,NULL,1787794957.903552,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(173,'k0DEPs9PHBXWm5SU','outgoing','brownfe741@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','6c3fcd5a-6bf1-8154-b8a1-04fc5a720b68@mg.maileff2.click',1787790991.772523,NULL,4,1,'HardFail',0,NULL,1787795014.200082,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(174,'0stFqJSESGh3Q2u0','outgoing','buxayor@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','c84efee5-579b-781d-1813-f5b3747048df@mg.maileff.click',1787791052.306335,NULL,2,1,'HardFail',0,NULL,1787795066.421823,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(175,'9MMVgCaJJ3apnyfU','outgoing','bvudzi.jongwe@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','f5430d2a-4e66-2fc2-3efc-fd7a02fd3e7f@mg.maileff2.click',1787791112.762771,NULL,4,1,'Sent',0,NULL,1787791448.910185,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(176,'efPwby1gUuhMGF5x','outgoing','c.cvernon@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','2e1a1b8f-e81a-1b55-725d-f03c773182d3@mg.maileff.click',1787791173.230845,NULL,2,1,'HardFail',0,NULL,1787795200.336443,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (177,'NRxQvmdzsVlEi6hV','outgoing','calvinsmith002@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','62d67530-114f-fc67-7db2-1c107f11ad46@mg.maileff2.click',1787875212.406226,NULL,4,1,'HardFail',0,NULL,1787875216.598774,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (178,'CLYNscFc93QSzJsh','outgoing','canievabfree@hotmail.com','microsoft-team@mg.maileff.click','Please Review This','b201d974-ef02-1474-97dd-ae5c92f1d850@mg.maileff.click',1787875272.328634,NULL,2,1,'Sent',0,NULL,1787875273.539856,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (179,'Ld4k9T3CwYSnhofa','outgoing','captmikehfn@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','01a08bdb-4a9c-9222-594b-d6ea70592f46@mg.maileff2.click',1787875332.883503,NULL,4,1,'HardFail',0,NULL,1787875335.469883,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
@@ -39723,18 +39571,18 @@ INSERT INTO `messages` VALUES
 (213,'gKlASHLPQOBkhD2O','outgoing','collizo82@yahoo.com','microsoft-team@mg.maileff2.click','Please Review This','697d85a3-a64a-2d2c-3c19-2e3561b8dfac@mg.maileff2.click',1787877391.528377,NULL,4,1,'HardFail',0,NULL,1787881385.977368,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (214,'elrNJ9dtS21JvBYr','outgoing','company073@yahoo.com','microsoft-team@mg.maileff.click','Please Review This','6b813e90-1fd4-ea42-660a-29f11f40d2c3@mg.maileff.click',1787877452.147209,NULL,2,1,'HardFail',0,NULL,1787881469.079968,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (215,'jF5hL8GOTGrRYdkr','outgoing','contactcodeoffice@gmail.com','microsoft-team@mg.maileff2.click','Please Review This','b139c0c0-9c65-03b3-2b5d-95674b0169ea@mg.maileff2.click',1787877512.640456,NULL,4,1,'HardFail',0,NULL,1787877513.710543,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(216,'44nywDux7udFFhSN','outgoing','cookingcable@gmail.com','maileff.team@mg.maileff.click','Review Your Account','f68b2633-7542-6c87-73cd-5a7d9645248e@mg.maileff.click',1790327421.623589,NULL,2,1,'HardFail',0,'739',1790327455.745931,'raw-2026-09-25',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(217,'h6qJaIg6sot9065g','outgoing','coolbomber01@aol.com','maileff.team@mg.maileff.click','Review Your Account','9ba77122-9e0d-c0b9-66a2-82368653672c@mg.maileff.click',1790327481.920351,NULL,2,1,'HardFail',0,'737',1790327487.406798,'raw-2026-09-25',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(218,'lVQYjWxpRKTo4Ry3','outgoing','coozyp@msn.com','maileff.team@mg.maileff.click','Review Your Account','83d93a4a-9a8e-06be-2784-3182e83a90fe@mg.maileff.click',1790327542.837476,NULL,2,1,'Sent',0,'731',1790327546.083837,'raw-2026-09-25',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(219,'pgF8RXUbCBknwpQD','outgoing','djeffssource@gmail.com','peoples.team@mg.maileff.click','Review Your Account','56bfae14-0324-8f57-a5ac-826ae3b2e8d3@mg.maileff.click',1790329475.038505,NULL,2,1,'Sent',0,'733',1790329488.769646,'raw-2026-09-25',8,7,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(220,'5m2ZDgc4FU7faS68','outgoing','dedon4christ5@yahoo.com','peoples.team@mg.maileff.click','Review Your Account','04b9025d-ece9-fad3-1483-616e05279a1b@mg.maileff.click',1790329535.903656,NULL,2,1,'Sent',0,'734',1790329553.147740,'raw-2026-09-25',10,9,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(221,'saM7n0SFwUWGXYd1','outgoing','dedon4christ5@gmail.com','peoples.team@mg.maileff.click','Review Your Account','35500699-f8fa-4555-680b-cccce9a4ae9d@mg.maileff.click',1790329597.273803,NULL,2,1,'Sent',0,'734',1790329599.394617,'raw-2026-09-25',12,11,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(222,'njmXS3P4FhaMNod0','outgoing','djeffssource@gmail.com','peoples.team@mg.maileff.click','Review Your Account','91169168-2bbb-42ac-6719-4c2e2d8f16b2@mg.maileff.click',1790331659.442859,NULL,2,1,'Sent',0,'733',1790332002.794421,'raw-2026-09-25',14,13,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(223,'o2y8t6xe69Va5E3f','outgoing','dedon4christ5@yahoo.com','peoples.team@mg.maileff.click','Review Your Account','6a4ff722-a2f6-0c0c-2672-ae812a54f0ef@mg.maileff.click',1790331719.974940,NULL,2,1,'Sent',0,'734',1790331723.984412,'raw-2026-09-25',16,15,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(224,'Rmq47RMzSgn5u41I','outgoing','dedon4christ5@gmail.com','peoples.team@mg.maileff2.click','Review Your Account','d3460bf5-6e28-f5da-eb8a-e80ab2114a55@mg.maileff2.click',1790331782.004332,NULL,4,1,'Sent',0,'736',1790332119.373883,'raw-2026-09-25',18,17,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(225,'nmNGLpGt9DJiZfYJ','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Review Your Account','1bdf2f58-5d6d-9858-8691-e5c04e85d3b2@mg.maileff2.click',1790334400.511566,NULL,4,1,'Sent',0,'741',1790334433.575237,'raw-2026-09-25',20,19,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(226,'bSmWTvBxWBhSX5Qk','outgoing','dedon4christ5@yahoo.com','maileff.team@mg.maileff2.click','Review Your Account','9351e40a-dcc1-15c6-3964-332d948877e4@mg.maileff2.click',1790334460.591389,NULL,4,1,'Sent',0,'742',1790334463.938633,'raw-2026-09-25',22,21,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(227,'ITQs9uhO2GFDw8gG','outgoing','dedon4christ5@gmail.com','maileff.team@mg.maileff.click','Review Your Account','c0937ad8-4cf9-16ca-5e49-0d6cd28f1182@mg.maileff.click',1790334521.741217,NULL,2,1,'Sent',0,'740',1790334868.890456,'raw-2026-09-25',24,23,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(216,'44nywDux7udFFhSN','outgoing','cookingcable@gmail.com','maileff.team@mg.maileff.click','Review Your Account','f68b2633-7542-6c87-73cd-5a7d9645248e@mg.maileff.click',1790327421.623589,NULL,2,1,'HardFail',0,NULL,1790327455.745931,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(217,'h6qJaIg6sot9065g','outgoing','coolbomber01@aol.com','maileff.team@mg.maileff.click','Review Your Account','9ba77122-9e0d-c0b9-66a2-82368653672c@mg.maileff.click',1790327481.920351,NULL,2,1,'HardFail',0,NULL,1790327487.406798,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(218,'lVQYjWxpRKTo4Ry3','outgoing','coozyp@msn.com','maileff.team@mg.maileff.click','Review Your Account','83d93a4a-9a8e-06be-2784-3182e83a90fe@mg.maileff.click',1790327542.837476,NULL,2,1,'Sent',0,NULL,1790327546.083837,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(219,'pgF8RXUbCBknwpQD','outgoing','djeffssource@gmail.com','peoples.team@mg.maileff.click','Review Your Account','56bfae14-0324-8f57-a5ac-826ae3b2e8d3@mg.maileff.click',1790329475.038505,NULL,2,1,'Sent',0,NULL,1790329488.769646,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(220,'5m2ZDgc4FU7faS68','outgoing','dedon4christ5@yahoo.com','peoples.team@mg.maileff.click','Review Your Account','04b9025d-ece9-fad3-1483-616e05279a1b@mg.maileff.click',1790329535.903656,NULL,2,1,'Sent',0,NULL,1790329553.147740,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(221,'saM7n0SFwUWGXYd1','outgoing','dedon4christ5@gmail.com','peoples.team@mg.maileff.click','Review Your Account','35500699-f8fa-4555-680b-cccce9a4ae9d@mg.maileff.click',1790329597.273803,NULL,2,1,'Sent',0,NULL,1790329599.394617,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(222,'njmXS3P4FhaMNod0','outgoing','djeffssource@gmail.com','peoples.team@mg.maileff.click','Review Your Account','91169168-2bbb-42ac-6719-4c2e2d8f16b2@mg.maileff.click',1790331659.442859,NULL,2,1,'Sent',0,NULL,1790332002.794421,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(223,'o2y8t6xe69Va5E3f','outgoing','dedon4christ5@yahoo.com','peoples.team@mg.maileff.click','Review Your Account','6a4ff722-a2f6-0c0c-2672-ae812a54f0ef@mg.maileff.click',1790331719.974940,NULL,2,1,'Sent',0,NULL,1790331723.984412,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(224,'Rmq47RMzSgn5u41I','outgoing','dedon4christ5@gmail.com','peoples.team@mg.maileff2.click','Review Your Account','d3460bf5-6e28-f5da-eb8a-e80ab2114a55@mg.maileff2.click',1790331782.004332,NULL,4,1,'Sent',0,NULL,1790332119.373883,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(225,'nmNGLpGt9DJiZfYJ','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Review Your Account','1bdf2f58-5d6d-9858-8691-e5c04e85d3b2@mg.maileff2.click',1790334400.511566,NULL,4,1,'Sent',0,NULL,1790334433.575237,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(226,'bSmWTvBxWBhSX5Qk','outgoing','dedon4christ5@yahoo.com','maileff.team@mg.maileff2.click','Review Your Account','9351e40a-dcc1-15c6-3964-332d948877e4@mg.maileff2.click',1790334460.591389,NULL,4,1,'Sent',0,NULL,1790334463.938633,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(227,'ITQs9uhO2GFDw8gG','outgoing','dedon4christ5@gmail.com','maileff.team@mg.maileff.click','Review Your Account','c0937ad8-4cf9-16ca-5e49-0d6cd28f1182@mg.maileff.click',1790334521.741217,NULL,2,1,'Sent',0,NULL,1790334868.890456,NULL,NULL,NULL,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (228,'w6n7EAMX76q62tHT','outgoing','djeffssource@gmail.com','arvest@mg.maileff2.click','Arvest: Federal Regulation Update','34c17d68-146e-4a69-a1eb-d98425939f65@mg.maileff2.click',1791914794.530484,NULL,4,1,'Sent',0,'6443',1791914826.255981,'raw-2026-10-13',2,1,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (229,'mELurw20uxC6OCzC','outgoing','dedon4christ5@yahoo.com','arvest@mg.maileff.click','Arvest: Federal Regulation Update','b73e3965-1064-8444-9b1c-777bd250ad76@mg.maileff.click',1791914855.164521,NULL,2,1,'Sent',0,'6442',1791914860.250816,'raw-2026-10-13',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (230,'CuWO0wernRbgh2hp','outgoing','dedon4christ5@gmail.com','arvest@mg.maileff2.click','Arvest: Federal Regulation Update','92dfdd0e-c971-712f-7c68-aa974df07006@mg.maileff2.click',1791914916.184645,NULL,4,1,'Sent',0,'6444',1791914929.859567,'raw-2026-10-13',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
@@ -40152,7 +40000,11 @@ INSERT INTO `messages` VALUES
 (642,'ejF1H9fg5HK4cRxy','outgoing','happychilligarden@hotmail.com','no-reply@mg.maileff.click','Arvest: Federal Regulation Update','0ccf5986-d5c9-8a80-c1ea-cd1445b049a6@mg.maileff.click',1792890030.653039,NULL,2,1,'HardFail',0,'6444',1792890033.160782,'raw-2026-10-25',94,93,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (643,'25N5kM1gAgJoT7Fx','outgoing','rcadamski@hotmail.com','no-reply@mg.maileff.click','Arvest: Federal Regulation Update','30dc47fa-2bd9-3d47-e91f-3ea5459d6db6@mg.maileff.click',1792890032.198763,NULL,2,1,'HardFail',0,'6436',1792890033.449079,'raw-2026-10-25',96,95,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
 (644,'JJJ1e5KZDUf0LnTT','outgoing','ebernhoft@hotmail.com','no-reply@mg.maileff.click','Arvest: Federal Regulation Update','9358c271-b008-156f-febf-c8a64e04b8c3@mg.maileff.click',1792890033.579132,NULL,2,1,'HardFail',0,'6436',1792890034.308934,'raw-2026-10-25',98,97,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
-(645,'muOAKZ9fyRxffZbd','outgoing','peteremmick@hotmail.com','no-reply@mg.maileff.click','Arvest: Federal Regulation Update','3268c082-5751-09bc-6255-0a31932f2340@mg.maileff.click',1792890034.764654,NULL,2,1,'HardFail',0,'6438',1792890040.667315,'raw-2026-10-25',100,99,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
+(645,'muOAKZ9fyRxffZbd','outgoing','peteremmick@hotmail.com','no-reply@mg.maileff.click','Arvest: Federal Regulation Update','3268c082-5751-09bc-6255-0a31932f2340@mg.maileff.click',1792890034.764654,NULL,2,1,'HardFail',0,'6438',1792890040.667315,'raw-2026-10-25',100,99,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(646,'wmaMaAKyho73AmaQ','outgoing','davidstrong035@gmail.com','test@mg.maileff.click','Test Message at October 26, 2026 13:08','127a9f71-a83b-4518-955e-7a37a8e209bd@rp.postal.maileff.space',1793020105.975621,NULL,2,NULL,'Sent',0,'932',1793020141.662408,'raw-2026-10-26',2,1,0,0,0.00,0,NULL,NULL,0,NULL,NULL,NULL,1,NULL,0,0,1,NULL,NULL),
+(647,'hhHft3aeCFtfsEAW','outgoing','djeffssource@gmail.com','maileff.team@mg.maileff2.click','Review Your Account','d1a49add-d3cc-8639-69db-bfea17490ebc@mg.maileff2.click',1793020421.082444,NULL,4,1,'Sent',0,'705',1793021199.374968,'raw-2026-10-26',4,3,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(648,'L593YxaSn9hceavr','outgoing','dedon4christ5@gmail.com','maileff.team@mg.maileff2.click','Review Your Account','48e89e9c-0ae2-43e0-1f9a-40fe66a18911@mg.maileff2.click',1793020663.133708,NULL,4,1,'Sent',0,'706',1793020664.150896,'raw-2026-10-26',6,5,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL),
+(649,'u7WbbzsqUtV2eHVG','outgoing','dedon4christ5@yahoo.com','maileff.team@mg.maileff.click','Review Your Account','0647b3ea-6675-2af8-ca90-29259228cf6e@mg.maileff.click',1793020664.353756,NULL,2,1,'Sent',0,'704',1793020667.463697,'raw-2026-10-26',8,7,0,0,0.00,0,NULL,0,0,NULL,NULL,NULL,NULL,NULL,0,0,1,NULL,NULL);
 /*!40000 ALTER TABLE `messages` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -40200,58 +40052,6 @@ INSERT INTO `migrations` VALUES
 (19),
 (20);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
-UNLOCK TABLES;
-COMMIT;
-SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
-
---
--- Table structure for table `raw-2026-09-25`
---
-
-DROP TABLE IF EXISTS `raw-2026-09-25`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8mb4 */;
-CREATE TABLE `raw-2026-09-25` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `data` longblob DEFAULT NULL,
-  `next` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `raw-2026-09-25`
---
-
-SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
-LOCK TABLES `raw-2026-09-25` WRITE;
-/*!40000 ALTER TABLE `raw-2026-09-25` DISABLE KEYS */;
-INSERT INTO `raw-2026-09-25` VALUES
-(1,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790327425;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=RuGPtvqmcpWPJdWAvJv3Xdz0NsT27tZXGQqJxOcSBsY8i3/7t2Cx2Ie4HrKy4XEJ49AMSgRM\r\n	9sYjDoWeonp9QzDJRXFzvEy590tifKud/uAkEvSN/oeKcjVLRFOg//J1dj3+kqgPZnNuee+W\r\n	/KH7RwAdI9imbXVKomBM5Vi1g7E=\r\nX-Postal-MsgID: 44nywDux7udFFhSN\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:10:21 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: cookingcable@gmail.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <f68b2633-7542-6c87-73cd-5a7d9645248e@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:10:20 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(2,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(3,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790327485;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=afdmwO5WEXfnofmwqi4BVstgtHH9aLYXBPua/m4FRCjKg4cVkZqGtotiOatj8ZZ/6jiQedE1\r\n	d4ExMUtcw9SBE8yLSNyZv6QlQlD8xRsqntdrr8CGL2SNQlTl7BioT/9GfpYrVD5vEQ3Imryk\r\n	jpKC8OJYOnrONCj2jqskRQN9cao=\r\nX-Postal-MsgID: h6qJaIg6sot9065g\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:11:21 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: coolbomber01@aol.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <9ba77122-9e0d-c0b9-66a2-82368653672c@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:11:21 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(4,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(5,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790327543;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Qy+14mRlcHeeMEhm5RrqhfkvAwA4haphZrJP/T2y3+/OXEOTwd0tXlFrb/l5csG0C+FdouzP\r\n	W00BNgnp/6XeN7XlntgYcBZXp7hokSYqSas/Dqr0kKmbvaz1xgd+AIDye4SlAqbyCXtak7Tb\r\n	hpCC/LAKucT/RoUuPsCtpaPTp7k=\r\nX-Postal-MsgID: lVQYjWxpRKTo4Ry3\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:12:22 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: coozyp@msn.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <83d93a4a-9a8e-06be-2784-3182e83a90fe@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:12:22 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(6,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(7,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790329476;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=PMeupRzygsgwom+9QW+4MjrjpKZxHG4DpvO81dZDCFbuU4zPShSgbVfwMKctdSLVkVu2uIJR\r\n	3TJuWZzeGK0CC/W7zvPbwz/Mv66WgobicFc1xdbsTt3RBj2xQOeSjSr4XUAlbKp4g5lIrhWL\r\n	PG0tihZkbSng2b8qv39vkgfAzHc=\r\nX-Postal-MsgID: pgF8RXUbCBknwpQD\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:44:34 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: djeffssource@gmail.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <56bfae14-0324-8f57-a5ac-826ae3b2e8d3@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:44:34 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(8,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(9,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790329539;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=vSng/t53RJYRtLF0eEyRVPUOjeKkdlckJs0nDWgdvDiAvxgF5niTYK95MSHN+R+1q/IlJ31o\r\n	bPlZQ6ZkEeXcgyQKxGDUJ/dBZ8SpIiV1zcw9hgzbDqXVk7LtbsUXZBJqYnvmEhiYUO3gR+lM\r\n	fI9f4oZPI9uMDcuGOKGU7DKpvX0=\r\nX-Postal-MsgID: 5m2ZDgc4FU7faS68\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:45:35 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@yahoo.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <04b9025d-ece9-fad3-1483-616e05279a1b@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:45:35 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(10,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(11,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790329598;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Y63sX5KCNHbGVFobt4Z1UCkGCsOBvh4aCnWaYl8WK6EsdOnpU3scgJgB73WFz8gg4POdmNiL\r\n	VG57dOCE7MDQG/lazsLyrnvIn0YP/5Dt1CtFKoT7Rv58KnRr7HWYMkY/kQUQYCnRg3zrCTId\r\n	M2WzxECPmceYlfynqK0xP16HQAw=\r\nX-Postal-MsgID: saM7n0SFwUWGXYd1\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 09:46:37 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@gmail.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <35500699-f8fa-4555-680b-cccce9a4ae9d@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 09:46:37 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(12,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(13,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790331660;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=JrealiPjzXYqXh4l1SOpExcKdoMnCnHVcW/OIm041rCrOSk1s+ID0bVTy41LC7CCYc0x8na7\r\n	RhoW7sNtZQo64eNranIuLTeKpC7Olsa966Y+qtFEHQ3JyrbO4PrCsnJyFnW9izMNLqPm6ZBK\r\n	eVJBJxCGntJi2/dMrMRECb7QSHI=\r\nX-Postal-MsgID: njmXS3P4FhaMNod0\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 10:20:59 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: djeffssource@gmail.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <91169168-2bbb-42ac-6719-4c2e2d8f16b2@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 10:20:59 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(14,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(15,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790331721;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=Vl3AIDNCFNTKZ+hk5zKSVLIrv9Hp4f5vrIx0kjKD+61LG2WRjVrj/cSfjqpZ7dBGe4WSEaBr\r\n	OSQfUjNcCO4gRmACfoLztYngGoirJznQpKi2aMWG/D4I/QPlcTfJ6b7Maar1md0m2W1M2/A8\r\n	0Yj4+BUXMmkR99dObYnncIXNQ8U=\r\nX-Postal-MsgID: o2y8t6xe69Va5E3f\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 10:21:59 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@yahoo.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <6a4ff722-a2f6-0c0c-2672-ae812a54f0ef@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 10:21:59 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(16,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(17,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1790331784;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=UBYbauKuGrshBSrw2OvLE/V822MhoMb3EKfqpKOGUb+UIGzzW8zvxx6bVALVnjrG89Pagfr3\r\n	DqJ5ypcPMTLXy/BsXcHh02Jpe1gZ0KbhPEDNml9vmBbhFgX3zjtGWmrpQNh1jCROU8Ffkam2\r\n	nMIQNkni7l5zqNYoaWWKOvZGygY=\r\nX-Postal-MsgID: Rmq47RMzSgn5u41I\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 10:23:01 -0000\r\nFrom: \"People\'s Team\" <peoples.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@gmail.com\r\nReply-To: dedon4@live.com\r\nSubject: Review Your Account\r\nMessage-ID: <d3460bf5-6e28-f5da-eb8a-e80ab2114a55@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 10:23:01 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(18,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(19,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1790334402;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=JRfPt8Km0MB8d1dhRr/rEIkfMIELIIvq/ySFipGf+pdv2l+cjlVagKFkpC21Z/+HCcLhK4SR\r\n	lP4hSxhzek+jIhz1BYNNsogwAigmn/3Gqvib4xLJ7EdNZsM++IWV+K62T+kiiMJNCDi30Md0\r\n	8/eV4z/zObShCoM4IGjdakxQkHU=\r\nX-Postal-MsgID: nmNGLpGt9DJiZfYJ\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 11:06:40 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: djeffssource@gmail.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <1bdf2f58-5d6d-9858-8691-e5c04e85d3b2@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 11:06:39 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(20,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(21,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1790334461;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=z38BuJOnbSDErjie/prBkrO9uJITQlDx5UAq/Y20uO6I8/1VOTUa4ru6ZiroDQzx9ahHyonu\r\n	DsgjjPSdIGufu9JqNmwc005MZNPa3Qs1tlIMCtYfClgy1pjtf5sT1/Ad7E3wRrJLapKk48z9\r\n	c1v6DviE7/G02cpoCV4vevMXAI4=\r\nX-Postal-MsgID: bSmWTvBxWBhSX5Qk\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 11:07:40 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@yahoo.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <9351e40a-dcc1-15c6-3964-332d948877e4@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 11:07:40 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(22,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
-(23,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1790334524;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:reply-to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=hSQxEs7nUrWgwlYow05Ke5D9wFtdrhxKI566o2cu4BdqkJS12ArVDpgCGAC9OoagFkoHfdpC\r\n	J4PQ1tJ1oPDZGiq6VAh2//eeJtb0epFumriPtP4MmngfaaOTs0nNz7ToWbadB6V0QcBkga6F\r\n	eiWowRjys7gW+dhJEjw6jEoIqPY=\r\nX-Postal-MsgID: ITQs9uhO2GFDw8gG\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Fri, 25 Sep 2026 11:08:41 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@gmail.com\r\nReply-To: davidstrong035@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <c0937ad8-4cf9-16ca-5e49-0d6cd28f1182@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Fri, 25 Sep 2026 11:08:41 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
-(24,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL);
-/*!40000 ALTER TABLE `raw-2026-09-25` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
@@ -41373,6 +41173,42 @@ COMMIT;
 SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
 
 --
+-- Table structure for table `raw-2026-10-26`
+--
+
+DROP TABLE IF EXISTS `raw-2026-10-26`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8mb4 */;
+CREATE TABLE `raw-2026-10-26` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `data` longblob DEFAULT NULL,
+  `next` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_uca1400_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `raw-2026-10-26`
+--
+
+SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
+LOCK TABLES `raw-2026-10-26` WRITE;
+/*!40000 ALTER TABLE `raw-2026-10-26` DISABLE KEYS */;
+INSERT INTO `raw-2026-10-26` VALUES
+(1,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1793020110;\r\n	bh=EzMbiMKvWM+bmMI85hzwwgwv7OH9QCjAxROPLOMI91Q=;\r\n	h=date:from:to:message-id:subject:mime-version:content-type:content-transfer-encoding;\r\n	b=JGtKXVptPAzboI8bRRzQYQvKGDnclXsfqwZv3CirddBw8jrjIeGLMduvyblfhRKYtfsl0Dtk\r\n	yL2We7Z3nNuZdw73Gadc/WpqwfM01UAdhxcM0hlTLzSXUYJnLo0pclpd+oXxU3oXjNiz+1tl\r\n	NtcFWjHW1kEY9U3+xTPcSToKIvk=\r\nX-Postal-MsgID: wmaMaAKyho73AmaQ\r\nReceived: from web-ui (105.127.6.209 [105.127.6.209]) by postal.maileff.space with HTTP; Mon, 26 Oct 2026 13:08:25 +0000\r\nDate: Mon, 26 Oct 2026 13:08:25 +0000\r\nFrom: test@mg.maileff.click\r\nTo: davidstrong035@gmail.com\r\nMessage-ID: <127a9f71-a83b-4518-955e-7a37a8e209bd@rp.postal.maileff.space>\r\nSubject: Test Message at October 26, 2026 13:08\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed;\r\n boundary=\"--==_mimepart_6adf50c9be5d7_a5be0733ba\"\r\nContent-Transfer-Encoding: 7bit',NULL),
+(2,'\r\n----==_mimepart_6adf50c9be5d7_a5be0733ba\r\nContent-Type: multipart/alternative;\r\n boundary=\"--==_mimepart_6adf50c9be06f_a5be0732d6\"\r\nContent-Transfer-Encoding: 7bit\r\n\r\n\r\n----==_mimepart_6adf50c9be06f_a5be0732d6\r\nContent-Type: text/plain;\r\n charset=UTF-8\r\nContent-Transfer-Encoding: 7bit\r\n\r\nThis is a message to test the delivery of messages through Postal.\r\n----==_mimepart_6adf50c9be06f_a5be0732d6--\r\n\r\n----==_mimepart_6adf50c9be5d7_a5be0733ba--\r\n',NULL),
+(3,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1793020421;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=h7lUu2WQKzaj6CROifvSMmq0K4vj4PWn03vzOj/GjDWWqI2H8pr2vV8t1GjD/J6IQuN5yJAr\r\n	HJOr2l2XWYNkOn4weNA7chsr9aHyEQzzKwGsnXTRXGF768yMF8WNDgyJsidhIv1gPeWGFK9h\r\n	xAlfomFZr0qHMRxjLX9My/ZhV1M=\r\nX-Postal-MsgID: hhHft3aeCFtfsEAW\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Mon, 26 Oct 2026 13:13:40 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: djeffssource@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <d1a49add-d3cc-8639-69db-bfea17490ebc@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Mon, 26 Oct 2026 13:13:40 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(4,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(5,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff2.click;\r\n	s=postal-rYtZRl; t=1793020663;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=qOB7GGV5dYYb7rZoh09YJc4AsIuGOZXjYnqHG05IOm6UFpVrkY20JHSyOd+vbdph4Q93fmhT\r\n	PkM9pPQyCNsxnOEbQRmc5hZTiCB9T8JpBBFT98K+rbDmrDTpkpw0Xun7+ww4dUpCpKgDYnb1\r\n	Uye4yvrySK5aNIa7vSvo3siqqYs=\r\nX-Postal-MsgID: L593YxaSn9hceavr\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Mon, 26 Oct 2026 13:17:42 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff2.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@gmail.com\r\nSubject: Review Your Account\r\nMessage-ID: <48e89e9c-0ae2-43e0-1f9a-40fe66a18911@mg.maileff2.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Mon, 26 Oct 2026 13:17:42 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(6,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL),
+(7,'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n	d=mg.maileff.click;\r\n	s=postal-PB2ZXV; t=1793020664;\r\n	bh=xC8f6rlEmle87Hoei0ryD3xq4iYdkJ9Zh3s3DGoP95k=;\r\n	h=from:sender:to:subject:message-id:content-transfer-encoding:date:mime-version:content-type;\r\n	b=vI5QF5PzmLodeMw2jFFY4LtUGDcSQf2TpMrkge7MSsgQqdtBD+bWnirsQswilfaxYLboGg0q\r\n	oSQtQlyEJmcUugveML4DFmouLqrLh1DvwL35z2sosZLtYfJLaVlMNkP2TYt9LAplXz9/2fWM\r\n	IsbVeScoAG11z3Sl9UzacyWWINk=\r\nX-Postal-MsgID: u7WbbzsqUtV2eHVG\r\nReceived: from [127.0.0.1] (vmi3476242.contaboserver.net [169.58.100.196]) by postal.maileff.space with SMTP; Mon, 26 Oct 2026 13:17:44 -0000\r\nFrom: Maileff Team <maileff.team@mg.maileff.click>\r\nSender: no-reply@mg.maileff.click\r\nTo: dedon4christ5@yahoo.com\r\nSubject: Review Your Account\r\nMessage-ID: <0647b3ea-6675-2af8-ca90-29259228cf6e@mg.maileff.click>\r\nContent-Transfer-Encoding: quoted-printable\r\nDate: Mon, 26 Oct 2026 13:17:44 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=utf-8',NULL),
+(8,'<a href=3D\"https://central.169.58.100.196.sslip.io/microsoft\" tab=3D\"_\">\r\n<img src=3D\"https://lh3.googleusercontent.com/d/1SbM0UzyG23IMnVBvKaqBfyExRV=\r\np498Sw=3Ds2000\" alt=3D\"Embedded Image\" />\r\n</a>\r\n',NULL);
+/*!40000 ALTER TABLE `raw-2026-10-26` ENABLE KEYS */;
+UNLOCK TABLES;
+COMMIT;
+SET AUTOCOMMIT=@OLD_AUTOCOMMIT;
+
+--
 -- Table structure for table `raw_message_sizes`
 --
 
@@ -41385,7 +41221,7 @@ CREATE TABLE `raw_message_sizes` (
   `size` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `on_table_name` (`table_name`(14)) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41396,7 +41232,6 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `raw_message_sizes` WRITE;
 /*!40000 ALTER TABLE `raw_message_sizes` DISABLE KEYS */;
 INSERT INTO `raw_message_sizes` VALUES
-(8,'raw-2026-09-25',8834),
 (9,'raw-2026-10-13',257479),
 (10,'raw-2026-10-14',257456),
 (11,'raw-2026-10-15',321836),
@@ -41406,7 +41241,8 @@ INSERT INTO `raw_message_sizes` VALUES
 (15,'raw-2026-10-19',218843),
 (16,'raw-2026-10-23',321808),
 (17,'raw-2026-10-24',321872),
-(18,'raw-2026-10-25',321794);
+(18,'raw-2026-10-25',321794),
+(19,'raw-2026-10-26',3047);
 /*!40000 ALTER TABLE `raw_message_sizes` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -41460,7 +41296,7 @@ CREATE TABLE `stats_daily` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=1081 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1085 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41488,7 +41324,8 @@ INSERT INTO `stats_daily` VALUES
 (719,1792368000,0,34,0,33,0),
 (786,1792713600,0,50,0,47,0),
 (883,1792800000,0,50,0,49,0),
-(982,1792886400,0,50,0,49,0);
+(982,1792886400,0,50,0,49,0),
+(1081,1792972800,0,4,0,0,0);
 /*!40000 ALTER TABLE `stats_daily` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -41511,7 +41348,7 @@ CREATE TABLE `stats_hourly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=1081 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1085 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41563,7 +41400,8 @@ INSERT INTO `stats_hourly` VALUES
 (979,1792803600,0,0,0,3,0),
 (982,1792886400,0,42,0,33,0),
 (1057,1792890000,0,8,0,15,0),
-(1080,1792893600,0,0,0,1,0);
+(1080,1792893600,0,0,0,1,0),
+(1081,1793019600,0,4,0,0,0);
 /*!40000 ALTER TABLE `stats_hourly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -41586,7 +41424,7 @@ CREATE TABLE `stats_monthly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=1081 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1085 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41600,7 +41438,7 @@ INSERT INTO `stats_monthly` VALUES
 (1,1782864000,0,5,0,0,0),
 (6,1785542400,0,210,0,147,3),
 (366,1788220800,0,12,0,2,0),
-(380,1790812800,0,418,0,283,0);
+(380,1790812800,0,422,0,283,0);
 /*!40000 ALTER TABLE `stats_monthly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -41623,7 +41461,7 @@ CREATE TABLE `stats_yearly` (
   `held` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `on_time` (`time`)
-) ENGINE=InnoDB AUTO_INCREMENT=1081 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1085 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41634,7 +41472,7 @@ SET @OLD_AUTOCOMMIT=@@AUTOCOMMIT, @@AUTOCOMMIT=0;
 LOCK TABLES `stats_yearly` WRITE;
 /*!40000 ALTER TABLE `stats_yearly` DISABLE KEYS */;
 INSERT INTO `stats_yearly` VALUES
-(1,1767225600,0,645,0,432,3);
+(1,1767225600,0,649,0,432,3);
 /*!40000 ALTER TABLE `stats_yearly` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -41696,7 +41534,7 @@ CREATE TABLE `webhook_requests` (
   KEY `on_event` (`event`(8)) USING BTREE,
   KEY `on_timestamp` (`timestamp`) USING BTREE,
   KEY `on_webhook_id` (`webhook_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=607 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=613 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42161,7 +41999,13 @@ INSERT INTO `webhook_requests` VALUES
 (603,'0842caae-e932-4af0-8619-f360b0084522','MessageDelayed',1,1792891768.230916,200,'OK','{\"message\":{\"id\":637,\"token\":\"A10jMn632DUdABpm\",\"direction\":\"outgoing\",\"message_id\":\"4e253861-c980-1a9d-4f85-7763a02fe6be@mg.maileff2.click\",\"to\":\"ishosun@hotmail.com\",\"from\":\"arvest@mg.maileff2.click\",\"subject\":\"Arvest: Federal Regulation Update\",\"timestamp\":1792889790.413677,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"SoftFail\",\"details\":\"An error occurred while sending the message to 52.101.68.11:25 (hotmail-com.olc.protection.outlook.com)\",\"output\":\"SMTPClient::Endpoint::SMTPSessionNotStartedError\",\"sent_with_ssl\":false,\"timestamp\":1792891767.8285737,\"time\":0.0}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
 (604,'58a4413c-0649-48fc-9997-30eff757ed9f','MessageDeliveryFailed',1,1792892657.155245,200,'OK','{\"message\":{\"id\":636,\"token\":\"oPjFeY529egRH2Ts\",\"direction\":\"outgoing\",\"message_id\":\"b30f6c57-c173-c4b3-3b4e-06307de6fa8d@mg.maileff.click\",\"to\":\"barney_1124@hotmail.com\",\"from\":\"no-reply@mg.maileff.click\",\"subject\":\"Arvest: Federal Regulation Update\",\"timestamp\":1792889789.545383,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"HardFail\",\"details\":\"Permanent SMTP delivery error when sending to 52.101.50.9:25 (hotmail-com.olc.protection.outlook.com)\",\"output\":\"550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin\",\"sent_with_ssl\":false,\"timestamp\":1792892656.8836596,\"time\":0.15}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
 (605,'7352bab9-401a-433e-bda1-9c65735258a9','MessageDelayed',1,1792892657.274996,200,'OK','{\"message\":{\"id\":637,\"token\":\"A10jMn632DUdABpm\",\"direction\":\"outgoing\",\"message_id\":\"4e253861-c980-1a9d-4f85-7763a02fe6be@mg.maileff2.click\",\"to\":\"ishosun@hotmail.com\",\"from\":\"arvest@mg.maileff2.click\",\"subject\":\"Arvest: Federal Regulation Update\",\"timestamp\":1792889790.413677,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"SoftFail\",\"details\":\"An error occurred while sending the message to 52.101.50.9:25 (hotmail-com.olc.protection.outlook.com)\",\"output\":\"SMTPClient::Endpoint::SMTPSessionNotStartedError\",\"sent_with_ssl\":false,\"timestamp\":1792892657.02347,\"time\":0.0}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
-(606,'f4988d66-57d3-4f8a-b584-a977d9409d59','MessageDeliveryFailed',1,1792893805.371824,200,'OK','{\"message\":{\"id\":637,\"token\":\"A10jMn632DUdABpm\",\"direction\":\"outgoing\",\"message_id\":\"4e253861-c980-1a9d-4f85-7763a02fe6be@mg.maileff2.click\",\"to\":\"ishosun@hotmail.com\",\"from\":\"arvest@mg.maileff2.click\",\"subject\":\"Arvest: Federal Regulation Update\",\"timestamp\":1792889790.413677,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"HardFail\",\"details\":\"Permanent SMTP delivery error when sending to 52.101.42.163:25 (hotmail-com.olc.protection.outlook.com)\",\"output\":\"550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin\",\"sent_with_ssl\":false,\"timestamp\":1792893805.250377,\"time\":0.15}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1);
+(606,'f4988d66-57d3-4f8a-b584-a977d9409d59','MessageDeliveryFailed',1,1792893805.371824,200,'OK','{\"message\":{\"id\":637,\"token\":\"A10jMn632DUdABpm\",\"direction\":\"outgoing\",\"message_id\":\"4e253861-c980-1a9d-4f85-7763a02fe6be@mg.maileff2.click\",\"to\":\"ishosun@hotmail.com\",\"from\":\"arvest@mg.maileff2.click\",\"subject\":\"Arvest: Federal Regulation Update\",\"timestamp\":1792889790.413677,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"HardFail\",\"details\":\"Permanent SMTP delivery error when sending to 52.101.42.163:25 (hotmail-com.olc.protection.outlook.com)\",\"output\":\"550 5.7.1 Unfortunately, messages from [169.58.100.196] weren\'t sent. Please contact your Internet service provider since part of their network is on our block list (S3150). You can also refer your provider to http://mail.live.com/mail/troubleshootin\",\"sent_with_ssl\":false,\"timestamp\":1792893805.250377,\"time\":0.15}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(607,'f351dcd7-226f-4401-b9aa-bb3aecff1e22','MessageSent',1,1793020142.283292,200,'OK','{\"message\":{\"id\":646,\"token\":\"wmaMaAKyho73AmaQ\",\"direction\":\"outgoing\",\"message_id\":\"127a9f71-a83b-4518-955e-7a37a8e209bd@rp.postal.maileff.space\",\"to\":\"davidstrong035@gmail.com\",\"from\":\"test@mg.maileff.click\",\"subject\":\"Test Message at October 26, 2026 13:08\",\"timestamp\":1793020105.9756212,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"Sent\",\"details\":\"Message for davidstrong035@gmail.com accepted by 142.251.127.27:25 (gmail-smtp-in.l.google.com)\",\"output\":\"250 2.0.0 OK  1793020141 ffacd0b85a97d-48e3ece9464si14801649f8f.179 - gsmtp\",\"sent_with_ssl\":true,\"timestamp\":1793020141.6624084,\"time\":0.65}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(608,'92e1fe33-416d-4532-a1f6-1504add6f974','MessageDelayed',1,1793020434.629738,200,'OK','{\"message\":{\"id\":647,\"token\":\"hhHft3aeCFtfsEAW\",\"direction\":\"outgoing\",\"message_id\":\"d1a49add-d3cc-8639-69db-bfea17490ebc@mg.maileff2.click\",\"to\":\"djeffssource@gmail.com\",\"from\":\"maileff.team@mg.maileff2.click\",\"subject\":\"Review Your Account\",\"timestamp\":1793020421.082444,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"SoftFail\",\"details\":\"Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)\",\"output\":\"421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\\n421-4.7.28 more information, go to\\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat\",\"sent_with_ssl\":false,\"timestamp\":1793020433.9781704,\"time\":0.54}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(609,'d47acbd7-642c-4891-9f10-aeaf3949f8e2','MessageSent',1,1793020664.503344,200,'OK','{\"message\":{\"id\":648,\"token\":\"L593YxaSn9hceavr\",\"direction\":\"outgoing\",\"message_id\":\"48e89e9c-0ae2-43e0-1f9a-40fe66a18911@mg.maileff2.click\",\"to\":\"dedon4christ5@gmail.com\",\"from\":\"maileff.team@mg.maileff2.click\",\"subject\":\"Review Your Account\",\"timestamp\":1793020663.133708,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"Sent\",\"details\":\"Message for dedon4christ5@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)\",\"output\":\"250 2.0.0 OK  1793020664 ffacd0b85a97d-48e3ecdbef9si14095521f8f.58 - gsmtp\",\"sent_with_ssl\":true,\"timestamp\":1793020664.1508956,\"time\":0.32}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(610,'d2d831e7-b877-4609-ad71-1ef9270351b1','MessageSent',1,1793020667.812640,200,'OK','{\"message\":{\"id\":649,\"token\":\"u7WbbzsqUtV2eHVG\",\"direction\":\"outgoing\",\"message_id\":\"0647b3ea-6675-2af8-ca90-29259228cf6e@mg.maileff.click\",\"to\":\"dedon4christ5@yahoo.com\",\"from\":\"maileff.team@mg.maileff.click\",\"subject\":\"Review Your Account\",\"timestamp\":1793020664.353756,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"Sent\",\"details\":\"Message for dedon4christ5@yahoo.com accepted by 98.136.96.76:25 (mta5.am0.yahoodns.net)\",\"output\":\"250 ok dirdel\",\"sent_with_ssl\":true,\"timestamp\":1793020667.463697,\"time\":1.75}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(611,'8df2c7db-ccaf-4eda-9b24-c8e7aeaee088','MessageDelayed',1,1793020768.188239,200,'OK','{\"message\":{\"id\":647,\"token\":\"hhHft3aeCFtfsEAW\",\"direction\":\"outgoing\",\"message_id\":\"d1a49add-d3cc-8639-69db-bfea17490ebc@mg.maileff2.click\",\"to\":\"djeffssource@gmail.com\",\"from\":\"maileff.team@mg.maileff2.click\",\"subject\":\"Review Your Account\",\"timestamp\":1793020421.082444,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"SoftFail\",\"details\":\"Temporary SMTP delivery error when sending to 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)\",\"output\":\"421-4.7.28 Gmail has detected an unusual rate of unsolicited mail. To protect\\n421-4.7.28 our users from spam, mail has been temporarily rate limited. For\\n421-4.7.28 more information, go to\\n421-4.7.28  https://support.google.com/mail/?p=UnsolicitedRat\",\"sent_with_ssl\":false,\"timestamp\":1793020765.5158784,\"time\":0.4}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1),
+(612,'39e3afdc-bcde-4923-bc1e-95165b147f25','MessageSent',1,1793021199.781951,200,'OK','{\"message\":{\"id\":647,\"token\":\"hhHft3aeCFtfsEAW\",\"direction\":\"outgoing\",\"message_id\":\"d1a49add-d3cc-8639-69db-bfea17490ebc@mg.maileff2.click\",\"to\":\"djeffssource@gmail.com\",\"from\":\"maileff.team@mg.maileff2.click\",\"subject\":\"Review Your Account\",\"timestamp\":1793020421.082444,\"spam_status\":\"NotChecked\",\"tag\":null},\"status\":\"Sent\",\"details\":\"Message for djeffssource@gmail.com accepted by 2a00:1450:4001:c21::1b:25 (gmail-smtp-in.l.google.com)\",\"output\":\"250 2.0.0 OK  1793021199 ffacd0b85a97d-48e3ed020e5si14532068f8f.296 - gsmtp\",\"sent_with_ssl\":true,\"timestamp\":1793021199.3749676,\"time\":0.48}',0,'https://api.maileff.space/webhooks/postal?token=pst_wbhk_6f3K9xL2vQ7mR4tZ6cH1nA2sD0aY',1);
 /*!40000 ALTER TABLE `webhook_requests` ENABLE KEYS */;
 UNLOCK TABLES;
 COMMIT;
@@ -42212,4 +42056,4 @@ USE `postal-server-1`;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
--- Dump completed on 2026-10-26  1:00:17
+-- Dump completed on 2026-10-27  1:00:13
