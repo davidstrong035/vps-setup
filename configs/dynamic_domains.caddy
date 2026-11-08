@@ -1,5 +1,5 @@
 # Central Static Domain
-central.169.58.100.196.sslip.io {
+central.91.229.239.152.sslip.io {
     reverse_proxy 127.0.0.1:3005
 }
 

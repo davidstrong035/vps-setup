@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CADDYFILE="/opt/postal/config/Caddyfile"
-APPS_MAP="/opt/postal/apps-map.json"
+APPS_MAP="/opt/mass-mailer/rotation/apps-map.json"
 TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
 echo "[$TIMESTAMP] Updating Caddyfile domains..."
@@ -21,7 +21,7 @@ postal.maileff.space {
     reverse_proxy 127.0.0.1:5000
 }
 
-central.169.58.100.196.sslip.io {
+central.91.229.239.152.sslip.io {
     reverse_proxy 127.0.0.1:3005
 }
 

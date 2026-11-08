@@ -1,7 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 
-const MAP_FILE = "/opt/postal/apps-map.json";
+const MAP_FILE = "/opt/mass-mailer/rotation/apps-map.json";
 
 const server = http.createServer((req, res) => {
   // Extract app name from path (e.g., "/microsoft" -> "microsoft")
