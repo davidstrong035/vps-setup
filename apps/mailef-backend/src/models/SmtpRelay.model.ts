@@ -9,6 +9,7 @@ export interface ISmtpRelay extends mongoose.Document {
   password?: string;
   secure?: boolean;
   tlsRejectUnauthorized?: boolean;
+  isSelfHosted: boolean;
   isActive: boolean;
   isArchived: boolean;
   weight: number;
@@ -33,6 +34,7 @@ const SmtpRelaySchema = new Schema<ISmtpRelay>(
     secure: { type: Boolean, default: false },
     tlsRejectUnauthorized: { type: Boolean, default: true },
     isActive: { type: Boolean, default: true },
+    isSelfHosted: { type: Boolean, default: false },
     isArchived: { type: Boolean, default: false },
     weight: { type: Number, min: 1, default: 1 },
     sentToday: { type: Number, min: 0, default: 0 },

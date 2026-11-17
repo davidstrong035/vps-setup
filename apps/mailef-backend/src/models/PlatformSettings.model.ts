@@ -20,6 +20,9 @@ export interface IPlatformSettings extends mongoose.Document {
   workerRateLimitMax?: number;
   workerRateLimitDurationMs?: number;
   customIntervalMinutes?: number; // Custom interval: send 1 email every X minutes (overrides per-minute limit)
+  // Relay health check intervals (in seconds)
+  relaySelfHostedHealthCheckSec?: number;
+  relayThirdPartyHealthCheckSec?: number;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -54,6 +57,9 @@ const PlatformSettingsSchema = new Schema<IPlatformSettings>(
     workerRateLimitMax: { type: Number, min: 1 },
     workerRateLimitDurationMs: { type: Number, min: 100 },
     customIntervalMinutes: { type: Number, min: 1 }, // Send 1 email every X minutes
+    // Relay health check intervals
+    relaySelfHostedHealthCheckSec: { type: Number, min: 60, default: 300 },
+    relayThirdPartyHealthCheckSec: { type: Number, min: 3600, default: 14400 },
   },
   { timestamps: true }
 );

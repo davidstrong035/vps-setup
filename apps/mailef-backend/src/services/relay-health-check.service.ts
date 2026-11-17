@@ -1,11 +1,11 @@
 import nodemailer from "nodemailer";
 import SmtpRelay from "../models/SmtpRelay.model";
-import { getActiveSmtpRelays, type RuntimeSmtpRelay } from "./smtp-relay.service";
+import { getActiveSmtpRelays, invalidateRelayCache, type RuntimeSmtpRelay } from "./smtp-relay.service";
 import { logger } from "../utils/logger";
 
 // Config
 const HEALTH_CHECK_INTERVAL_MS = Math.max(
-  Number(process.env.RELAY_HEALTH_CHECK_INTERVAL_MS) || 60_000,
+  Number(process.env.RELAY_HEALTH_CHECK_INTERVAL_MS) || 300_000,
   10_000
 );
 const HEALTH_CHECK_TIMEOUT_MS = Math.max(
@@ -112,6 +112,7 @@ const applyHealthResult = async (
     }
 
     await relay.save();
+    invalidateRelayCache().catch(() => undefined);
   } else {
     // Failed health check
     const newConsecutive = (relay.consecutiveFailures || 0) + 1;
@@ -138,6 +139,7 @@ const applyHealthResult = async (
     }
 
     await relay.save();
+    invalidateRelayCache().catch(() => undefined);
   }
 };
 
@@ -172,6 +174,7 @@ export const recordRelaySendFailure = async (relayId: string): Promise<void> => 
     relay.consecutiveFailures = newConsecutive;
     relay.lastHealthCheckAt = new Date();
     await relay.save();
+    invalidateRelayCache().catch(() => undefined);
   } catch (error) {
     logger.error("Failed to record relay send failure", { relayId, error });
   }
@@ -189,6 +192,7 @@ export const recordRelaySendSuccess = async (relayId: string): Promise<void> => 
         lastHealthCheckAt: new Date(),
       },
     });
+    invalidateRelayCache().catch(() => undefined);
   } catch (error) {
     logger.error("Failed to record relay send success", { relayId, error });
   }

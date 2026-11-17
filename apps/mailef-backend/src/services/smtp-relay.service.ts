@@ -1,3 +1,5 @@
+import { getRedisClient } from "../config/redis-client";
+import { logger } from "../utils/logger";
 import SmtpRelay, { type ISmtpRelay } from "../models/SmtpRelay.model";
 
 export interface RuntimeSmtpRelay {
@@ -9,6 +11,7 @@ export interface RuntimeSmtpRelay {
   password: string;
   secure: boolean;
   tlsRejectUnauthorized: boolean;
+  isSelfHosted: boolean;
   isActive: boolean;
   isArchived: boolean;
   weight: number;
@@ -22,6 +25,14 @@ export interface RuntimeSmtpRelay {
 }
 
 export interface UpdatableSmtpRelayInput {
+  name?: string;
+  host?: string;
+  port?: number;
+  username?: string;
+  password?: string;
+  secure?: boolean;
+  tlsRejectUnauthorized?: boolean;
+  isSelfHosted?: boolean;
   name?: string;
   host?: string;
   port?: number;
@@ -44,6 +55,8 @@ export interface AdminSmtpRelayRow {
   secure: boolean;
   tlsRejectUnauthorized: boolean;
   isActive: boolean;
+isSelfHosted: boolean;
+  isActive: boolean;
   isArchived: boolean;
   weight: number;
   sentToday: number;
@@ -57,6 +70,30 @@ export interface AdminSmtpRelayRow {
 
 const getTodayKey = (): string => new Date().toISOString().slice(0, 10);
 
+// ---------------------------------------------------------------------------
+// Active relays cache (Redis, TTL-based)
+// ---------------------------------------------------------------------------
+const ACTIVE_RELAYS_CACHE_TTL_MS = 30_000; // 30 seconds
+
+const getActiveRelaysCacheKey = (userId?: string | null): string =>
+  `smtp:active_relays:${userId || 'platform'}`;
+
+/**
+ * Invalidates all cached active relay entries in Redis.
+ * Called after any relay create/update/delete/toggle, or health status change.
+ */
+export const invalidateRelayCache = async (): Promise<void> => {
+  try {
+    const redis = getRedisClient();
+    const keys = await redis.keys("smtp:active_relays:*");
+    if (keys.length > 0) {
+      await redis.del(...keys);
+    }
+  } catch {
+    // Cache invalidation is best-effort — stale entries expire via TTL.
+  }
+};
+
 const normalizeRelay = (relay?: Partial<ISmtpRelay> | null): RuntimeSmtpRelay => {
   const port = Math.max(Number(relay?.port) || 587, 1);
 
@@ -69,6 +106,7 @@ const normalizeRelay = (relay?: Partial<ISmtpRelay> | null): RuntimeSmtpRelay =>
     password: relay?.password || "",
     secure: typeof relay?.secure === "boolean" ? relay.secure : port === 465,
     tlsRejectUnauthorized: relay?.tlsRejectUnauthorized !== false,
+    isSelfHosted: relay?.isSelfHosted === true,
     isActive: relay?.isActive !== false,
     isArchived: Boolean(relay?.isArchived),
     weight: Math.max(Number(relay?.weight) || 1, 1),
@@ -92,6 +130,7 @@ export const toAdminSmtpRelayRow = (
   username: relay.username,
   secure: relay.secure,
   tlsRejectUnauthorized: relay.tlsRejectUnauthorized,
+  isSelfHosted: relay.isSelfHosted,
   isActive: relay.isActive,
   isArchived: relay.isArchived,
   weight: relay.weight,
@@ -129,28 +168,54 @@ export const listAdminSmtpRelays = async (): Promise<AdminSmtpRelayRow[]> => {
 };
 
 export const getActiveSmtpRelays = async (userId?: string | null): Promise<RuntimeSmtpRelay[]> => {
+  // Try Redis cache first
+  try {
+    const redis = getRedisClient();
+    const cacheKey = getActiveRelaysCacheKey(userId);
+    const cached = await redis.get(cacheKey);
+    if (cached) {
+      const parsed: RuntimeSmtpRelay[] = JSON.parse(cached, (_key, value) => {
+        if (typeof value === "string" && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(value)) {
+          const d = new Date(value);
+          return isNaN(d.getTime()) ? value : d;
+        }
+        return value;
+      });
+      return parsed;
+    }
+  } catch {
+    // Cache miss or Redis unavailable — fall through to MongoDB
+  }
+
   await resetDailyRelayUsageIfNeeded();
   const userRelays = userId
-    ? await SmtpRelay.find({ isActive: true, isArchived: { $ne: true }, userId }).lean()
+    ? await SmtpRelay.find({ isActive: true, isArchived: { $ne: true }, healthStatus: { $ne: "down" }, userId }).lean()
     : [];
   if (userRelays.length > 0) {
-    return userRelays.map((relay) => normalizeRelay(relay));
+    const result = userRelays.map((relay) => normalizeRelay(relay));
+    cacheActiveRelays(userId, result).catch(() => undefined);
+    return result;
   }
-  const relays = await SmtpRelay.find({ isActive: true, isArchived: { $ne: true }, userId: null }).lean();
+  const relays = await SmtpRelay.find({ isActive: true, isArchived: { $ne: true }, healthStatus: { $ne: "down" }, userId: null }).lean();
 
-  return relays
-    .map((relay) => normalizeRelay(relay))
-    .sort((a, b) => {
-      const aLoad = a.sentToday / Math.max(a.weight, 1);
-      const bLoad = b.sentToday / Math.max(b.weight, 1);
+  const result = relays.map((relay) => normalizeRelay(relay));
 
-      return (
-        aLoad - bLoad ||
-        (a.lastUsedAt?.getTime() ?? 0) - (b.lastUsedAt?.getTime() ?? 0) ||
-        b.weight - a.weight ||
-        a.name.localeCompare(b.name)
-      );
-    });
+  cacheActiveRelays(userId, result).catch(() => undefined);
+  return result;
+};
+
+/**
+ * Stores the active relay list in Redis cache with TTL.
+ * Fire-and-forget — errors are silently ignored.
+ */
+const cacheActiveRelays = async (userId: string | null | undefined, relays: RuntimeSmtpRelay[]): Promise<void> => {
+  try {
+    const redis = getRedisClient();
+    const cacheKey = getActiveRelaysCacheKey(userId);
+    await redis.setex(cacheKey, ACTIVE_RELAYS_CACHE_TTL_MS / 1000, JSON.stringify(relays));
+  } catch {
+    // Cache write failures are non-critical
+  }
 };
 
 export const createSmtpRelay = async (
@@ -167,6 +232,7 @@ export const createSmtpRelay = async (
       typeof input.tlsRejectUnauthorized === "boolean"
         ? input.tlsRejectUnauthorized
         : true,
+    isSelfHosted: input.isSelfHosted === true,
     isActive: typeof input.isActive === "boolean" ? input.isActive : true,
     isArchived: typeof input.isArchived === "boolean" ? input.isArchived : false,
     weight: Math.max(Math.floor(Number(input.weight) || 1), 1),
@@ -175,7 +241,9 @@ export const createSmtpRelay = async (
     usageDate: getTodayKey(),
   });
 
-  return toAdminSmtpRelayRow(normalizeRelay(relay.toObject()));
+  const result = toAdminSmtpRelayRow(normalizeRelay(relay.toObject()));
+  await invalidateRelayCache().catch(() => undefined);
+  return result;
 };
 
 export const updateSmtpRelay = async (
@@ -204,6 +272,7 @@ export const updateSmtpRelay = async (
   if (typeof input.tlsRejectUnauthorized === "boolean") {
     existing.tlsRejectUnauthorized = input.tlsRejectUnauthorized;
   }
+  if (typeof input.isSelfHosted === "boolean") existing.isSelfHosted = input.isSelfHosted;
   if (typeof input.isActive === "boolean") existing.isActive = input.isActive;
   if (typeof input.isArchived === "boolean") existing.isArchived = input.isArchived;
   if (input.weight !== undefined) {
@@ -214,7 +283,9 @@ export const updateSmtpRelay = async (
   }
 
   await existing.save();
-  return toAdminSmtpRelayRow(normalizeRelay(existing.toObject()));
+  const result = toAdminSmtpRelayRow(normalizeRelay(existing.toObject()));
+  await invalidateRelayCache().catch(() => undefined);
+  return result;
 };
 
 export const setSmtpRelayActiveState = async (
@@ -224,7 +295,9 @@ export const setSmtpRelayActiveState = async (
   const relay = await SmtpRelay.findByIdAndUpdate(id, { isActive }, {
     returnDocument: "after",
   }).lean();
-  return relay ? toAdminSmtpRelayRow(normalizeRelay(relay)) : null;
+  if (!relay) return null;
+  await invalidateRelayCache().catch(() => undefined);
+  return toAdminSmtpRelayRow(normalizeRelay(relay));
 };
 
 export const setSmtpRelayArchivedState = async (
@@ -234,11 +307,14 @@ export const setSmtpRelayArchivedState = async (
   const relay = await SmtpRelay.findByIdAndUpdate(id, { isArchived }, {
     returnDocument: "after",
   }).lean();
-  return relay ? toAdminSmtpRelayRow(normalizeRelay(relay)) : null;
+  if (!relay) return null;
+  await invalidateRelayCache().catch(() => undefined);
+  return toAdminSmtpRelayRow(normalizeRelay(relay));
 };
 
 export const deleteSmtpRelay = async (id: string): Promise<boolean> => {
   const result = await SmtpRelay.findByIdAndDelete(id).lean();
+  await invalidateRelayCache().catch(() => undefined);
   return Boolean(result);
 };
 
