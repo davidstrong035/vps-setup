@@ -1,6 +1,7 @@
 import nodemailer from "nodemailer";
 import SmtpRelay from "../models/SmtpRelay.model";
 import { getActiveSmtpRelays, invalidateRelayCache, type RuntimeSmtpRelay } from "./smtp-relay.service";
+import { getRelayHealthCheckSettings } from "./platform-settings.service";
 import { logger } from "../utils/logger";
 
 // Config
@@ -26,6 +27,40 @@ const CONSECUTIVE_SUCCESSES_TO_RECOVER = Math.max(
 );
 
 let healthCheckTimer: NodeJS.Timeout | null = null;
+// Cache the intervals from DB so we don't query on every tick
+let cachedSelfHostedIntervalMs = 300_000;
+let cachedThirdPartyIntervalMs = 14_400_000;
+let intervalCacheExpiresAt = 0;
+
+const getRelayIntervalMs = async (relay: {
+  isSelfHosted?: boolean;
+  healthStatus?: string | null;
+  lastHealthCheckAt?: Date | null;
+}): Promise<number> => {
+  if (relay.healthStatus === "down" || relay.healthStatus === "degraded") {
+    return 300_000;
+  }
+  if (Date.now() > intervalCacheExpiresAt) {
+    try {
+      const settings = await getRelayHealthCheckSettings();
+      cachedSelfHostedIntervalMs = settings.selfHostedIntervalSec * 1000;
+      cachedThirdPartyIntervalMs = settings.thirdPartyIntervalSec * 1000;
+      intervalCacheExpiresAt = Date.now() + 300_000;
+    } catch {}
+  }
+  return relay.isSelfHosted ? cachedSelfHostedIntervalMs : cachedThirdPartyIntervalMs;
+};
+
+const isRelayDueForCheck = async (relay: {
+  isSelfHosted?: boolean;
+  healthStatus?: string | null;
+  lastHealthCheckAt?: Date | null;
+}): Promise<boolean> => {
+  const intervalMs = await getRelayIntervalMs(relay);
+  if (!relay.lastHealthCheckAt) return true;
+  const elapsed = Date.now() - new Date(relay.lastHealthCheckAt).getTime();
+  return elapsed >= intervalMs;
+};
 
 const buildTransporterForRelay = (relay: RuntimeSmtpRelay): nodemailer.Transporter => {
   const secure = relay.secure || relay.port === 465;
@@ -202,7 +237,7 @@ export const recordRelaySendSuccess = async (relayId: string): Promise<void> => 
  * Runs one full health check cycle: checks all non-archived relays,
  * updates statuses, auto-deactivates down relays.
  */
-const runHealthCheckCycle = async (): Promise<void> => {
+const runHealthCheckTick = async (): Promise<void> => {
   try {
     // Check all non-archived relays (including inactive ones that might have recovered)
     const relays = await SmtpRelay.find({ isArchived: { $ne: true } }).lean();
@@ -210,6 +245,15 @@ const runHealthCheckCycle = async (): Promise<void> => {
     if (relays.length === 0) return;
 
     for (const relay of relays) {
+      // Skip relays whose interval hasn't elapsed yet
+      // Down/degraded relays are checked more frequently to detect recovery
+      const isDue = await isRelayDueForCheck({
+        isSelfHosted: relay.isSelfHosted === true,
+        healthStatus: relay.healthStatus,
+        lastHealthCheckAt: relay.lastHealthCheckAt,
+      });
+      if (!isDue) continue;
+
       const runtimeRelay = {
         id: relay._id.toString(),
         name: relay.name,
@@ -219,6 +263,7 @@ const runHealthCheckCycle = async (): Promise<void> => {
         password: relay.password || "",
         secure: relay.secure || false,
         tlsRejectUnauthorized: relay.tlsRejectUnauthorized !== false,
+        isSelfHosted: relay.isSelfHosted === true,
         isActive: relay.isActive,
         isArchived: relay.isArchived,
         weight: relay.weight,
@@ -240,7 +285,7 @@ const runHealthCheckCycle = async (): Promise<void> => {
       );
     }
   } catch (error) {
-    logger.error("Relay health check cycle failed", {
+    logger.error("Relay health check tick failed", {
       error: error instanceof Error ? error.message : String(error),
     });
   }
@@ -250,24 +295,24 @@ export const startRelayHealthChecker = (): void => {
   if (healthCheckTimer) return;
 
   logger.info("Starting relay health checker", {
-    intervalMs: HEALTH_CHECK_INTERVAL_MS,
+    baseTickIntervalMs: BASE_TICK_INTERVAL_MS,
     maxFailuresBeforeDown: MAX_CONSECUTIVE_FAILURES_BEFORE_DOWN,
   });
 
   // Run immediately on start
-  runHealthCheckCycle().catch((error) => {
+  runHealthCheckTick().catch((error) => {
     logger.error("Initial relay health check failed", {
       error: error instanceof Error ? error.message : String(error),
     });
   });
 
   healthCheckTimer = setInterval(() => {
-    runHealthCheckCycle().catch((error) => {
-      logger.error("Relay health check cycle failed", {
+    runHealthCheckTick().catch((error) => {
+      logger.error("Relay health check tick failed", {
         error: error instanceof Error ? error.message : String(error),
       });
     });
-  }, HEALTH_CHECK_INTERVAL_MS);
+  }, BASE_TICK_INTERVAL_MS);
 };
 
 export const stopRelayHealthChecker = (): void => {
