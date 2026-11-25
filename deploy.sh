@@ -14,6 +14,7 @@ NC='\033[0m'
 
 info()  { echo -e "${GREEN}[$TIMESTAMP]${NC} $1"; }
 warn()  { echo -e "${YELLOW}[$TIMESTAMP] WARNING:${NC} $1"; }
+err()   { echo -e "${RED}[$TIMESTAMP] ERROR:${NC} $1"; }
 # ─── Validate ────────────────────────────────────────────────
 if [ -z "$1" ]; then
     DETECTED_IP=$(curl -s --max-time 5 ifconfig.me 2>/dev/null || hostname -I 2>/dev/null | awk '{print $1}')
@@ -50,7 +51,6 @@ cp "$REPO_DIR/configs/rotate-all-apps.sh" "$CUSTOM_DIR/rotation/"
 cp "$REPO_DIR/configs/apps-map.json" "$CUSTOM_DIR/rotation/"
 cp "$REPO_DIR/configs/router.js" "$CUSTOM_DIR/router/"
 chmod +x "$CUSTOM_DIR/rotation/"*.sh
-err()   { echo -e "${RED}[$TIMESTAMP] ERROR:${NC} $1"; }
 # ─── Copy apps to mass-mailer AND caddy-data ───────────────
 if [ -d "$REPO_DIR/apps" ]; then
     for app_dir in "$REPO_DIR/apps/"*/; do
