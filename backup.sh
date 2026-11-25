@@ -17,6 +17,9 @@ echo "[$TIMESTAMP] Starting backup..."
 tar -czf "$BACKUP_FILE" \
     /opt/mass-mailer/rotation/ \
     /opt/mass-mailer/apps/ \
+    /opt/mass-mailer/mailef-backend/ \
+    /opt/mass-mailer/email-verifier/ \
+    /opt/mass-mailer/leads-enricher/ \
     /opt/postal/caddy-data/apps/ \
     2>/dev/null
 

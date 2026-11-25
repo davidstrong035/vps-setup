@@ -51,6 +51,27 @@ cp "$REPO_DIR/configs/rotate-all-apps.sh" "$CUSTOM_DIR/rotation/"
 cp "$REPO_DIR/configs/apps-map.json" "$CUSTOM_DIR/rotation/"
 cp "$REPO_DIR/configs/router.js" "$CUSTOM_DIR/router/"
 chmod +x "$CUSTOM_DIR/rotation/"*.sh
+# ─── Clone backend repos (if not already present) ─────────
+CLONE_DIRS="
+  mailef-backend|https://github.com/djokhar05/mailef-backend.git
+  email-verifier|https://github.com/djokhar05/email-verifier.git
+  leads-enricher|https://github.com/djokhar05/leads-enricher.git
+"
+echo "$CLONE_DIRS" | while IFS='|' read -r dir repo; do
+  if [ ! -d "$CUSTOM_DIR/$dir" ]; then
+    info "Cloning $repo -> $CUSTOM_DIR/$dir"
+    git clone --depth 1 "$repo" "$CUSTOM_DIR/$dir" 2>/dev/null
+    if [ -d "$CUSTOM_DIR/$dir" ]; then
+      cd "$CUSTOM_DIR/$dir" && npm install --production 2>/dev/null || true
+      info "  $dir ready (add .env + start manually)"
+    else
+      warn "  Failed to clone $dir"
+    fi
+  else
+    info "  $dir already exists, skipping"
+  fi
+done
+
 # ─── Copy apps to mass-mailer AND caddy-data ───────────────
 if [ -d "$REPO_DIR/apps" ]; then
     for app_dir in "$REPO_DIR/apps/"*/; do
