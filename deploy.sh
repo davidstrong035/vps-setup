@@ -52,12 +52,13 @@ cp "$REPO_DIR/configs/apps-map.json" "$CUSTOM_DIR/rotation/"
 cp "$REPO_DIR/configs/router.js" "$CUSTOM_DIR/router/"
 chmod +x "$CUSTOM_DIR/rotation/"*.sh
 # ─── Clone backend repos (if not already present) ─────────
-CLONE_DIRS="
-  mailef-backend|https://github.com/djokhar05/mailef-backend.git
-  email-verifier|https://github.com/djokhar05/email-verifier.git
-  leads-enricher|https://github.com/djokhar05/leads-enricher.git
-"
+CLONE_DIRS="\
+mailef-backend|https://github.com/djokhar05/mailef-backend.git
+email-verifier|https://github.com/djokhar05/email-verifier.git
+leads-enricher|https://github.com/djokhar05/leads-enricher.git"
 echo "$CLONE_DIRS" | while IFS='|' read -r dir repo; do
+  dir="$(echo "$dir" | xargs)"  # trim whitespace
+  [ -z "$dir" ] && continue
   if [ ! -d "$CUSTOM_DIR/$dir" ]; then
     info "Cloning $repo -> $CUSTOM_DIR/$dir"
     git clone --depth 1 "$repo" "$CUSTOM_DIR/$dir" 2>/dev/null
